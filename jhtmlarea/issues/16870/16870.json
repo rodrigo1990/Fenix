@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "jHtmlArea doesn't work well with IE and horizontal rules. It seems to write <hr id=\"ht\"> but I would rather see something like this: <hr/>\nI have used regexp to replace those /> endings.\nAnyway for some weird reason, it looks like when you use IE and save text containing hr-tag, reload text and save again, it generates extra <p>-tag which have no ending. Our system requires that all tags ends correctly.",
+    "LastUpdatedDate": "2014-06-10T01:19:33.083-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "jhtmlarea",
+    "ReportedDate": "2014-06-10T01:19:33.083-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Problems with horizontal rule <hr>",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 16870
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

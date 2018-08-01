@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "1345406",
+    "ThreadId": "578453",
+    "Html": "Hi there,\r<br />\nif anyone was interested, here is a custom toolbar button for youtube:<br />\n<pre><code>   [{\n                        // YOUTUBE EMBED BUTTON\n                        css: &quot;youtube&quot;, //style it with &quot;div.jHtmlArea .ToolBar ul li a.youtube{...}&quot; in style/jHtmlArea.css\n                        text: &quot;add YouTube video&quot;,\n                        action: function( event ){\n                        x = prompt(&quot;YouTube URL address:&quot;, &quot;&quot;);\n                        //strip vid id\n                        var regExp = /^.*(youtu.be\\/|v\\/|u\\/\\w\\/|embed\\/|watch\\?v=|\\&amp;v=)([^#\\&amp;\\?]*).*/;\n                        var match = x.match(regExp);\n                        if (match &amp;&amp; match[2].length == 11) {\n                        this.pasteHTML('&lt;iframe width=&quot;420&quot; height=&quot;315&quot; src=&quot;//www.youtube-nocookie.com/embed/'+match[2]+'&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;');\n                        } else {\n                        alert('error');\n                        }\n                                                }          \n                           }],</code></pre>\n\n",
+    "PostedDate": "2015-01-23T10:58:03.197-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

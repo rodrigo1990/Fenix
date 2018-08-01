@@ -1,0 +1,50 @@
+[
+  {
+    "Id": "723921",
+    "ThreadId": "285825",
+    "Html": "\r\n<p>Here is my problem, the htmlarea is rending but the toolbars is all collapse together in to a single column and i cannot see the area where i can type. I have looked in to the render html code using the developer tool in ie 9, and here is what i see....\r\n I have highlighted the area of concern, it seems that at the time of htmlarea initialization these inline styles are added but they have zero values. I spent whole day playing around with the code with no luck. Another strange thing about this is that it works\r\n fine in another page on my project, it will render with width vaules appropriately, just buffling. I hope that someone can shine a light on this for me. One more thing, the following div is contained inside a nother div with the follwoing valule &lt;div style=&quot;width:800px;\r\n height:210px; border:1px solid red; &quot; &gt;...&lt;/div&gt;</p>\r\n<p>&lt;div class=&quot;jHtmlArea&quot; <strong>style=&quot;width: 0px;&quot;</strong>&gt;</p>\r\n<p>&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class=&quot;ToolBar&quot;&gt;</p>\r\n<p>&nbsp;&nbsp;&nbsp;&nbsp; ....</p>\r\n<p>&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;</p>\r\n<p>&nbsp;&nbsp;&nbsp;&nbsp; &lt;div&gt;</p>\r\n<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;iframe <strong>style=&quot;width: 0px; height: 0px;&quot;</strong>&gt;</p>\r\n<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ...</p>\r\n<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/iframe&gt;</p>\r\n<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;</p>\r\n<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;textarea id=&quot;SchChgReasonHtmlArea&quot; style=&quot;width: 100%; overflow: auto; display: none;&quot; rows=&quot;10&quot; cols=&quot;83&quot;&gt;</p>\r\n<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ...</p>\r\n<p>&nbsp;&nbsp;&nbsp;&nbsp; &lt;/textarea&gt;</p>\r\n<p>&lt;/div&gt;</p>\r\n",
+    "PostedDate": "2012-01-11T13:56:34.93-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "724418",
+    "ThreadId": "285825",
+    "Html": "<p>anyone ?</p>",
+    "PostedDate": "2012-01-12T11:51:39.93-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "840686",
+    "ThreadId": "285825",
+    "Html": "<p>Yes I am having the same problem,&nbsp; I have JQuery UI installed as well as a few other js files included a chat and video scripts.&nbsp; I did not see anything in the JHtml js file do this.&nbsp; so I just punted for now and added this.&nbsp; $(\".myTextArea\").removeAtt('style')&nbsp;</p>\r\n<p>Also toggling between the html and the text I loose both textareas.&nbsp;</p>",
+    "PostedDate": "2012-05-24T17:24:14.747-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "840690",
+    "ThreadId": "285825",
+    "Html": "\r\n<p>I have style=&quot;height: 0&quot; in the iframe still hoping to debug this tomorrow and get it working before having to punt and you one of the heavier non jquery based editors</p>\r\n",
+    "PostedDate": "2012-05-24T17:37:44.923-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1035122",
+    "ThreadId": "285825",
+    "Html": "I had the same problem. Here's why it's happening. If you have the textarea hidden (because of css/js, like with tabs), then jHtmlArea calculates its' width and height as 0. So the fix is to either make sure that the textarea is not hidden, or add another function that initiates when the hidden text area is shown.\r<br />\n<br />\nNormal usage, but making sure the textarea is actually visible:<br />\n<pre><code>$(&quot;textarea:visible&quot;).htmlarea();</code></pre>\n\nFor cases where you need it to initiate later on, after showing the div, you can do this:<br />\n<pre><code>if ($('.myDiv').is(&quot;:visible&quot;)) {\n        $(&quot;textarea:visible&quot;).htmlarea();\n}</code></pre>\n\nThat's the basic idea anyway. I've just implemented a fix like this, and haven't has a problem so far.<br />\n",
+    "PostedDate": "2013-04-24T06:20:47.883-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1070950",
+    "ThreadId": "285825",
+    "Html": "Thanks a lot Justin!\r<br />\nIt was very helpful and you've just saved me a lot of headache and time. <br />\n",
+    "PostedDate": "2013-07-21T04:50:53.547-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

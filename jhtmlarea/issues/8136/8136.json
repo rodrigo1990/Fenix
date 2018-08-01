@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Done",
+    "ClosedDate": "2009-07-22T18:03:21.157-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Added an \"alias\" method for jHtmlArea.execCommand named \"ec\" to help reduce the\nfile size of the script.",
+    "LastUpdatedDate": "2013-05-16T04:59:45.443-07:00",
+    "PlannedForRelease": "0.6.0",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "jhtmlarea",
+    "ReportedDate": "2009-07-22T18:03:09.907-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Added an \"alias\" method for jHtmlArea.execCommand named \"ec\"",
+    "Type": {
+      "Name": "Feature",
+      "Id": 1
+    },
+    "VoteCount": 1,
+    "Id": 8136
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

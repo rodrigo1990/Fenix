@@ -1,0 +1,85 @@
+<div class="wikidoc"><h1>Add Custom jHtmlArea Toolbar Button</h1>Not only are the &quot;built-in&quot; toolbar buttons availabe, but completely custom toolbar buttons can be defined. This can be useful for extending the editor with any functionality desired.<br />
+<h2>Add Custom Toolbar Button</h2>To add a custom toolbar button, instead of specifying the button to use by name, an object literal is passed instead.<br /><br />Here&#39;s an example of the object literal required:<br /><div style="color:Black;background-color:White;"><pre>
+{
+    <span style="color:Green;">// The CSS class used to style the &lt;a&gt; tag of the toolbar button</span>
+    css: <span style="color:#A31515;">&#39;custombutton&#39;</span>,
+
+    <span style="color:Green;">// The text to use as the &lt;a&gt; tags &quot;Alt&quot; attribute value</span>
+    text: <span style="color:#A31515;">&#39;Custom Button Tooltip / Description Value&#39;</span>,
+
+    <span style="color:Green;">// The callback function to execute when the toolbar button is clicked</span>
+    action: <span style="color:Blue;">function</span> (btn) {
+        <span style="color:Green;">// &#39;this&#39; = jHtmlArea object</span>
+        <span style="color:Green;">// &#39;btn&#39; = jQuery object that represents the &lt;a&gt; (&quot;anchor&quot;) tag for the toolbar button</span>
+
+        <span style="color:Green;">// Take some action or do something here</span>
+    }
+}
+</pre></div><br />Now that the required object literal has been shown, here&#39;s an example of it being used along with other toolbar buttons to build a custom toolbar set:<br /><div style="color:Black;background-color:White;"><pre>
+$(<span style="color:#A31515;">&quot;textarea&quot;</span>).htmlarea({
+    <span style="color:Green;">// Override/Specify the Toolbar buttons to show</span>
+    toolbar: [
+        [<span style="color:#A31515;">&quot;html&quot;</span>], [<span style="color:#A31515;">&quot;bold&quot;</span>, <span style="color:#A31515;">&quot;italic&quot;</span>, <span style="color:#A31515;">&quot;underline&quot;</span>, <span style="color:#A31515;">&quot;|&quot;</span>, <span style="color:#A31515;">&quot;forecolor&quot;</span>],
+        [<span style="color:#A31515;">&quot;h1&quot;</span>, <span style="color:#A31515;">&quot;h2&quot;</span>, <span style="color:#A31515;">&quot;h3&quot;</span>, <span style="color:#A31515;">&quot;h4&quot;</span>, <span style="color:#A31515;">&quot;h5&quot;</span>, <span style="color:#A31515;">&quot;h6&quot;</span>],
+        [<span style="color:#A31515;">&quot;link&quot;</span>, <span style="color:#A31515;">&quot;unlink&quot;</span>, <span style="color:#A31515;">&quot;|&quot;</span>, <span style="color:#A31515;">&quot;image&quot;</span>],
+        [
+            {
+                <span style="color:Green;">// The CSS class used to style the &lt;a&gt; tag of the toolbar button</span>
+                css: <span style="color:#A31515;">&#39;custombutton&#39;</span>,
+
+                <span style="color:Green;">// The text to use as the &lt;a&gt; tags &quot;Alt&quot; attribute value</span>
+                text: <span style="color:#A31515;">&#39;Custom Button Tooltip / Description Value&#39;</span>,
+
+                <span style="color:Green;">// The callback function to execute when the toolbar button is clicked</span>
+                action: <span style="color:Blue;">function</span> (btn) {
+                    <span style="color:Green;">// &#39;this&#39; = jHtmlArea object</span>
+                    <span style="color:Green;">// &#39;btn&#39; = jQuery object that represents the &lt;a&gt; (&quot;anchor&quot;) tag for the toolbar button</span>
+
+                    <span style="color:Green;">// Take some action or do something here</span>
+                }
+            }
+        ]
+    ]
+});
+</pre></div>
+<h2>Perform Basic Actions from a Custom Toolbar Button</h2>The jHtmlArea API provides a number of methods or actions that can be performed on the editor from within the custom toolbar buttons handler.<br /><br />Here are a couple examples:<br /><div style="color:Black;background-color:White;"><pre>
+{
+    css: <span style="color:#A31515;">&quot;custombutton&quot;</span>,
+    text: <span style="color:#A31515;">&quot;Custom Toolbar Button&quot;</span>,
+    action: <span style="color:Blue;">function</span>(btn) {
+
+        <span style="color:Green;">// Paste some specific HTML / Text value into the Editor</span>
+        <span style="color:Blue;">this</span>.pasteHTML(<span style="color:#A31515;">&quot;&lt;p&gt;&lt;/p&gt;&quot;</span>);
+
+        <span style="color:Green;">// Get the currently selected HTML / Text within the Editor</span>
+        <span style="color:Blue;">var</span> s = <span style="color:Blue;">this</span>.getSelectedHTML();
+
+        <span style="color:Green;">// Set the current selection to Bold</span>
+        <span style="color:Blue;">this</span>.bold();
+
+        <span style="color:Green;">// Set the current selection to Italic</span>
+        <span style="color:Blue;">this</span>.italic();
+
+        <span style="color:Green;">// Set the current selection to Underline</span>
+        <span style="color:Blue;">this</span>.underline();
+
+        <span style="color:Green;">// Center Justify the current selection</span>
+        <span style="color:Blue;">this</span>.justifyCenter();
+
+        <span style="color:Green;">// Indent the current selection</span>
+        <span style="color:Blue;">this</span>.indent();
+
+        <span style="color:Green;">// Insert horizontal rule or &lt;hr&gt; tag</span>
+        <span style="color:Blue;">this</span>.insertHorizontalRule();
+
+        <span style="color:Green;">// Insert an Image by URL</span>
+        <span style="color:Blue;">this</span>.image(<span style="color:#A31515;">&quot;http://domain/image.png&quot;</span>);
+
+        <span style="color:Green;">// Set the Forecolor / Text Color of the current selection</span>
+        <span style="color:Blue;">this</span>.forecolor(<span style="color:#A31515;">&quot;#336699&quot;</span>);
+
+        <span style="color:Green;">// Get the Full HTML that&#39;s contained within the Editor</span>
+        <span style="color:Blue;">var</span> html = <span style="color:Blue;">this</span>.toHtmlString();
+    }
+}
+</pre></div><br />Further documentation is available within the <a href="http://jhtmlarea.codeplex.com/wikipage?title=Modify%20Editor%20Programatically%20using%20JavaScript&amp;referringTitle=Documentation">Modify Editor Programatically using JavaScript</a> article.</div><div class="ClearBoth"></div>

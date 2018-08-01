@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "copy  from Microsoft Word and Past to JHtmlArea Editor in chrome browser adding extra margin while it's working fine in IE11.\nlike style=\"margin: 0in 0in 0pt;\"  setting automatically in <p>",
+    "LastUpdatedDate": "2015-03-27T00:57:16.157-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "jhtmlarea",
+    "ReportedDate": "2014-08-20T02:14:43.113-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "JHtmlAreaEditor in Chrome browser Copy Paste issue",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 2,
+    "Id": 16956
+  },
+  "FileAttachments": [
+    {
+      "FileId": 4909,
+      "FileName": "IE11andChrome.txt",
+      "DownloadUrl": ".\\4909"
+    }
+  ],
+  "Comments": []
+}

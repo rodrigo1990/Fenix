@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "833134",
+    "ThreadId": "354833",
+    "Html": "\r\n<p>Ok, so I have created a very basic &lt;textarea id=&quot;editor&quot;&gt;&lt;/textarea&gt; and inside my dom ready, I have added added simply $('#editor').htmlarea();...The buttons all show up and if I put some text inside the textarea that shows up to but the textarea\r\n box itself disappears. Can anyone tell me why this is happening? I'm sure its a noob question but I'm a noob. Thanks</p>\r\n",
+    "PostedDate": "2012-05-07T14:46:13.903-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

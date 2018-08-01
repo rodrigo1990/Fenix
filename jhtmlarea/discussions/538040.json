@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "1219487",
+    "ThreadId": "538040",
+    "Html": "Just for future reference, I'm leaving this note.\r<br />\n<br />\nI was trying to figure out how to get the editor to resize its width dynamically when the window resizes. (I have the editor contained in a table with width=100%.) To get the editor to resize when the window resizes, I did the following:\r<br />\n<br />\nFor the textarea element in the HTML, don't specify any width in the style attribute.\r<br />\n<br />\nIn the stylesheets, put:<br />\n<pre><code>div.jHtmlArea {\n    width: 100% !important;\n}</code></pre>\n\nAnd in the Javascript:<br />\n<pre><code>$(document).ready(init);\n\nfunction init() {\n    resizeHtmlEditor();\n    $(window).resize(resizeHtmlEditor);\n}\n\nfunction resizeHtmlEditor() {\n    $('div.jHtmlArea').find('div.ToolBar').css('width', '100%');\n    $('div.jHtmlArea iframe').css('width', '100%');\n}</code></pre>\n\n",
+    "PostedDate": "2014-03-05T07:12:22.213-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

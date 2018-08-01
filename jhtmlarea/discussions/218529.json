@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "464019",
+    "ThreadId": "218529",
+    "Html": "<p>Where is the documentation for the Editor?</p>\r\n<p>I want to know the names of all of the buttons I can add to the toolbar in my custom editor without having to guess the names.</p>\r\n<p>(You can find it in the source code - but this is not the point, having a page for documentation is very easy and typical for a library like this...)</p>",
+    "PostedDate": "2010-07-06T18:28:43.307-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "477827",
+    "ThreadId": "218529",
+    "Html": "<p>I agree with TigerWolf.</p>\r\n<p>Heck, I'd write the documentation for you if you made a publicly editable &quot;Documentation&quot; wiki page. It's really just a matter of reformatting the content of the vsdoc file.</p>",
+    "PostedDate": "2010-08-08T16:08:41.04-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

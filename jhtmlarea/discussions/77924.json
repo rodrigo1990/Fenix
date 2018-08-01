@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "266575",
+    "ThreadId": "77924",
+    "Html": "<p>Content is not remembered until I switch to source (HTML) view each time I change the content.</p>",
+    "PostedDate": "2009-12-12T02:11:52.727-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "493605",
+    "ThreadId": "77924",
+    "Html": "<p>Im finding that mine is doing the same thing. What I found when looking at the code with FireBug while editing the text... the text in the code wasn't being changed. I've found that I can hit HTML button or edit the content with bold or anything else it sometimes fixes it.</p>\r\n<p>Need help though on why this is happening as I'm not the one that will be using the form.</p>",
+    "PostedDate": "2010-09-14T18:36:54.44-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "516218",
+    "ThreadId": "77924",
+    "Html": "\r\n<p>hi.</p>\r\n<p>am having the same issue. will not remember the content unless i click the html button.<br>\r\nI am implementing a website whcih will have about 50 people who will need to log in and change content via the wysiwyg editor and i dont want to have to tell them all to &quot;click the htmlbutton first&quot; seems a bit dodgy.</p>\r\n<p>can someone please post back here with an answer. its obvous that we three are not the only folk in the world this is happening to.</p>\r\n<p>&nbsp;</p>\r\n<p>cheers</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n",
+    "PostedDate": "2010-11-02T18:32:13.807-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "524570",
+    "ThreadId": "77924",
+    "Html": "\r\n<p>The JHtmlTextArea automatically copies data from the internal IFrame to the TEXTAREA based on events.&nbsp; The problem is that some browsers don't fire the events consistently (for example: The apply color button doesn't always update the TEXTAREA).</p>\r\n<p>A simple solution which works on IE/FF/Chrome is to simply invoke the update to textarea method like this:</p>\r\n<pre style=\"font-family:consolas\">&nbsp;&nbsp;&nbsp;&nbsp;$(<span style=\"color:red\">&quot;#textarea&quot;</span>).htmlarea(<span style=\"color:red\">&quot;updateTextArea&quot;</span>);</pre>\r\n<pre style=\"font-family:consolas\"><br></pre>\r\n",
+    "PostedDate": "2010-11-19T14:47:24.293-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

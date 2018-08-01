@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "912450",
+    "ThreadId": "395478",
+    "Html": "\r\n<p>In Chrome it is adding all kinds of extra tags and I can't seem to figure out where they are coming from. &nbsp;For example, when I hit enter it puts &lt;div&gt;&lt;br&gt;&lt;/div&gt;.</p>\r\n<p>Where in the js is this coming from??</p>\r\n",
+    "PostedDate": "2012-09-13T18:25:29.57-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

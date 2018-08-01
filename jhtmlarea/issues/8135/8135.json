@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Done",
+    "ClosedDate": "2009-07-22T17:55:04.237-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Add Justify Functionality - Left, Center and Right\n \nAdd the following jHtmlArea methods:\njustifyLeft\njustifyCenter\njustifyRight\n \nAlso add Toolbar buttons",
+    "LastUpdatedDate": "2013-05-16T04:59:45.653-07:00",
+    "PlannedForRelease": "0.6.0",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "jhtmlarea",
+    "ReportedDate": "2009-07-22T17:48:16.36-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Add Justify Functionality - Left, Center and Right",
+    "Type": {
+      "Name": "Feature",
+      "Id": 1
+    },
+    "VoteCount": 1,
+    "Id": 8135
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

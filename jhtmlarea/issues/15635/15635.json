@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Fixed",
+    "ClosedDate": "2013-07-31T18:56:18.81-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "current source code:\n.html(\"\") <-dont work\nhtml: function (v) {\n            if (v) {\n                this.textarea.val(v);\n                this.updateHtmlArea();\n            } else {\n                return this.toHtmlString();\n            }\nfixed\nhtml: function (v) {\n            if (v!=undefined) {\n                this.textarea.val(v);\n                this.updateHtmlArea();\n            } else {\n                return this.toHtmlString();\n            }",
+    "LastUpdatedDate": "2013-07-31T18:56:18.81-07:00",
+    "PlannedForRelease": "0.8.0",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "jhtmlarea",
+    "ReportedDate": "2012-09-20T02:56:22.303-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "html() function dont set blank value",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 15635
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

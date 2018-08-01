@@ -1,0 +1,51 @@
+<div class="wikidoc"><h1>Configure jHtmlArea Toolbar Buttons</h1>
+jHtmlArea makes it extremely simple to define custom toolbar button sets. This allows for any combination or subset of toolbar buttons to be displayed; if the default set isn&#39;t necessary or desired.<br /><br />Here&#39;s an example that turns a <span class="codeInline">&lt;textarea&gt;</span> with &quot;<span class="codeInline">id=&#39;txtCustomHtmlArea</span>&quot; into a jHtmlArea Editor and sets specific Toolbar buttons to be displayed:<br /><div style="color:Black;background-color:White;"><pre>
+$(<span style="color:#A31515;">&#39;#txtCustomHtmlArea&#39;</span>}.htmlarea({
+toolbar: [
+        <span style="color:#A31515;">&quot;bold&quot;</span>, <span style="color:#A31515;">&quot;italic&quot;</span>, <span style="color:#A31515;">&quot;underline&quot;</span>,
+        <span style="color:#A31515;">&quot;|&quot;</span>,
+        <span style="color:#A31515;">&quot;h1&quot;</span>, <span style="color:#A31515;">&quot;h2&quot;</span>, <span style="color:#A31515;">&quot;h3&quot;</span>, <span style="color:#A31515;">&quot;h4&quot;</span>, <span style="color:#A31515;">&quot;h5&quot;</span>, <span style="color:#A31515;">&quot;h6&quot;</span>,
+        <span style="color:#A31515;">&quot;|&quot;</span>,
+        <span style="color:#A31515;">&quot;link&quot;</span>, <span style="color:#A31515;">&quot;unlink&quot;</span>
+    ]
+});
+</pre></div>This code tells the editor to only show the 11 butons specified. The items with the pipe &quot;<span class="codeInline">|</span>&quot; are items that tell the editor to add a separator to give visual grouping to the buttons being displayed.<br />
+<h2>Create Toolbar Button Groups</h2>The toolbar buttons can also be visually grouped to allow for related buttons separated from others. To do this, just set the &quot;<span class="codeInline">toolbar</span>&quot; option to an array of arrays. Each Array within will be displayed as a separate group.<br /><br />Here&#39;s an example that take the above custom toolbar example and separates the related buttons into groups instead of just placing a toolbar separator between them.<br /><div style="color:Black;background-color:White;"><pre>
+$(<span style="color:#A31515;">&#39;#txtCustomHtmlArea&#39;</span>}.htmlarea({
+toolbar: [
+        [<span style="color:#A31515;">&quot;bold&quot;</span>, <span style="color:#A31515;">&quot;italic&quot;</span>, <span style="color:#A31515;">&quot;underline&quot;</span>],
+        [<span style="color:#A31515;">&quot;h1&quot;</span>, <span style="color:#A31515;">&quot;h2&quot;</span>, <span style="color:#A31515;">&quot;h3&quot;</span>, <span style="color:#A31515;">&quot;h4&quot;</span>, <span style="color:#A31515;">&quot;h5&quot;</span>, <span style="color:#A31515;">&quot;h6&quot;</span>],
+        [<span style="color:#A31515;">&quot;link&quot;</span>, <span style="color:#A31515;">&quot;unlink&quot;</span>]
+    ]
+});
+</pre></div>
+<h2>Available Toolbar Buttons</h2>The below table contains a list of all the &quot;built-in&quot; toolbar buttons that can be used.<br /><br /><table><tr><th> Name </th><th> Description </th></tr>
+<tr><td> html </td><td> Allows for the user to toggle between WYSIWYG and Raw HTML views within the editor. </td></tr>
+<tr><td> <span class="codeInline">|</span> </td><td> Created a toolbar separator </td></tr>
+<tr><td> bold </td><td> Surrounds the selected text with <span class="codeInline">&lt;b&gt;</span> or <span class="codeInline">&lt;strong&gt;</span> tags (which one depends on the browser used.) </td></tr>
+<tr><td> italic </td><td> Surrounds the selected text with <span class="codeInline">&lt;i&gt;</span> or <span class="codeInline">&lt;em&gt;</span> tags (which one depends on the browser used.) </td></tr>
+<tr><td> underline </td><td>  </td></tr>
+<tr><td> strikethrough </td><td> Strikes out the currently selected text with <span class="codeInline">&lt;strike&gt;</span> tags </td></tr>
+<tr><td> p </td><td> Creates a new paragraph &quot;<span class="codeInline">&lt;p&gt;</span>&quot; </td></tr>
+<tr><td> h1 </td><td> Surrounds the selected text with a <span class="codeInline">&lt;h1&gt;</span> tag. </td></tr>
+<tr><td> h2 </td><td> Surrounds the selected text with a <span class="codeInline">&lt;h2&gt;</span> tag. </td></tr>
+<tr><td> h3 </td><td> Surrounds the selected text with a <span class="codeInline">&lt;h3&gt;</span> tag. </td></tr>
+<tr><td> h4 </td><td> Surrounds the selected text with a <span class="codeInline">&lt;h4&gt;</span> tag. </td></tr>
+<tr><td> h5 </td><td> Surrounds the selected text with a <span class="codeInline">&lt;h5&gt;</span> tag. </td></tr>
+<tr><td> h6 </td><td> Surrounds the selected text with a <span class="codeInline">&lt;h6&gt;</span> tag. </td></tr>
+<tr><td> image </td><td> Allows for an image to be inserted into the current caret location. </td></tr>
+<tr><td> link </td><td> Adds a hyperlink <span class="codeInline">&lt;a&gt;</span> to the currently selected text. </td></tr>
+<tr><td> unlink </td><td> Removes the hyperlink from the currently selected text. </td></tr>
+<tr><td> orderedList </td><td> Creates an Ordered List <span class="codeInline">&lt;ol&gt;</span> </td></tr>
+<tr><td> unorderedList </td><td> Creates an Unorderd List <span class="codeInline">&lt;ul&gt;</span> </td></tr>
+<tr><td> superscript </td><td> Surrounds the selected text with <span class="codeInline">&lt;sup&gt;</span> tags. </td></tr>
+<tr><td> subscript </td><td> Surrounds the selected text with <span class="codeInline">&lt;sub&gt;</span> tags. </td></tr>
+<tr><td> indent </td><td> Indents the selected text. </td></tr>
+<tr><td> outdent </td><td> Outdents the selected text. </td></tr>
+<tr><td> justifyleft </td><td> Left justifies the selected text. </td></tr>
+<tr><td> justifycenter </td><td> Centers the selected text. </td></tr>
+<tr><td> justifyright </td><td> Right justifies the selected text. </td></tr>
+<tr><td> increasefontsize </td><td> Increases the font size of the selected text by one value. </td></tr>
+<tr><td> decreasefontsize </td><td> Decreases the font size of the selected text by one value. </td></tr>
+<tr><td> forecolor </td><td> Allows for the &quot;<span class="codeInline">color</span>&quot; of the selected text to be set. </td></tr>
+<tr><td> horizontalrule </td><td> Adds a horizontal rule <span class="codeInline">&lt;hr&gt;</span> tag to the current caret location. </td></tr></table></div><div class="ClearBoth"></div>

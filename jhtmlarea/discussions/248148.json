@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "574465",
+    "ThreadId": "248148",
+    "Html": "\r\n<p><span style=\"color:#000000\">I don't like to set cols and rows for width but use CSS percentage widths.</span></p>\r\n<p><span style=\"color:#000000\">Why are you hard coding width values in the js.</span></p>\r\n<p><span style=\"color:#000000\">Also, why the iframe?</span></p>\r\n<p>&nbsp;</p>\r\n<p><span style=\"color:#000000\">thanks,<br>\r\n</span></p>\r\n",
+    "PostedDate": "2011-03-02T07:46:31.497-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "574481",
+    "ThreadId": "248148",
+    "Html": "<p>nevermind, this can be overwritten with css.</p>\r\n<p><code>\r\n<div style=\"color: black; background-color: white;\">\r\n<pre><span style=\"color: #a31515;\">div.jHtmlArea </span>{ \r\n\t<span style=\"color: red;\">display</span>: <span style=\"color: blue;\">inline block</span>;\r\n\t<span style=\"color: red;\">width</span>: <span style=\"color: blue;\">100% !important</span>;\r\n\t}\r\n<span style=\"color: #a31515;\">div.jHtmlArea iframe </span>{ \r\n\t<span style=\"color: red;\">border</span>: <span style=\"color: blue;\">0</span>;\r\n\t<span style=\"color: red;\">width</span>: <span style=\"color: blue;\">100%</span>;\r\n\t}\r\n<br /><br />I assume the iframe is there for ie or something.</pre>\r\n</div>\r\n</code></p>",
+    "PostedDate": "2011-03-02T08:22:22.07-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

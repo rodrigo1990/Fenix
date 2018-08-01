@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2012-08-03T20:53:13.51-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "A bug that only exercises itself if you happen to have an onBeforeUnload trigger set (say to check if a form has changed and stop the user from leaving without saving)\n \non IE8, clicking any of the menu buttons would actually trigger the onBeforeUnload.\n \nI changed the code slightly to fix this, tested in IE8, Safari, FF, Chrome:\n \nOriginal Code:\n \n            var menuItem = function(className, altText, action) {\n                return $(\"<li/>\").append($(\"<a href='javascript:void(0);'/>\").addClass(className).attr(\"title\", altText).click(function() { action.call(that, $(this)); }));\n            };\n \nMy Code:\n \n            var menuItem = function(className, altText, action) {\n                return $(\"<li/>\").append($(\"<a href='#'/>\").addClass(className).attr(\"title\", altText).click(function() { action.call(that, $(this)); return false; }));\n            };",
+    "LastUpdatedDate": "2013-05-16T04:59:40.923-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "jhtmlarea",
+    "ReportedDate": "2010-06-18T12:40:54.683-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Menu Items on IE8 trigger onBeforeUnload",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 11127
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

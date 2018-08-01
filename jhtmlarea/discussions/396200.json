@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "915034",
+    "ThreadId": "396200",
+    "Html": "\r\n<p>Hi</p>\r\n<p>My textarea has sometimes some whitespace at the beginning, which is important to preserve, but when using jHtmlArea, that whitespace is lost.&nbsp;</p>\r\n<p>Is there anything I can do to avoid this?</p>\r\n<p>&nbsp;</p>\r\n<p>Thanks</p>\r\n<p>Filipe</p>\r\n",
+    "PostedDate": "2012-09-20T02:42:52.987-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "915125",
+    "ThreadId": "396200",
+    "Html": "<p>I think I've found the source of this. On jHtmlArea-0.7.5.js, around line 306, there's:</p>\r\n<div style=\"color: black; background-color: white;\">\r\n<pre>        initEditor: <span style=\"color: blue;\">function</span> (options) {\r\n            <span style=\"color: blue;\">var</span> edit = <span style=\"color: blue;\">this</span>.editor = <span style=\"color: blue;\">this</span>.iframe[0].contentWindow.document;\r\n            edit.designMode = <span style=\"color: #a31515;\">'on'</span>;\r\n            edit.open();\r\n            edit.write(<span style=\"color: blue;\">this</span>.textarea.val());\r\n            edit.close();\r\n            <span style=\"color: blue;\">if</span> (options.css) {\r\n                <span style=\"color: blue;\">var</span> e = edit.createElement(<span style=\"color: #a31515;\">'link'</span>); e.rel = <span style=\"color: #a31515;\">'stylesheet'</span>; e.type = <span style=\"color: #a31515;\">'text/css'</span>; e.href = options.css; edit.getElementsByTagName(<span style=\"color: #a31515;\">'head'</span>)[0].appendChild(e);\r\n            }\r\n\r\n</pre>\r\n</div>\r\n<p>Apparently, the write() method doesn't respect whitespace...</p>\r\n<p>If I replace the lines ...</p>\r\n<p>\r\n<div style=\"color: black; background-color: white;\">\r\n<pre>            edit.open();\r\n            edit.write(<span style=\"color: blue;\">this</span>.textarea.val());\r\n            edit.close();\r\n</pre>\r\n</div>\r\n</p>\r\n<p>... with ...</p>\r\n<p>\r\n<div style=\"color: black; background-color: white;\">\r\n<pre>            edit.body.textContent = <span style=\"color: blue;\">this</span>.textarea.val()\r\n\r\n</pre>\r\n</div>\r\n</p>\r\n<p>... then whitespace is preserved! but any html markup part of the textarea contents is not interpreted by the browser when copied to the iframe.</p>\r\n<p>Moreover, I don't want to change the jHtmlArea source...</p>\r\n<p>All help appreciated. This is a big show stopper for me :\\</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2012-09-20T05:21:50.23-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

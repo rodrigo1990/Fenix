@@ -1,0 +1,75 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "The heading tags (H1..H6) does not work in IE 8. Nothing happens when you try to change the font.\nIn Firefox and Chrome it seems to work properly.",
+    "LastUpdatedDate": "2013-07-04T01:13:38.977-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "jhtmlarea",
+    "ReportedDate": "2009-09-15T17:15:39.49-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Heading tags does not work in IE 8",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 3,
+    "Id": 8789
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "change function:\r\n\r\nheading: function(h) {\r\n     this.formatBlock($.browser.msie ? \"Heading \" + h : \"h\" + h);\r\n },\r\n\r\n\r\nto:\r\n\r\nheading: function(h) {\r\n    this.formatBlock($.browser.msie ? \"<h\" + h + \">\" : \"h\" + h);\r\n },\r\n",
+      "PostedDate": "2010-01-18T23:00:18.423-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2012-08-03T20:57:09.72-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "\r\n\r\n\n\n** Closed by crpietschmann 8/3/2012 8:57 PM",
+      "PostedDate": "2012-08-03T20:57:22.89-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2012-08-03T20:57:23.723-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2012-08-03T20:57:35.01-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-21T17:58:49.673-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-07-04T01:13:38.977-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

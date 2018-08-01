@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "using this code inside jtable plugin to create a custom field returns document of null\n\n```\nvar $dp = $(\"<textarea class='\" + field.inputClass + \"'>\" + (value || '') + \"</textarea>\")\n$dp.htmlarea();\nreturn $dp;\n```\n\nTypeError: Cannot read property 'document' of null\n\nwhat can it be?",
+    "LastUpdatedDate": "2013-03-19T17:19:14.907-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "jhtmlarea",
+    "ReportedDate": "2013-03-19T17:19:14.907-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "using jhtmlarea in jtable",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 16111
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

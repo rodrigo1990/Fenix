@@ -1,0 +1,55 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Below is the description of what was done to get these methods to work, but it needs to be fixed at some point to \"properly\" support this functionality:\n \nThe execCommand \"fontsize\" doesn't work in Safari, and it doesn't support \"increaseFontSize\" or \"decreaseFontSize\", so consiquentially the work around to get this working was to wrap the current selection in <span> tags with the css font-size set to \"smaller\" or \"larger\" appropriately. This isn't the ideal solution but it works.",
+    "LastUpdatedDate": "2017-11-29T06:38:45.96-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "jhtmlarea",
+    "ReportedDate": "2009-07-24T14:15:23.93-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Fix increaseFontSize and decreaseFontSize \"properly\" in Safari",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 8174
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "If anyone has any suggestions on how to do this, please post them. Thanks.",
+      "PostedDate": "2009-07-24T14:15:49.633-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-21T17:58:52.16-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2017-11-29T06:38:45.96-08:00",
+      "Id": -2147483648
+    }
+  ]
+}

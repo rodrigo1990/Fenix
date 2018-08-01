@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "603141",
+    "ThreadId": "255340",
+    "Html": "\r\n<p>I would like to control the separation distance of the paragraphs in my jhtmlArea.&nbsp; I assume that I would modify the jhtmlArea.css.&nbsp; I would like to set the &lt;p&gt; to be the equivalent of</p>\r\n<p>&lt;P style=&quot;MARGIN: 0px&quot;&gt;</p>\r\n<p>Is this possible?&nbsp; what do I need to add to my jhtmlarea.css to accomplish this?</p>\r\n<p>&nbsp;</p>\r\n<p>Jay</p>\r\n<p>&nbsp;</p>\r\n",
+    "PostedDate": "2011-04-26T12:35:10-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "603196",
+    "ThreadId": "255340",
+    "Html": "<p>If you install a tool like firebug in firefox you can easyly find the element you want to modify and then add that to the css file.</p>\r\n<p>For your problem it should simply be:</p>\r\n<div style=\"color: black; background-color: white;\">\r\n<pre><span style=\"color: #a31515;\">body p </span>{\r\n  <span style=\"color: red;\">margin</span>:<span style=\"color: blue;\">0</span>;\r\n}<br /></pre>\r\n</div>\r\n<p>Also you would actually have to include the css first since that doesn't really happen by default. See the second post of <a title=\"Pasting youtube video HTML code \" href=\"http://jhtmlarea.codeplex.com/discussions/236009\">this discussion</a> for details on that.</p>",
+    "PostedDate": "2011-04-26T13:56:19.913-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

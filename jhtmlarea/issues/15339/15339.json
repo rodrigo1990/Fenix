@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2012-08-03T20:29:10.71-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "In Firefox and Chrome:\n \nHave an RTE on a page with a simple input box. Drag one of the toolbar items in the input field. The input field now has the value javascript:void(0);",
+    "LastUpdatedDate": "2013-05-16T04:59:38.423-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "jhtmlarea",
+    "ReportedDate": "2012-06-21T06:32:58.573-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Drag & drop of toolbar items in input fields adds javascript code to the value.",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 15339
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

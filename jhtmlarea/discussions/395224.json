@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "911292",
+    "ThreadId": "395224",
+    "Html": "\r\n<p>Hi,</p>\r\n<p>I have a server page default.asp in that there is a &lt;div&gt; tag in which am loading registration.htm.</p>\r\n<p>In registration page i have a textarea to which i want to apply jhtmlarea. In this case am able to see the editor rendering on the page when i open default.asp but am not able to update the editor with the data.</p>\r\n<p>When i debug the code the i found in initEditor method edit.open() is opening default.asp.</p>\r\n<p>in the below line its opening the body of the document to write the content. In this case body will be the default.asp body so its not able to upend the text which is provided to it.</p>\r\n<p>Can anybody help me with this case?</p>\r\n",
+    "PostedDate": "2012-09-11T22:51:05.243-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

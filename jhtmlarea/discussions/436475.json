@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "1014623",
+    "ThreadId": "436475",
+    "Html": "Hello all\r<br />\n<br />\nI have a file with extension txt who contain a simple text with accent such as é ,è,...\r<br />\nWhen i insert this file into editor , there are incorrect caracter <br />\n<pre><code>function()  {   \n      $.ajax({\n        url : name_file,\n    dataType: &quot;text&quot;,\n    success : function (data) \n               {      $(&quot;#editor&quot;).htmlarea('html', data ); }\n              });       \n}</code></pre>\n\n",
+    "PostedDate": "2013-03-13T07:48:26.713-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

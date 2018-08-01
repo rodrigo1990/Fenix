@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "425164",
+    "ThreadId": "207714",
+    "Html": "<p>Hi, I just noticed that when I cut and paste text from work 2007 or open office it brings it copies the hidden xml data with it. It doesn't show up visually, but when you view the source you can see it all and it all. I noticed this problem because I have set my max characters to 600, and when I cut and paste a couple of lines from word 2007 it ends up being around 24,000 characters. Whats going on? Anyone know how I can fix this? Thanks</p>",
+    "PostedDate": "2010-03-29T16:37:54.577-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "428862",
+    "ThreadId": "207714",
+    "Html": "<p>&nbsp;MS Word formatting is terrible. To fix it, you need to strip the HTML. I found this function to be useful</p>\r\n<p>http://www.1stclassmedia.co.uk/developers/clean-ms-word-formatting.php</p>\r\n<p>You can run this function when you extract the content from jHtmlArea for saving it. Or you can provide a special button to convert Word document on the toolbar.</p>\r\n<p>--</p>\r\n<p><span style=\"font-family:arial;font-size:small\">Abhi Muthiyan<br>Co-founder, CTO<br>Patagonia Health<br>919-649-6465<br>http://www.patagoniahealth.com<br>http://twitter.com/patagoniahealth</span></p>",
+    "PostedDate": "2010-04-08T08:39:48.23-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

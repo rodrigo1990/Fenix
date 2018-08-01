@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "997124",
+    "ThreadId": "432154",
+    "Html": "Hi all!\r<br />\n<br />\nIs it possible to hide the horizontal scroll bar that appears in the editor area?<br />\n",
+    "PostedDate": "2013-02-06T01:59:46.927-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1025797",
+    "ThreadId": "432154",
+    "Html": "Anyone solved this?<br />\n",
+    "PostedDate": "2013-04-04T21:09:08.223-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1033043",
+    "ThreadId": "432154",
+    "Html": "Hi,\r<br />\n<br />\nTry this<br />\n<pre><code>    $(&quot;#myTextArea&quot;).htmlarea({\n        css: '@Url.Content(&quot;~/Content/jHtmlArea.Editor.css&quot;)'\n    });\n</code></pre>\n\njHtmlArea.Editor.css:\r<br />\nbody \r<br />\n{<br />\n<pre><code>background-color: transparent;\nmargin: 0;\npadding: 0;</code></pre>\n\n}<br />\n",
+    "PostedDate": "2013-04-19T07:06:43.14-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

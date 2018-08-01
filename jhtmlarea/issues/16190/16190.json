@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "How to reproduce:\n\n* $element.htmlarea('html', '');\n* Expected behavior: editor is emptied\n* Observed behavior: nothing happened\n\nThe bug is caused by the following code:\n```\n        html: function (v) {\n            if (v) {\n                this.textarea.val(v);\n                this.updateHtmlArea();\n            } else {\n                return this.toHtmlString();\n            }\n        },\n```\n\nif(v) returns 'false' when v is an empty string.\n\nSolution: check for 'undefined'\n\n```\n        html: function (v) {\n            if (v !== undefined) {\n                this.textarea.val(v);\n                this.updateHtmlArea();\n            } else {\n                return this.toHtmlString();\n            }\n        },\n```",
+    "LastUpdatedDate": "2013-05-03T13:11:24.737-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "jhtmlarea",
+    "ReportedDate": "2013-05-03T11:33:00.367-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Bug: $element.htmlarea('html', '') doesn't do anything",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 16190
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

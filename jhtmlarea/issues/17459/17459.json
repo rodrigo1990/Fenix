@@ -1,0 +1,50 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "GitHub seems to be a de-facto standard for open source projects now and it is more contributors-friendly.",
+    "LastUpdatedDate": "2015-10-18T07:01:10.573-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "jhtmlarea",
+    "ReportedDate": "2015-06-17T09:10:45.227-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Move to GitHub",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 2,
+    "Id": 17459
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Made a fork https://github.com/mnaoumov/jhtmlarea/\r\n\r\nAdded bower configuration\r\n\r\nand going to add some more fixes",
+      "PostedDate": "2015-06-17T17:01:08.343-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2015-10-18T07:01:10.573-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

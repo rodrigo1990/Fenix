@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "717253",
+    "ThreadId": "284193",
+    "Html": "\r\n<p>Hi all,</p>\r\n<p>&nbsp;</p>\r\n<p>I appear to have installed jHtmlArea correctly - all of the toolbar functions are visible and functional - but if I press ctrl&#43;i or ctrl&#43;b, my FireFox bookmarks folder opens. I am running FireFox version 7.0.1.</p>\r\n<p>When I'm viewing the script in Chrome, those keyboard shortcuts apply italic and bold as intended.</p>\r\n<p>There are no JavaScript errors in Firebug.</p>\r\n<p>Is this a bug with the plugin?</p>\r\n<p>&nbsp;</p>\r\n<p>Regards,</p>\r\n<p>Duncan</p>\r\n",
+    "PostedDate": "2011-12-26T12:14:57.963-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

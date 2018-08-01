@@ -1,0 +1,51 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "hello   sir \n\n i  have  Used JHTML area  in   my page  and  i  am  opening  that  page  using  the dialog Box  \n if   once  i have  open  that  dialog box   then in  works  fine   if  i open  that  dialog    again  then  textarea\nget  disabled and i  unable   to add  any  thing..............please reply",
+    "LastUpdatedDate": "2013-08-22T01:08:21.24-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "jhtmlarea",
+    "ReportedDate": "2013-07-18T04:31:51.34-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "textarea getting  disabled  when  using  with  dialogbox",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 16317
+  },
+  "FileAttachments": [
+    {
+      "FileId": 4778,
+      "FileName": "JHTMLAREAbug.jpg",
+      "DownloadUrl": ".\\4778"
+    }
+  ],
+  "Comments": [
+    {
+      "Message": "I think it's a bug in JHTML. I believe it's because the JHTML hijacks the page focus. I figured out a solution. We need to add a line before the end of dispose function in Jhtml and call  $yourtextarea.htmlarea('dispose') before you close your dialog. It works well in my project. Hope this works for you as well.\r\n\r\n        dispose: function () {\n            this.textarea.show().insertAfter(this.container);\n            this.container.remove();\n            this.textarea[0].jhtmlareaObject = null;\n            this.textarea.focus().click();\n        }",
+      "PostedDate": "2013-08-22T01:08:21.24-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

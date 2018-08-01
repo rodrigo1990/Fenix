@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "623217",
+    "ThreadId": "260258",
+    "Html": "\r\n<p>The cut, copy and paste functions are not working for me &nbsp;(FF, Safari, Chrome, all on Mac)&nbsp;. The&nbsp;<a href=\"http://www.html.org.cn/books/dhtml/methods/execcommand.html\">execCommand</a>&nbsp;is actually supposed to have a couple other parameters\r\n for those functions, which I put in, but it still doesn't work. Any ideas anyone?</p>\r\n<p>&nbsp;</p>\r\n&lt;!-- p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Menlo} span.s1 {color: #b4280d} span.s2 {color: #9237bd} --&gt;\r\n<p>cut: <span>function</span>() {&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>\r\n<p><span><span style=\"white-space:pre\"></span>this</span>.ec(<span>&quot;cut&quot;</span>, <span>\r\n&quot;false&quot;</span>, <span>&quot;null&quot;</span>);</p>\r\n<p>&nbsp; &nbsp; &nbsp; &nbsp; },</p>\r\n<p>&nbsp;copy: <span>function</span>() {</p>\r\n<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span>this</span>.ec(<span>&quot;copy&quot;</span>,\r\n<span>&quot;false&quot;</span>, <span>&quot;null&quot;</span>);</p>\r\n<p>&nbsp; &nbsp; &nbsp; &nbsp; },</p>\r\n<p>paste: <span>function</span>() {</p>\r\n<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span>this</span>.ec(<span>&quot;paste&quot;</span>,\r\n<span>&quot;false&quot;</span>, <span>&quot;null&quot;</span>);</p>\r\n<p>&nbsp; &nbsp; &nbsp; &nbsp; }</p>\r\n<p>&nbsp;</p>\r\n<p>Thanks,</p>\r\n<p>Kyle</p>\r\n",
+    "PostedDate": "2011-06-05T13:19:54.617-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

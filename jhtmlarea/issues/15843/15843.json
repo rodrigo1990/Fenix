@@ -1,0 +1,50 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "I'm applying the jhtmlarea to all textarea's in the page as shown below (called from $(document).ready()):\n $('textarea').htmlarea({\n    toolbar: [\n        [\"bold\", \"italic\"],\n        [ \"underline\",\"superscript\", \"subscript\"]\n       ]\n  });\n\nThe first text area works just fine. But on the second one the iFrame has a height of 0 and the text area is not hidden.  When I add the below code right after the htmlarea() I'm able to now see and use the editor but the text area still shows as a small box.  My understanding is that setting the style to display none or using the hide() should get rid of the textarea but something is coming into play and setting the text area to display:block.\n\n$('iframe').height(60);\n$('textarea').attr(\"style\", \"display:none\");\n$('textarea').height(0);\n$('textarea').width(0);\n$('textarea').hide();\n\nThe $('textarea').html() call works just find in IE8, Chrome and Firefox.",
+    "LastUpdatedDate": "2013-02-21T17:58:39.673-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "jhtmlarea",
+    "ReportedDate": "2012-12-14T06:22:02.56-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "IE9 Issue with second textarea",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 15843
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "I figured it out.  I wasn't taking into account that one of the textareas was dependent on a drop down selection and wasn't generated at the time the $(document).ready() fired.  Even if I called $('textarea').htmlarea(); on $(document).ready() and then again on the specific element when the second textarea was displayed I had issues.  I had to use the IDs rather than all textarea elements and it works just fine. ",
+      "PostedDate": "2012-12-16T20:30:05.25-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-21T17:58:39.673-08:00",
+      "Id": -2147483648
+    }
+  ]
+}

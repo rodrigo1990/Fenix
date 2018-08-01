@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "838811",
+    "ThreadId": "356514",
+    "Html": "\r\n<p><strong>Script call:</strong></p>\r\n<p><span style=\"color:#ff0000\">function Showdialog(id) {</span></p>\r\n<p><span style=\"color:#ff0000\">glboalid = id; $(&quot;#dialog&quot;).dialog({ width: 420 }); //$(&quot;#dialog&quot;).parent().appendTo($(&quot;form:first&quot;)) $(&quot;#dialog&quot;).load(); $(&quot;#dialogEditor&quot;).html(''); $(&quot;#dialogEditor&quot;).htmlarea('pasteHTML', $(id).html()); $(&quot;#dialog&quot;).dialog(&quot;open&quot;);</span></p>\r\n<p><span style=\"color:#ff0000\">} </span></p>\r\n<p><span style=\"color:#ff0000\">function CloseDialog(id) {</span></p>\r\n<p><span style=\"color:#ff0000\">$(glboalid).html($('#dialogEditor').htmlarea('toHtmlString')) $(&quot;#dialogEditor&quot;).htmlarea(&quot;dispose&quot;); $(&quot;#dialog&quot;).dialog(&quot;close&quot;);</span></p>\r\n<p><span style=\"color:#ff0000\">}</span></p>\r\n<p>&nbsp;</p>\r\n<p><strong>HTml source</strong></p>\r\n<div id=\"dialog\" title=\"Done Editing Region -Close Tool bar\">&lt;textarea id=&quot;dialogEditor&quot; style=&quot;width: 400px;&quot; rows=&quot;10&quot;&gt;some test&lt;/textarea&gt; &lt;input onclick=&quot;CloseDialog('dialog')&quot; type=&quot;button&quot; value=&quot;Close&quot; /&gt;&lt;input onclick=&quot;CloseDialog('dialog')&quot;\r\n type=&quot;button&quot; value=&quot;Save&quot; /&gt;</div>\r\n<div title=\"Done Editing Region -Close Tool bar\"></div>\r\n<div title=\"Done Editing Region -Close Tool bar\"></div>\r\n<div title=\"Done Editing Region -Close Tool bar\">Please help me out..</div>\r\n",
+    "PostedDate": "2012-05-21T02:49:47.19-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

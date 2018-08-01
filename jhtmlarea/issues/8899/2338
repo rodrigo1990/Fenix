@@ -1,0 +1,14 @@
+82a83,89
+>                 if (this.editor.selection.type.toLowerCase() == 'control') {
+>                     var controlrange = this.editor.selection.createRange();
+>                     if (controlrange.length > 0) {
+>                         return controlrange(0).outerHTML;
+>                     }
+>                     return null;
+>                 } else {
+83a91
+>                 }
+339c347
+<         $(this.editor.body).click(function() { t.updateTextArea(); }).keyup(function() { t.updateTextArea(); });
+---
+>             $(this.editor).click(function() { t.updateTextArea(); }).keyup(function() { t.updateTextArea(); });

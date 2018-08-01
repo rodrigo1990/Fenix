@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "417262",
+    "ThreadId": "204716",
+    "Html": "<p>HI all!</p>\r\n<p>I used the button reset to reset the form as follow:</p>\r\n<p>&lt;input type=&quot;reset&quot; name=&quot;btnReset&quot; id=&quot;btnReset&quot; value=&quot;Reset&quot;/&gt;</p>\r\n<p>At the result, all form input are reset but the jhtmlarea. How can I reset it to the beginning state?</p>",
+    "PostedDate": "2010-03-11T19:29:52.953-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "588809",
+    "ThreadId": "251793",
+    "Html": "\r\n<p><strong>How can I make the textarea/jHtmlArea auto-expand as content fills the box?</strong></p>\r\n<p>A demo of what I am talking about is here.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; http://brandonaaron.net/code/expandable/demos</p>\r\n<p>In the example given in the hyperlink, the textarea's content expands beyond what is shown, the textarea itself expands?</p>\r\n",
+    "PostedDate": "2011-03-30T06:38:31.007-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "588867",
+    "ThreadId": "251793",
+    "Html": "<p>Since jHtmlArea uses an iFrame you can't add the textarea specific jQuery expandable method. You would have to write a jHtmlArea specific one yourself i guess.</p>\r\n<p>The only possible approach i could think of is using the hidden texatea element where jHtmlArea stores the Content, give that the expandable option and than build a listener that copys it's height/width attributes to the iFrame box of jHtmlArea.</p>\r\n<p>Good luck and pleaee post any results you have.</p>",
+    "PostedDate": "2011-03-30T08:14:33.41-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "808723",
+    "ThreadId": "251793",
+    "Html": "<p>Did anyone find or implement a solution for this? Would appreciate someone sharing code.</p>\r\n<p>Thank you</p>\r\n<p>Abhi</p>",
+    "PostedDate": "2012-03-11T07:56:21.513-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

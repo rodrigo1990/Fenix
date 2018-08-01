@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "1278839",
+    "ThreadId": "554527",
+    "Html": "The documentation is great, and easy to follow for a standard website. However, I am working on a LightSwitch HTML application in Visual Studio 2013. The end result is an HTML5 application that is largely built on jquery. I've successfully added other jquery libraries to the project, but I can't get this one to work.\r<br />\n<br />\nSince the documentation doesn't cover LightSwitch, I made some guesses. I added the following code to the code behind javascript, as I usually do when I want to modify an element after it renders.<br />\n<pre><code>myapp.ScreenName.textArea_PostRender = function (element, contentItem) { //This is genereated by VS\n   $(element).htmlarea();\n};</code></pre>\n\nAll that I get is the element rendered with a red box over it, indicating an error, the error text is &quot;CustomControl error: textArea_postRender() method error: TypeError: undefined is not a function&quot;\r<br />\n<br />\nI've tried a number of variations, and I'll keep hammering at this, but I'm hoping somebody here knows the answer and can save me a little time.\r<br />\n<br />\nThank you,<br />\n",
+    "PostedDate": "2014-07-29T10:17:01.173-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1278948",
+    "ThreadId": "554527",
+    "Html": "All right, I found the problem. the deafult.htm file in my project had two blocks of script tags. One set in the head, and another set in the body of the document. I moved the script reference from the head to the body, problem solved.<br />\n",
+    "PostedDate": "2014-07-29T16:47:10.7-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": "2014-07-29T16:47:15.583-07:00"
+  }
+]

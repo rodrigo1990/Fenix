@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "bower now is more preferred way to redistribute web libs rather than NuGet \n\nI found some project https://github.com/krampstudio/jhtmlarea but it is abandoned",
+    "LastUpdatedDate": "2015-05-28T14:43:06.887-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "jhtmlarea",
+    "ReportedDate": "2015-05-28T13:31:36.09-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Create bower package",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 17445
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "I created a bower package based on your NuGet package 0.8.0. and registered it\r\n\r\nhttps://github.com/mnaoumov/jhtmlarea/",
+      "PostedDate": "2015-05-28T14:43:06.887-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

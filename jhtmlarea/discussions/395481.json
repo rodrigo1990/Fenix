@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "912464",
+    "ThreadId": "395481",
+    "Html": "\r\n<p>Just installed jHtmlArea in a form, but it's not submitting the input from the textarea. If I remove the htmlarea reference, the form works fine, but not with htmlarea active. I'm sure I'm missing something basic. Any suggestions?</p>\r\n<p>Thanks</p>\r\n",
+    "PostedDate": "2012-09-13T19:02:29.33-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

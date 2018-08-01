@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Fixed, sort of...The execCommand &#34;fontsize&#34; doesn&#39;t work in Safari, and it doesn&#39;t support &#34;increaseFontSize&#34; or &#34;decreaseFontSize&#34;, so consiquentially the work around to get this working was to wrap the current selection in &#60;span&#62; tags with the css font-size set to &#34;smaller&#34; or &#34;larger&#34; appropriately. This isn&#39;t the ideal solution but it works.",
+    "ClosedDate": "2009-07-24T14:14:13.913-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Fix increaseFontSize and decreaseFontSize in Safari",
+    "LastUpdatedDate": "2013-05-16T04:59:45.05-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "jhtmlarea",
+    "ReportedDate": "2009-07-22T18:50:11.877-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Fix increaseFontSize and decreaseFontSize in Safari",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 8138
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

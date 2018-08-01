@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Hi all,\n\nLooks like there is a bug whenever you have html with relative links, the editor automatically adds the root url to the relative urls.\nFor example working on a testpage.aspx\n\n<a href=\"#\"> This is a test</a>\n\nwill look like:\n\n<a href=\"http://servername/www/testpage.aspx#\"> This is a test</a>\n\nI am not sure if there is a setting to disable that.\n\nThanks\nAl",
+    "LastUpdatedDate": "2014-08-10T11:54:53.317-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "jhtmlarea",
+    "ReportedDate": "2013-08-28T08:55:02.54-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "clicking on HTML view appends root url into href links",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 16386
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "@nyc_alex, did you manage to find the solution to it as I am also facing the same issue.",
+      "PostedDate": "2014-08-10T11:54:53.317-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

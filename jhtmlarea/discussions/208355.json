@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "427464",
+    "ThreadId": "208355",
+    "Html": "<p>Can someone please tell me why in IE when I manually put the following HTML into the editor the element with the width becomes re-sizable when you are not in HTML view anymore?<br><br></p>\r\n<div style=\"color:Black;background-color:White\">\r\n<pre><span style=\"color:Blue\">&lt;</span><span style=\"color:#A31515\">span</span><span style=\"color:Blue\">&gt;</span>Normal Text<span style=\"color:Blue\">&lt;/</span><span style=\"color:#A31515\">span</span><span style=\"color:Blue\">&gt;</span><span style=\"color:Blue\">&lt;</span><span style=\"color:#A31515\">br</span><span style=\"color:Blue\">&gt;</span><span style=\"color:Blue\">&lt;</span><span style=\"color:#A31515\">br</span><span style=\"color:Blue\">&gt;</span>\r\n<span style=\"color:Blue\">&lt;</span><span style=\"color:#A31515\">span</span> <span style=\"color:Red\">style</span><span style=\"color:Blue\">=</span><span style=\"color:Blue\">&quot;width: 30%&quot;</span><span style=\"color:Blue\">&gt;</span>This text becomes re-sizable<span style=\"color:Blue\">&lt;/</span><span style=\"color:#A31515\">span</span><span style=\"color:Blue\">&gt;</span>\r\n</pre>\r\n</div>\r\n<p>&nbsp;</p>\r\n<p>Ideally, I would like it to not have the resize thingy as it appears very ugly.</p>",
+    "PostedDate": "2010-04-05T08:20:27.423-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

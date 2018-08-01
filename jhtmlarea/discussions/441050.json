@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "1033542",
+    "ThreadId": "441050",
+    "Html": "Hello there,\r<br />\n<br />\nI have tried to detect auto focus after loading and chage the param (keyboardDisplayRequiresUserAction to NO)  in the webview of my applicaion.\r<br />\n<br />\nThe keyboard jumped looks fine and even the cursor is in the right position, the only problem is that the character that taps is not display in the edited area.\r<br />\n<br />\nAny suggestion?<br />\n",
+    "PostedDate": "2013-04-21T04:47:19.647-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

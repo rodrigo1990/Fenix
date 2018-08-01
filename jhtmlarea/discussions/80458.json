@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "275762",
+    "ThreadId": "80458",
+    "Html": "<p>Im trying to JQuery UI .resizable() to make the jHTMLarea editor resizable (like the one here on CodePlex).&nbsp; When I do this, it will let me shrink the editor but not expand it;&nbsp;it seems like the&nbsp;maximum size of the editor is being locked by the Toolbar.&nbsp; Anyway to fix this?</p>",
+    "PostedDate": "2010-01-11T09:21:27.973-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "442911",
+    "ThreadId": "80458",
+    "Html": "<p>I'm also really interested in a solution for this!</p>",
+    "PostedDate": "2010-05-14T07:08:24.04-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "552826",
+    "ThreadId": "80458",
+    "Html": "\r\n<p>Here's a solution that so far seems to be working:</p>\r\n<p>&nbsp;</p>\r\n<p>$('textarea').htmlarea().parent().resizable({ alsoResize: $(this).find('iframe') });</p>\r\n",
+    "PostedDate": "2011-01-20T12:47:57.603-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

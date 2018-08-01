@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "741919",
+    "ThreadId": "294651",
+    "Html": "\r\n<p>I have a jquery-ui dialog opening with a jHTML text area in it.</p>\r\n<p>The first time you press 'Update' the form the text area is in is serialized and posted via ajax to be sorted by a PHP script.</p>\r\n<p>However, if you open the dialog again you can edit the text but when the form is serialized it serializes the old textarea (i.e. all extra changes are ignored.)</p>\r\n<p>&nbsp;</p>\r\n<p>Is this because there are multiple instances of the JHTMLArea and only the original/first one is being used?</p>\r\n<p>&nbsp;</p>\r\n<p>If I were to assign the textarea with a random id and call jHTMLArea on that random id each time would this solve the problem?</p>\r\n",
+    "PostedDate": "2012-02-05T15:01:08.66-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

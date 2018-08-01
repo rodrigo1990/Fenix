@@ -1,0 +1,50 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "I am using the htmlArea inside a jqx tab control. The problem which i am facing is, i cannot edit anything in the htmlArea. It happens only i wrap it in another control. Rest of the area is fine, i can able to select the toolbars. but the editor portion alone is disabled. If i am not using the tab then its working fine. What could be the problem.",
+    "LastUpdatedDate": "2014-11-28T21:43:21.117-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "jhtmlarea",
+    "ReportedDate": "2014-10-08T23:15:47.14-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "HtmlArea Are Not Getting Focus",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 17036
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Same issue - although it is transient: I mean sometimes I can edit, sometimes I can't;\r\n\r\nIt seems to be linked to the couple OS version/Browser version : one of my users on XP/Chrome (latest) has the issue 80% of the time, me on Linux/Chrome or Linux/Firefox it always works fine; \r\n\r\nIf you find a work around I'd be delighted to hear",
+      "PostedDate": "2014-11-28T21:20:29.363-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Note : I have implemented two fixes which seem to deal with this issue on from #17036 and #8969; We'll see on Monday if that fixes it.",
+      "PostedDate": "2014-11-28T21:43:21.117-08:00",
+      "Id": -2147483648
+    }
+  ]
+}

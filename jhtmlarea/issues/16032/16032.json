@@ -1,0 +1,55 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Hi,\n\nWhen calling pasteHTML, the debugger shows an error that    r.select();  \non line 124 is not a function (version 0.7.5 of jHtmlArea)\nIt still works, though ...\n\nAlso, in Safari or Chrome, pasteHTML surrounds the pasted html with a double set of   ... \nso the extra insertion of a span on line 121 seems not necessary.",
+    "LastUpdatedDate": "2015-05-29T07:55:48.43-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "jhtmlarea",
+    "ReportedDate": "2013-02-08T08:55:59.777-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "r.select()  not a function on line 124 of version 0.7.5",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 16032
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "p.s.: I forgot to specify that this is using jquery 1.7.2",
+      "PostedDate": "2013-02-08T21:57:34.177-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-21T17:58:38.58-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2015-05-29T07:55:48.43-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

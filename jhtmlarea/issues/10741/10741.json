@@ -1,0 +1,50 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Tried the following methods to insert text into the jhtmlarea - all resulted in the text displaying at the top of the page and not inside the actual textarea.\n \n$('#entryText').htmlarea({\n        toolbar: [\"orderedList\", \"unorderedList\" ],\n\tloaded: function(){\n\t\tthis.pasteHTML($(data).find('EntryText').text());\n\t}\n});\n \n \nAND\n \n$(\"#entryText\").htmlarea('pasteHTML', $(data).find('EntryText').text());",
+    "LastUpdatedDate": "2013-02-21T17:58:47.33-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "jhtmlarea",
+    "ReportedDate": "2010-04-30T11:36:30.23-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Inserting text into htmlarea fails in IE7",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 10741
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "update:  found a timing issue with IE.  Your code in pasteHTML to discover ie as a browser   (if ($.browser.msie) {\r\n r.pasteHTML(html);) seemed to not be running - found this out by putting in an alert statement to see if $.browser.msie was actually returning true.  The addition of the alert allowed the above to run detecting that the browser was msie.  My work around was to add a setTimeout method.\r\n\r\n                                                setTimeout(function(){\r\n\t\t\t\t\t\t\t$(\"#entryText\").htmlarea(\"updateHtmlArea\");\r\n\t\t\t\t\t\t\t$('#entryText').htmlarea('pasteHTML', letterData);\r\n\t\t\t\t\t\t }, 250);",
+      "PostedDate": "2010-05-01T07:02:07.03-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-21T17:58:47.33-08:00",
+      "Id": -2147483648
+    }
+  ]
+}

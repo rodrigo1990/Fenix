@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2012-08-03T20:32:14.207-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "I tried the demo via default.htm in the downloaded zip file. After clicked \"Show Dialog with jHtmlArea Editor\" in the bottom of page, the dialog displayed. But, dragging and resizing are both failed to work. Furthermore, each time click the sample text \"Some Basic text\", the dialog will be larger line by line.\n \nI used IE9 to view the demo page.",
+    "LastUpdatedDate": "2013-05-16T04:59:38.853-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "jhtmlarea",
+    "ReportedDate": "2012-05-20T02:16:05.397-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Dialog does not work well in sample page",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 15180
+  },
+  "FileAttachments": [
+    {
+      "FileId": 4390,
+      "FileName": "QQ截图20120520165605.png",
+      "DownloadUrl": ".\\4390"
+    }
+  ],
+  "Comments": []
+}

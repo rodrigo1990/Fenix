@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "267287",
+    "ThreadId": "78133",
+    "Html": "<p><strong>I wanted to give some padding to the images in the header, by header I mean the top buttons.</strong></p>\r\n<p><strong>The buttons are very close to each other and also they are small in size.</strong></p>\r\n<p><strong>Any idea how can I change them.&nbsp; </strong></p>",
+    "PostedDate": "2009-12-14T13:43:35.94-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "270006",
+    "ThreadId": "78133",
+    "Html": "<p>Santosh,</p>\r\n<p>One way I found to do this is to edit the jHtmlArea.css file.&nbsp; Find the lines near the top (4th &amp; 5th lines)</p>\r\n<p>div.jHtmlArea .ToolBar ul { border: solid 1px #ccc; margin: 4px; padding: 1px; float: left; background: #fff url(jHtmlArea_Toolbar_Group_BG.png) repeat-x;}<br>div.jHtmlArea .ToolBar ul li { list-style-type: none; float: left; border: none; padding: 1px; margin: 1px; }</p>\r\n<p>Changing the margin on the ul adds space between sections of buttons, changing the ul li modifies the actual buttons.</p>\r\n<p>Hope this helps.</p>\r\n<p>&nbsp;</p>\r\n<p>Mark</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2009-12-22T11:32:11.257-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

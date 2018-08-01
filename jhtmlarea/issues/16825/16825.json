@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "I am finding that the editor works well except that whenever I click a toolbar option I get the standard IE security message 'Are you sure you want to leave this page?'. Is there a way to prevent this? It means that every toolbar action displays this prompt! Direct editing of the text in jHtmlArea does not display the message.\n\nI am running the editor within a SharePoint 2010 page (in edit mode) in IE11 .\n\nThanks",
+    "LastUpdatedDate": "2014-05-01T03:15:59.633-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "jhtmlarea",
+    "ReportedDate": "2014-05-01T03:15:59.633-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "IE 'sure you want to leave page' message displayed after toolbar action",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 16825
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

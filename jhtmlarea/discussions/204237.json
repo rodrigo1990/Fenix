@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "415632",
+    "ThreadId": "204237",
+    "Html": "<p>I love this plugin for a use I'm planning, however, it currently lacks one thing.&nbsp; It generates all HTML code as spans w/ styles in Firefox.&nbsp;&nbsp; From all that I've read, you need to do the following to change this behaviour on the editor:</p>\r\n<p>.execCommand('styleWithCss', false, false);</p>\r\n<p>However, every way in which I've attempted that, has been futile.&nbsp; I've tried snagging the .jhtmlareaObject and setting it after the fact.&nbsp; I've hacked the code and inserted it immediately after the .designMode=&quot;on&quot; command, etc.&nbsp;&nbsp; Yet it always does '&lt;span&gt;'</p>\r\n<p>Any idea on how to accomplish this?&nbsp;&nbsp; and/or if it could be added an a feature/option?</p>",
+    "PostedDate": "2010-03-08T13:24:43.103-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "415646",
+    "ThreadId": "204237",
+    "Html": "<p>A quick update.&nbsp; I have found a workaround/hack.&nbsp; But, well, it doesn't seem right ;)</p>\r\n<p>Basically for some reason I have to set the styleWithCss before EACH AND EVERY execCommand that I want to happen that way.</p>\r\n<p>Therefore my 'fix' has been to put this piece of code inside of jHtmlArea's execCommand function.</p>\r\n<p>At the very least, would be nice to see jHtmlArea offer this functionality as an option, and do it for you.&nbsp;&nbsp; But it seems that there has to be a more 'clean' way to accomplish this as well instead of doing it EVERY time.</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2010-03-08T13:53:10.963-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "457386",
+    "ThreadId": "204237",
+    "Html": "<p>3 Months later ... I have another update here.</p>\r\n<p>So my code-fix here had been working great ... until about to launch product and doing a final run of tests.</p>\r\n<p>Ended up finding that in IE8 it was throwing an error on that line of code I added.&nbsp;&nbsp; It didn't like it one bit.</p>\r\n<p>So I had to wrap it in a if (!($.browser.msie)) and everything seems to work fine, especially since IE seems by default to not use 'CSS' mode.</p>\r\n<p>On an 'odd' point:&nbsp; I found that on SOME Firefox browsers, not having that line at all still worked fine, generating B's and I's.&nbsp; On other Firefox though, spans would appear.&nbsp; Odd.</p>",
+    "PostedDate": "2010-06-18T12:30:10.713-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "285640",
+    "ThreadId": "83106",
+    "Html": "<p>Hello,</p>\r\n<p>I've set my jHtmlArea as follows:</p>\r\n<p>\r\n<div style=\"color:Black;background-color:White\">\r\n<pre><span style=\"color:Blue\">&lt;</span><span style=\"color:#A31515\">textarea</span> <span style=\"color:Red\">id</span><span style=\"color:Blue\">=</span><span style=\"color:Blue\">&quot;post-content&quot;</span> <span style=\"color:Red\">cols</span><span style=\"color:Blue\">=</span><span style=\"color:Blue\">&quot;90&quot;</span> <span style=\"color:Red\">rows</span><span style=\"color:Blue\">=</span><span style=\"color:Blue\">&quot;10&quot;</span><span style=\"color:Blue\">&gt;</span><span style=\"color:Blue\">&lt;/</span><span style=\"color:#A31515\">textarea</span><span style=\"color:Blue\">&gt;</span>\r\n</pre>\r\n</div>\r\n</p>\r\n<p>It is contained inside a div (let's call it '#content') whose CSS display property is set to 'none' initially.</p>\r\n<p>After authentication, '#content' is shown (via the jQuery $('#div-id').show() function), but the jHtmlArea's width is set to 0.</p>\r\n<p>I have created a screenshot and placed here: <a title=\"http://images.stormwarestudios.com/jHtmlArea-bug.png\" href=\"http://images.stormwarestudios.com/jHtmlArea-bug.png\">http://images.stormwarestudios.com/jHtmlArea-bug.png</a></p>\r\n<p>What is the best way to handle this issue?</p>\r\n<p>Best regards,</p>\r\n<p>- Peter</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2010-02-03T22:15:52.343-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "285752",
+    "ThreadId": "83106",
+    "Html": "<p>The following can be used as an interim fix for the issue:</p>\r\n<div style=\"color:Black;background-color:White\">\r\n<pre>$(<span style=\"color:#A31515\">'.jHtmlArea'</span>).css(<span style=\"color:#A31515\">'width'</span>, <span style=\"color:#A31515\">'644px'</span>); <span style=\"color:Green\">// Require for outer frame's width</span>\r\n$(<span style=\"color:#A31515\">'.jHtmlArea'</span>).find(<span style=\"color:#A31515\">'iframe'</span>).css(<span style=\"color:#A31515\">'width'</span>, <span style=\"color:#A31515\">'640px'</span>); <span style=\"color:Green\">// Should allow for padding based on CSS rules</span>\r\n$(<span style=\"color:#A31515\">'.jHtmlArea'</span>).find(<span style=\"color:#A31515\">'iframe'</span>).css(<span style=\"color:#A31515\">'height'</span>, <span style=\"color:#A31515\">'200px'</span>); <span style=\"color:Green\">// Required for inner iframe's height</span>\r\n</pre>\r\n</div>\r\n<p>This is obviously fugly, but at least temporarily bandages the problem.</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2010-02-04T05:14:07.177-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "430261",
+    "ThreadId": "83106",
+    "Html": "<p>I've run into the same problem. It seems to only occur if I initialize htmlarea() on an element that's currently not visible (in a parent div with display:none;). If I wait to call htmlarea() until after the underlying textarea is visible then I don't get the problem. I haven't taken a look yet in the source code but maybe it's trying to decide dimensions on the iframe but can't when the underlying textarea isn't visible.</p>",
+    "PostedDate": "2010-04-12T17:44:48.13-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

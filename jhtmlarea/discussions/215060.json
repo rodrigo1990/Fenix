@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "452005",
+    "ThreadId": "215060",
+    "Html": "<p>Hello,</p>\r\n<p>I'm wondering whether it's possible to force jHtmlArea to only make use of certain HTML tags like, say, headings and paragraphs, and how much effort this would be.</p>\r\n<p>My problem is as follows. Say I add a heading H1, a paragraph, another heading H2 and another paragraph. I switch to HTML view and can see it did just fine, wrapping the text snippets with the correct tags. I switch back to WYSIWYG view, cut the content and paste it back in. When I switch to HTML view after that, jHtmlArea has added a plethora of META and&nbsp;DIV tags and so on, all with inline CSS styles, and wrapped it all in one H1 tag. Cutting and pasting that stuff in the&nbsp;WYSIWYG view again produces more and more of those tags (which, for my specific use case, are not just unnecessary but actually harmful).</p>\r\n<p>What do you think, is it more of a effort to force&nbsp;jHtmlArea to use only P and H1/H2 tags than it would be to write an editor from scratch?</p>\r\n<p>Thanks</p>\r\n<p>-userfriendly</p>",
+    "PostedDate": "2010-06-05T08:36:48.117-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "453213",
+    "ThreadId": "215060",
+    "Html": "Any code you put in javascript is not going to stop a malicious user from posting any html they want.  You should consider filtering your html on the server side.  Use AntiXSS and HtmlAgilityPack in your server code.  HtmlAgilityPack can be used to load a .net DOM tree from the html, even from poorly formatted, but valid html.  Then you can iterate over that DOM and replace any node type not in your whitelist with a text node containing the offending html encoded using AntiXSS.  Also iterate over element attributes and remove any not in your whitelist, and use AntiXSS on attribute values you want to support but not allow hacks in them.",
+    "PostedDate": "2010-06-08T14:15:51.42-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "456409",
+    "ThreadId": "215060",
+    "Html": "<p>I am running into this same issue. I am planning to clean the code on the server side (via HtmlAgilityPack), but I would like to restrict the paste tags to the same set. The net result would be a paste-as with removal of non-allowed formatting.&nbsp;I could post back to the server&nbsp;if there is a function that gets called on paste. Does such a callback exist?</p>\r\n<p>Thanks,<br>Erick</p>",
+    "PostedDate": "2010-06-16T16:45:05.627-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

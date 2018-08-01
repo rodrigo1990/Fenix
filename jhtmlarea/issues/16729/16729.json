@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Thanks for creating jhtmlarea. Works seamlessly and installs easily. However, one simple issue makes it unusable for me - the change event is no longer available, As a result, I cannot use jhtmlarea in an AJAX form. The change suggested here makes jhtmlarea incredibly slow, and I am not sure it works either:\n\nhttp://stackoverflow.com/questions/6237457/binding-onchange-event-to-jhtmlarea-textarea\n\nHopefully there can be a fix for this.\n\nThanks\nManish",
+    "LastUpdatedDate": "2014-02-25T17:57:08.66-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "jhtmlarea",
+    "ReportedDate": "2014-02-25T17:57:08.66-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "change event not fired",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 16729
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

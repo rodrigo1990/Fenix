@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "581542",
+    "ThreadId": "249978",
+    "Html": "\r\n<p>to change a headline to a textblock i want to use this.getSelectedHTML() to remove encapsulating headline tags and replace them with p tags. However for me that function only returns the content of the headline tags but not the headline tags content.</p>\r\n<p>I am testing on both firefox (3.6.15) and safari (5.0.3) with the latest jHtmlArea version (0.7.0).</p>\r\n<p>I have this in my button function definition and it alerts only the text, noit the surrounding headline tags of the selection:</p>\r\n<p></p>\r\n<pre>var replace_string = this.getSelectedHTML();\r\nalert('replace string = &quot;' &#43; replace_string &#43; '&quot;');</pre>\r\nAnyone a solution for this problem or at least had the same problem?\r\n<p></p>\r\n",
+    "PostedDate": "2011-03-16T10:10:04.67-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

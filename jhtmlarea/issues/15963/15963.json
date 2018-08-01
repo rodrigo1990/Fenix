@@ -1,0 +1,55 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Hi,\n\nI am using jHtmlArea0.7.0 for textarea in my JSP page. In existing plugin, I have made some changes for inserting images on textarea (using insertImage function of existing plugin). By these changes I am able to insert multiple images along with content. \nWhile inserting the images on textarea, I find all images are inserted at zero cursor position instead of  current cursor location.\nFor solving this, I made certain changes in existing code which you can find below but these all are returning cursor position zero.\n\nI will appreciate in case of anyone can help me on this task. Also please share with me in case of known issue.\n\n// code for reference-------------------------\nfunction doGetCaretPosition(ctrl) {\n\tvar CaretPos = 0;\t// IE Support\n\tif (document.selection) {\n\t\tctrl.focus ();\n\t\tvar Sel = document.selection.createRange();\n\t\tSel.moveStart ('character', -ctrl.value.length);\n\t\tCaretPos = Sel.text.length;\n\t}else if (ctrl.selectionStart || ctrl.selectionStart == '0'){\n\t\t// Firefox support\n\t\tCaretPos = ctrl.selectionStart;\n\t}\n\treturn (CaretPos);\n}\nfunction setCaretPosition(ctrl, pos){\n\tif(ctrl.setSelectionRange){\n\t\tctrl.focus();\n\t\tctrl.setSelectionRange(pos,pos);\n\t}else if (ctrl.createTextRange) {\n\t\tvar range = ctrl.createTextRange();\n\t\trange.collapse(true);\n\t\trange.moveEnd('character', pos);\n\t\trange.moveStart('character', pos);\n\t\trange.select();\n\t}\n}\n\ncpos=doGetCaretPosition(document.getElementById('test1')); // cursor position always returns 0\nsetCaretPosition(document.getElementById('test1'),cpos);\n// code for reference-------------------------\n\nAlong with these code changes, I followed the link below, This is not working for me.\nhttp://jhtmlarea.codeplex.com/workitem/10192 \n\nI will appreciate for your quick reply.\n\nThanks\nDilip Gupta",
+    "LastUpdatedDate": "2013-02-21T17:58:39.477-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "jhtmlarea",
+    "ReportedDate": "2013-01-16T06:20:49.42-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "jHtmlArea - Cursor position issue",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 15963
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Along with description above, I would like to add something which is related with existing jHtmlarea plugin changes. \nIn existing plugin, I have added image upload option on image function which upload images on server directory and insert images inside textarea. \nWith these changes, images are inserted at first place always and cursor position returns zero position.\r\n\r\nIf we don't make any changes in plugin, images are always inserted at cursor position but inserted images are not getting displayed. It is showing as a break images.\r\n\r\nPlease help.",
+      "PostedDate": "2013-01-16T22:33:35.487-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "any update on this?",
+      "PostedDate": "2013-01-21T01:30:48.557-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-21T17:58:39.477-08:00",
+      "Id": -2147483648
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "jHtmlArea",
+      "DisplayName": "jHtmlArea"
+    },
+    "ClosedComment": "Not an Issue",
+    "ClosedDate": "2009-10-28T06:48:08.573-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Your control is awesome.....It is working fine if I just use it in a page but when I try to use it in tandem with Jquery dialog, it is making the text area disabled. If I dont make use of the dialog then it is working fine. Is there any way I can use it in tandem with Jquery ui dialog?",
+    "LastUpdatedDate": "2013-05-16T04:59:42.5-07:00",
+    "PlannedForRelease": "0.7.0",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "jhtmlarea",
+    "ReportedDate": "2009-08-14T07:54:40.72-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "JHTMLArea is not working when used with JqueryUI Dialog",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 3,
+    "Id": 8499
+  },
+  "FileAttachments": [
+    {
+      "FileId": 2193,
+      "FileName": "WebSite2.zip",
+      "DownloadUrl": ".\\2193"
+    }
+  ],
+  "Comments": [
+    {
+      "Message": "This sounds strange and would definitely be an issue. I'll look into this as soon as I get a chance. Thanks!",
+      "PostedDate": "2009-08-18T15:29:45.437-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2009-08-18T15:29:57.463-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2009-08-18T15:30:03.03-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "I'm using it with the jquery dialog also without any problems at all.",
+      "PostedDate": "2009-08-19T05:42:04.733-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "I tried to use (and still trying to use) it with Jquery dialog and it renders my textarea disabled. I tried giving the htmlarea() before and after calling the dialog(). If I do it after I call my dialog then it renders the tool box vertically making it unusable. If I call it before then it is rendering perfectly but it is making the text area as disabled. I even tried hard coding some data to textbox but it did not display. Anyways let me test it again and check if it works. Thanks :-)",
+      "PostedDate": "2009-08-19T09:56:54.177-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "I am adding a sample solution I created. try commenting the dialog() and try it by uncommenting it.",
+      "PostedDate": "2009-08-19T10:32:44.93-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2009-08-19T10:32:47.14-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2009-10-05T14:26:49.037-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "You need to call \"htmlarea()\" after the Dialog is initialized. This is due to the jHtmlArea Editor not being initialized to the correct size when it's parent is not visible to the user.",
+      "PostedDate": "2009-10-28T06:46:53.053-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2009-10-28T06:48:08.573-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Hi there!\r\nSame problem here, it is disabled in some cases. I made a solution that works:\r\n\r\nsetTimeout(function(){jQuery(\"#elemid\").htmlarea();},1);\r\n\r\n\r\n",
+      "PostedDate": "2010-01-19T08:30:28.63-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-21T17:58:50.133-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-16T04:59:42.5-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

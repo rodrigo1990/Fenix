@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "485293",
+    "ThreadId": "224968",
+    "Html": "<p>Can I get jhtmlarea to output XHTML instead of malformed HTML? Is there a setting somewhere?&nbsp;Thanks!</p>",
+    "PostedDate": "2010-08-26T10:10:12.303-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "583318",
+    "ThreadId": "224968",
+    "Html": "<p>You'll have to clean up your HTML output using SGML reader...</p>\r\n<p><a href=\"http://developer.mindtouch.com/en/docs/SgmlReader\">http://developer.mindtouch.com/en/docs/SgmlReader</a></p>\r\n<p>It's brilliant.</p>",
+    "PostedDate": "2011-03-20T09:28:17.69-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "592262",
+    "ThreadId": "224968",
+    "Html": "<p>jHtmlArea uses the browser's DOM to generate the HTML. The actual HTML code that is generated depends on the browser.</p>",
+    "PostedDate": "2011-04-05T11:47:50.013-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

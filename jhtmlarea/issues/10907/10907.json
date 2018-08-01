@@ -1,0 +1,50 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Since jquery's width or height methods both return 0 if an element is nested in an element that is not visible due to the style display:none, I am having problems using the jHtmlArea in hidden elements that might get displayed later (i.e using show on some occasion).\n \nFunny thing is, if I add two textareas (both nested in hidden elements) I can display the second textarea using show() and the jHtmlArea is rendered without a problem.\n \nMaybe somebody can help me on this one?\n \nBy the way, nice plug. I like!!!",
+    "LastUpdatedDate": "2013-02-21T17:58:46.783-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "jhtmlarea",
+    "ReportedDate": "2010-05-20T11:54:49.287-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Problems when textarea nested in display:none",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 10907
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "I had this problem too. What I did was to initialize the element as an .htmlarea(), and THEN hide the element with .hide() in the $(document).ready() (that is, don't define the element as 'display: none' in either internal or inline CSS definitions). Here's a barebones example:\r\n\r\n<html>\r\n...\r\n<!-- make sure to load the jquery and jHtmlArea Javascript files -->\r\n<script type=\"text/javascript\">\r\n$(document).ready(function()  {\r\n$('#test').htmlarea();\r\n$('#test').hide();\r\n});\r\n</script>\r\n<body>\r\n<textarea id=\"test\" cols=\"30\" rows=\"12\"></textarea>\r\n</body>\r\n</html>\r\n\r\nHope that helps.",
+      "PostedDate": "2010-10-30T11:17:14.993-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-21T17:58:46.783-08:00",
+      "Id": -2147483648
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+<div class="wikidoc"><h1>Localize the jHtmlArea Editor</h1>
+By default, the text for all jHtmlArea toolbar buttons is in English. If you need to localize the editor to a different language, you can set the text to use for each toolbar button (reference them each by name) using the &quot;<span class="codeInline">toolbarText</span>&quot; option when creating the editor.<br /><br />Here&#39;s a simple example that localizes the &quot;<span class="codeInline">bold</span>&quot;, &quot;<span class="codeInline">italic</span>&quot; and &quot;<span class="codeInline">underline</span>&quot; tooblar buttons to German:<br /><div style="color:Black;background-color:White;"><pre>
+$(<span style="color:#A31515;">&quot;textarea&quot;</span>).htmlarea({
+    toolbarText: $.extend({}, jHtmlArea.defaultOptions.toolbarText, {
+        <span style="color:#A31515;">&quot;bold&quot;</span>: <span style="color:#A31515;">&quot;fett&quot;</span>,
+        <span style="color:#A31515;">&quot;italic&quot;</span>: <span style="color:#A31515;">&quot;kursiv&quot;</span>,
+        <span style="color:#A31515;">&quot;underline&quot;</span>: <span style="color:#A31515;">&quot;unterstreichen&quot;</span>
+    })
+});
+</pre></div><br />A global override / localization of jHtmlArea can be performed by overwriting the &quot;<span class="codeInline">jHtmlArea.defaultOptions.toolbarText</span>&quot; variable if necessary.</div><div class="ClearBoth"></div>

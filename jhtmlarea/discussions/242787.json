@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "553374",
+    "ThreadId": "242787",
+    "Html": "\r\n<p>Hi,</p>\r\n<p>&nbsp;</p>\r\n<p>I am added a style dropdown in RTE. and&nbsp;inserting&nbsp;custom style. I am adding the span, like&nbsp;</p>\r\n<p>before some text &lt;span class=&quot;style1&quot;&gt;test&lt;/span&gt;after some text</p>\r\n<p>after inserted this span in i frame, i want the cursor to place inside the span tag.&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>how to do it for all browser? any idea?</p>\r\n",
+    "PostedDate": "2011-01-21T10:40:11.207-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

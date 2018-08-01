@@ -1,0 +1,65 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Fixed",
+    "ClosedDate": "2012-08-03T20:50:44.09-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "In Version 0.7.0, full source code\nLine 105: pastHTML -> pasteHTML\nLine 123: There is no method r.select. Only r.selectNode and r.selectNodeContents are available (according to FireBug)\n \nI am trying to insert completely new text and it is not working because of the second error. If I comment out that line the inserted text gets appended to the existing text.",
+    "LastUpdatedDate": "2013-05-16T04:59:40.473-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "jhtmlarea",
+    "ReportedDate": "2011-01-07T13:16:16.89-08:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Bugs Found WHen Trying to Replace Editable HTML",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 3,
+    "Id": 12801
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Also: line 107, return toHtmlString(); might need to be return this.toHtmlString(); ? (not sure - but I do get an error at that line when trying to use .html or .pasteHTML)",
+      "PostedDate": "2011-07-20T10:11:09.587-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2012-03-06T05:56:10.38-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2012-08-03T20:50:44.09-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-21T17:58:45.227-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-16T04:59:40.473-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

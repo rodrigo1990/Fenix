@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "I have an example at http://people.virginia.edu/~tan7f/jhtmlarea/\nYou can see the simple php source at http://people.virginia.edu/~tan7f/jhtmlarea/index.phps\n \nFollow this procedure on IE and on Firefox and you will see the difference.\nType two lines of text in the text area, like\n \nhello\nthere\n \nor something.  Then click \"submit'.  Both IE and Firefox show the same output at the bottom because the textarea hasn't been fiddled with at all by jhtmlarea.\n \nNow check, and immediately uncheck the checkbox (which will create and then dispose of a jhtmlarea object) and, again, type two lines of text and hit submit.  On IE, the carriage returns will be stripped out, but on firefox, they will still be there.  I expect both platforms to behave the same.",
+    "LastUpdatedDate": "2013-02-21T17:58:46.97-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "jhtmlarea",
+    "ReportedDate": "2010-05-13T15:20:31.78-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "textarea strips carriage returns on form submission after calling \"detach\" when using IE8",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 10866
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

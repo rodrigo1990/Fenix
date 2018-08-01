@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "I noticed that if I wanted to update the textarea with new data that IE would not clear out the old text while firefox did.  IE would just paste the updated text to what was already in the textarea.  Looking at the code pasteHTML you see r.deleteContents(); under the if statements for mozilla and Safari, but noting under IE (IE does not support deleteContents().  So I added    this.editor.body.innerHTML = \"\";   to the if statement for msie to delete the contents.  Updated code follows:\n \n pasteHTML: function(html) {\n            this.iframe[0].contentWindow.focus();\n            var r = this.getRange();\n            if ($.browser.msie) {\n                this.editor.body.innerHTML = \"\";\n                r.pasteHTML(html);\n            } else if ($.browser.mozilla) {",
+    "LastUpdatedDate": "2013-02-21T17:58:47.157-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "jhtmlarea",
+    "ReportedDate": "2010-05-02T06:55:05.34-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "IE: Clear text area when updating",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 10746
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

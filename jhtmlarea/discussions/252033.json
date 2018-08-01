@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "589655",
+    "ThreadId": "252033",
+    "Html": "\r\n<p>Hi,</p>\r\n<p>After successfully displaying jHtmlarea inside of a popup (using simplemodal), I'm trying to reattach to a textarea but it does not work.</p>\r\n<p>I'm creating jHtmlArea using default settings</p>\r\n<p></p>\r\n<div style=\"color:black; background-color:white\">\r\n<pre>$(elem).htmlarea();\r\n</pre>\r\n</div>\r\n<p></p>\r\n<p>Any thoughts??</p>\r\n",
+    "PostedDate": "2011-03-31T10:08:17.17-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "589667",
+    "ThreadId": "252033",
+    "Html": "<p>a bit more detail? What do you mean with \"reattach\"? You mean you want to get the results of the jHtmlArea to another textarea?</p>",
+    "PostedDate": "2011-03-31T10:33:27.473-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

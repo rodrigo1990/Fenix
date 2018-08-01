@@ -1,0 +1,50 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Hi, \n\nI have been using jHtmlArea but now that I introduced foundation zurb (5.2.2)\n\nAfter using $(document).foundation();\n\njHtmlArea stops working properly on mobile, the issue is that I cannot edit, I mean, you can click once and you write as expected, but if you move your pointer to an earlier spot you cannot write anymore, you can delete, and once you click any of the toolbar items, you can write again.\n\nI have added a click event to the iframe followed by a focus like this:\n\n\n```\n        var editorIframe = $(\".jHtmlArea iframe\")[0];\n        var editorDocument = getDocFromIframe(editorIframe);\n        editorDocument.addEventListener('click', showBodyExample, false);\n        editorDocument.addEventListener('click', function(){editorIframe.contentWindow.focus()}, false);\n        function getDocFromIframe(x) {\n            return x.contentDocument || x.contentWindow.document;\n        }\n```\n\nBut still doesn't work.\n\nThis issue happens on iPhone, iPod, Android 2.3, iPhone emulator, iPad mini. \n\nNever happens on desktop browsers.",
+    "LastUpdatedDate": "2014-06-25T15:46:08.15-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "jhtmlarea",
+    "ReportedDate": "2014-06-17T15:43:17.993-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Foundation Zurb on mobile issue",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 16889
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "btw if you remove the foundation() call it works again. ",
+      "PostedDate": "2014-06-17T15:44:11.07-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Hi, \r\n\r\njust figured out that foundation.topbar.js has this code \r\n\r\n```\n      S('body').off('.topbar').on('click.fndtn.topbar touchstart.fndtn.topbar', function (e) {\n....\n      });\n```\r\n\r\nThat is causing the error. I have commented those lines and it is working now. I have also replaced the code with this: \n```\n      S('body').off('.topbar');\n      S('body .fndtn.topbar').on('click', fndtnClicked);\n      S('body .fndtn.topbar').on('touchstart', fndtnClicked);\n      function fndtnClicked(e) {\n.....\n      }\n```\r\n\r\nIt also works, but I'm not 100% sure if that will do exactly the same that foundation wanted. \n",
+      "PostedDate": "2014-06-25T15:46:08.15-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

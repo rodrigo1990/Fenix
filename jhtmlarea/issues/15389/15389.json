@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Hey there. I have been looking for a good thml editor for my website. Well when I include jhtmlarea now, its like my page earms some extra-space on the side. Weirdly too, firebug displays me this line:\n<div class=\"ToolBar\" style=\"width: 1277px;\">\nThis width seems to cause the problems. But since the CSS is loaded before the html content, and the html content has priority with the style-attribute, i cant fix this width per css x.x\n \nIt would be good to add an option like:\n$('textarea').jhtmlarea({ width: \"90%\" });\n \nthe following links show my CSS used and also a copy of the html-page how it looks like in firebug.\nhttp://drachennetz.com/style/charabase.css <- CSS file\nhttp://pastebin.com/Pi1k5hLu <-- copy/paste from firebug output\n \n \ni hope you guys can help/fix this.\n \n \nEDIT: Uh, i fergot to mention, this only hapens on firefox.",
+    "LastUpdatedDate": "2013-02-21T17:58:40.797-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "jhtmlarea",
+    "ReportedDate": "2012-07-08T06:27:51.893-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Using jHtmlArea totally increases page width",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 15389
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

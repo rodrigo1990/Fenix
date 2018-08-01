@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "811623",
+    "ThreadId": "348945",
+    "Html": "\r\n<p>I&acute;m triing to implement an Edit-in place feature using a textarea with jHtmlArea.&nbsp;</p>\r\n<p>Is it possible to capture onblur event? I need to know when jHtmlArea lost focus.</p>\r\n<p>Thanks in advance,</p>\r\n<p>Christian</p>\r\n",
+    "PostedDate": "2012-03-16T12:39:31.453-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "946169",
+    "ThreadId": "404375",
+    "Html": "\r\n<p><span>I get this error</span></p>\r\n<p><strong>TypeError: $(&quot;textarea.item-content&quot;).updateHtmlArea is not a function</strong></p>\r\n<p><strong>[Break On This Error]&nbsp;</strong></p>\r\n<p>when I add the following line.</p>\r\n<p><strong>$('textarea.item-content').updateHtmlArea(content);</strong><br>\r\n<br>\r\n<span>what am I missing... I am trying to load content into the htmlArea to let the user edit it. I see it in the textarea (hidden) but not in the rich text area... thanks in advance for any guidance!!!</span></p>\r\n",
+    "PostedDate": "2012-11-23T08:16:53.967-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,50 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "When I have a html page that I am trying to edit that is long enough to generate a vertical scrollbar, if I try to select any of the text beyond the initial screen (by scrolling to the desired text), the text does not highlight and if I try to highlight text that crosses that boundry the text jumps to the end of the document.  Is there some setting that I need to modify to allow selecting of text beyond the first display area?   I have tried numerous html codes and it doesn't seem to be related to the content.\n \nAny ideas on how to solve this?\n \nNote I am using version 0.7.0.\n \nNote:  This problem seems to be an issue with only IE9,  Chome and IE8 work ok,  Hmmmm",
+    "LastUpdatedDate": "2013-02-21T17:58:43.177-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "jhtmlarea",
+    "ReportedDate": "2011-09-21T14:25:37.56-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "selecting an area in scrollable text",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 14279
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "This issue is with IE9 and the line in the main .js file that says: \r\n\r\nedit.designMode = 'on'; \r\n\r\nComment out (or remove) this line, and it will work.\r\n\r\nYou can also view my article on this on KimJoyFox.com",
+      "PostedDate": "2012-11-19T09:45:58.92-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-21T17:58:43.177-08:00",
+      "Id": -2147483648
+    }
+  ]
+}

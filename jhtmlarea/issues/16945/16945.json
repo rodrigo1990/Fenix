@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Hi,\n\nExcellent tool..but requesting for an bug fix. \nNoticed that while typing the URL, it gets auto converted to URL (Web and Mail) and takes the root url of the existing website instead of opening as it is needed.\n\nFor example., if the URL typed is ___www.codeplex.com___ or ___http://www.codeplex.com___ the current solution will take it as http://www.abc.com/%60www.codeplex.com%60 or http://www.abc.com/%60http://www.codeplex.com",
+    "LastUpdatedDate": "2014-08-10T12:07:30.98-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "jhtmlarea",
+    "ReportedDate": "2014-08-10T12:07:30.98-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Auto URL doesn't open in external window",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 16945
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

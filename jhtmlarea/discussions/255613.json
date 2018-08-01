@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "604353",
+    "ThreadId": "255613",
+    "Html": "<p><span style=\"color: black; font-size: 10pt;\">I have a textarea with the jHtmlArea plug-in added to my page, but would like to be able to move it to another area within the page like an enable/disable function with the sudo code example below. I'm able to move the textarea and editor just fine, but then the iframe within it loses the ability to edit along with the toolbar buttons do not work anymore. Any ideas work greatly help. Thanks :)</span></p>\n<p>&lt;script type=\"text/javascript\" &gt;<br />$(document).ready(function() {<br />$textarea = $('&lt;textarea/&gt;').appendTo('body');<br />$textarea.htmlarea();<br />}<br /><br />....</p>\n<p>$('&lt;a href=\"#\" class=\"edit\"&gt;EDIT&lt;/a&gt;').mousedown(function (e) {&nbsp;<br />$('#currentarea_id').append( $(\"#jHtmlArea\") );<br />})</p>\n<p>&nbsp;</p>",
+    "PostedDate": "2011-04-28T12:29:34.593-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "257709",
+    "ThreadId": "75317",
+    "Html": "<p>Sample code:</p>\r\n<p>$(function() {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $(&quot;#form_showHTMLview_button&quot;).click(function() {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; XXXXXXX.showHTMLView();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; });<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; });</p>\r\n<p>&nbsp;</p>\r\n<p>Basicly... what is XXXXXX?</p>\r\n<p>How do I access the functions?</p>\r\n<p>&nbsp;</p>\r\n<p>Thanks for a very neat plugin!</p>\r\n<p>f</p>",
+    "PostedDate": "2009-11-16T17:16:28.807-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "582239",
+    "ThreadId": "75317",
+    "Html": "<p>I think what you should do is cast the textarea jQuery Object to being of type jHtmlArea Prototype. But i myself haven't completely figured out how to do that yet either.</p>",
+    "PostedDate": "2011-03-17T10:53:51.087-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "582247",
+    "ThreadId": "75317",
+    "Html": "<p>Works now! With a damn workaround. In the loaded method i define my own jQuery namespace and store the object in there using \"this\".</p>\n<pre>$('textarea#myTextAreaId').htmlarea({<br />  loaded: function() {<br />    $.myCustomConfig = {jhtmlareaobject : this};<br /> }<br />});</pre>\n<p>Then in an outside method i access that namespace and convert it to jHtmlArea:</p>\n<pre>$.myCustomConfig.jhtmlareaobject[typeof jHtmlArea] = jHtmlArea;<br />$.myCustomConfig.jhtmlareaobject.pasteHTML('this is just a test!');<br /></pre>\n<p>Should work for you too.</p>",
+    "PostedDate": "2011-03-17T11:09:46.417-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,90 @@
+[
+  {
+    "Id": "244404",
+    "ThreadId": "71654",
+    "Html": "<p>Is it possible to set HTML area to readonly?</p>\r\n<p>&nbsp;</p>\r\n<p>Thanks</p>\r\n<p>Abhi</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2009-10-11T11:27:28.727-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "253738",
+    "ThreadId": "71654",
+    "Html": "<p>why would you want to do this?</p>",
+    "PostedDate": "2009-11-05T05:30:32.2-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "253806",
+    "ThreadId": "71654",
+    "Html": "<p>We are using jHtmlArea to record medical notes from physicians. When the physicians sign the note, the note should be visible in the rich format, but they cannot edit it. <br>I solved the problem by disposing jHtmlArea and replacing it with the &lt;object&gt; element. Maybe you can add that to the plugin?</p>\r\n<p>&nbsp;</p>\r\n<p>Thanks</p>\r\n<p>Abhi</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2009-11-05T07:44:41.693-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "263273",
+    "ThreadId": "71654",
+    "Html": "<p>I am new in JQuery and jHtmlArea, how do you solve the problem?</p>\r\n<p>Thanks</p>\r\n<p>PW</p>",
+    "PostedDate": "2009-12-03T09:12:08.507-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "263277",
+    "ThreadId": "71654",
+    "Html": "<br>I read the contents of jHtmlArea into a variable.<br>Dispose jHtmlArea. <br>Create an object element with the contents of jHtmlArea. <br>Add object element in place of jHtmlArea.<br><br>Not an elegant solution, but it works.<br>\r\n<br><br clear=all>Abhi Muthiyan<br>Co-founder, CTO<br>Patagonia Health<br>919-649-6465<br><a href=\"http://www.patagoniahealth.com\">http://www.patagoniahealth.com</a><br>\r\n<br><br><div>On Thu, Dec 3, 2009 at 12:12 PM, pantungw <span dir=ltr>&lt;<a href=\"mailto:notifications@codeplex.com\">notifications@codeplex.com</a>&gt;</span> wrote:<br><blockquote style=\"margin:0pt 0pt 0pt 0.8ex;padding-left:1ex\">\r\n   <div> <p>From: pantungw</p> <div><p>I am new in JQuery and jHtmlArea, how do you solve the problem?</p>\r\n<p>Thanks</p>\r\n<p>PW</p></div> <div> <p>Read the <a href=\"http://jhtmlarea.codeplex.com/Thread/View.aspx?ThreadId=71654&ANCHOR#Post263273\">full discussion online</a>.</p> <p>To add a post to this discussion, reply to this email (<a href=\"mailto:jhtmlarea@discussions.codeplex.com?subject=[jhtmlarea:71654]\">jhtmlarea@discussions.codeplex.com</a>)</p>\r\n <p>To start a new discussion for this project, email <a href=\"mailto:jhtmlarea@discussions.codeplex.com\">jhtmlarea@discussions.codeplex.com</a></p> <p>You are receiving this email because you subscribed to this discussion on CodePlex. You can <a href=\"http://www.codeplex.com/site/discussions/thread/unsubscribe/71654\">unsubscribe</a> on codePlex.com.</p>\r\n <p>Please note: Images and attachments will be removed from emails. Any posts to this discussion will also be available online at <a href=\"http://codeplex.com\">codeplex.com</a></p> </div> </div> </blockquote>\r\n</div><br>",
+    "PostedDate": "2009-12-03T09:19:04.523-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "263283",
+    "ThreadId": "71654",
+    "Html": "<p>Thank you very much - I'll try it today.</p>\r\n<p>PW</p>",
+    "PostedDate": "2009-12-03T09:28:18.03-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "417674",
+    "ThreadId": "71654",
+    "Html": "<p>it&acute;s work?</p>\r\n<p>i have the same problem!</p>",
+    "PostedDate": "2010-03-12T16:06:04.723-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "417759",
+    "ThreadId": "71654",
+    "Html": "Yes, it has worked for me. Did you run into any problems? <div><br clear=all>Abhi Muthiyan<br>Co-founder, CTO<br>Patagonia Health<br>919-649-6465<br><a href=\"http://www.patagoniahealth.com\">http://www.patagoniahealth.com</a><br>\r\n<a href=\"http://twitter.com/patagoniahealth\">http://twitter.com/patagoniahealth</a><br>\r\n</div>",
+    "PostedDate": "2010-03-13T07:43:07.893-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "417802",
+    "ThreadId": "71654",
+    "Html": "<p>how you use?</p>\r\n<p>I can&acute;t understand?</p>\r\n<p>where I put the &lt;object&gt; tag? can you show one exemple ?</p>",
+    "PostedDate": "2010-03-13T13:23:51.907-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "417803",
+    "ThreadId": "71654",
+    "Html": "<div>Here is the HTML code and corresponding jQuery code. Hope this helps.</div><div><br></div><div>HTML code with jHtmlArea</div><div><br></div><div><div></div>\r\n<div><div style=\"width:1183px\"></div><div><div style=\"width:1257px\"></div>\r\n<div>&lt;!--Toolbar icons here--&gt;</div><div></div></div><div><div>&lt;iframe tabindex=&quot;1&quot; style=&quot;height: 90px; width: 1179px;&quot;&gt;</div>\r\n<div>&lt;!--HTML area here --&gt;</div><div>&lt;/iframe&gt;</div><div></div>&lt;textarea class=&quot;noteTextArea&quot; style=&quot;display: none;&quot;&gt;</div>\r\n<div>&lt;/textarea&gt;</div><div></div></div><div></div></div>\r\n<div>&lt;textarea class=&quot;noteTextArea&quot; style=&quot;display: none;&quot;&gt;</div><div>&lt;/textarea&gt;</div>\r\n<div><br></div><div>// jQuery code for the HTML above</div><div>// $(this) is the HTML element that contains the jHtmlArea</div>\r\n<div>var target = $(this).find('.noteTextArea');</div><div><br></div><div>// Extract content from jHtmlArea</div>\r\n<div>var content = $(target).htmlarea('toHtmlString');</div><div>// Dispose jHtmlArea</div><div>$(target).htmlarea('dispose');</div>\r\n<div><br></div><div>// Create a HTML object element with the content from jHtmlArea</div><div>var obj = '&lt;Object&gt;' + content + '&lt;/Object&gt;';</div>\r\n<div><br></div><div>// Append this HTML object in the right place</div><div>$(this).append(obj);</div>\r\n<div><br></div><div>After executing the javascript, the HTML looks like this:</div><div><div></div><div>&lt;textarea class=&quot;noteTextArea&quot; style=&quot;display: none;&quot;&gt;</div>\r\n<div>&lt;/textarea&gt;</div><div></div></div><div>&lt;object&gt;Convert jHtmlArea to read-only<br>&lt;/object&gt;</div>\r\n<div><br></div>",
+    "PostedDate": "2010-03-13T13:35:47.71-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1435646",
+    "ThreadId": "71654",
+    "Html": "Many thanks to abhivm!!! <br />\n<br />\nI had exactly the same problem.<br />\nIn our case the user shall create, edit and copy events, and the user shall be able to add dates to the event.<br />\nWhen the user creates or edits the event, jHtmlArea must be editable - in Rich Text Format.<br />\nWhen the user copies the event or if he adds additional dates to it, jHtmlArea must be readonly so that the user can see and verify which values are taken over. If jHtmlArea is editable then, the user might think that he can edit the value although it isn't allowed/supported by the underlying server-side code (C#, ASP.NET MVC) at that time, because it shall be a 100% copy of the event and also a 100% copy in case that the event becomes a series by adding more dates to the event. It would be confusing and irritating for the user because he might enter pages of text there before he finds out that nothing of his text gets stored then. And users will use an enabled feature, no matter how many warnings you put above and below it. All other Input fields can get grayed out/disabled. The user shall switch to the Edit page if he wants to edit the event. It shall prevent 'layer 8' (see ISO layer 8 = user) problems.<br />\n<br />\nI know that jHtmlArea is free, but it would be really great if a readonly or disabled attribute could be added to jHtmlArea sometime in the future.<br />\nProbably it happened already, but I couldn't find it.<br />\n",
+    "PostedDate": "2015-07-23T01:23:30.053-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

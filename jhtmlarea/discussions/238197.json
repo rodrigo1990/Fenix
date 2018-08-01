@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "535047",
+    "ThreadId": "238197",
+    "Html": "\r\n<p>Using IE7 and FF 3.6.12.&nbsp; I'm using the main files from jhtmlarea but using jquery v1.4.2 instead of the version that came with jhtmlarea.&nbsp; Most buttons and functions I've tried work fine.&nbsp; However, when I add removeFormat and formatBlock\r\n to my toolbar, there is a placeholder for them but neither show up with an icon and then when I click the placeholder area I get a script error saying &quot;object doesn't support this property or method&quot; (IE).</p>\r\n<p>I also had a problem with &quot;insertHorizontalRule&quot; until I somehow figured out to use &quot;horizontalRule&quot; instead.&nbsp; The documentation still says to use &quot;insertHorizontalRule&quot; but it doesn't work either.&nbsp; Wondering if there is a similar resolution to\r\n the removeFormat or formatBlock problems.&nbsp; Biggest issue is with &quot;removeFormat&quot; since there isn't a clean way to undo a &quot;strikethrough&quot; without retyping information.</p>\r\n",
+    "PostedDate": "2010-12-13T08:08:12.993-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

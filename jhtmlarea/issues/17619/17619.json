@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "i am trying to set the black color to the text in the textarea. but when i observe hte corresponding htmlview  .. black color is not reflected in the font tag.\n\nneed solution as early as possible...! thank you...!",
+    "LastUpdatedDate": "2016-03-08T01:45:30.697-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "jhtmlarea",
+    "ReportedDate": "2016-03-08T01:45:30.697-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "jHtmlArea Color Picker : use of 'black' color is not reflected in corresponding html view.",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 17619
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

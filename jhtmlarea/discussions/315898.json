@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "766835",
+    "ThreadId": "315898",
+    "Html": "\r\n<p>Can I customize its toolbar that is can I remove the buttons that I do not need? Can I integrate it with java code?</p>\r\n",
+    "PostedDate": "2012-02-14T21:50:16.233-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "799700",
+    "ThreadId": "315898",
+    "Html": "<p>jHtmlArea is a JavaScript component and can not be used in a Java app.</p>",
+    "PostedDate": "2012-02-24T19:09:18.1-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

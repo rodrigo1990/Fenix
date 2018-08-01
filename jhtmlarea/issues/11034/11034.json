@@ -1,0 +1,65 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2012-08-03T20:53:26.073-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "I have downloaded the jHtmlArea,and haven't modified anything .\nWhen i visited Default.htm,I got a word selected,and click H1,nothing happened,the html remained no changing,perhaps the document.execCommand doesn't work well on IE8?",
+    "LastUpdatedDate": "2013-05-16T04:59:41.057-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "jhtmlarea",
+    "ReportedDate": "2010-06-08T00:13:55.927-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "I found the h1 h2 function donesn't work on my IE8",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 11034
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "I fixed this  changing the line \r\nthis.formatBlock($.browser.msie ? \"Heading \" + h : \"h\" + h);\r\nby             \r\nthis.formatBlock($.browser.msie ? \"<h\" + h + \">\" : \"h\" + h);",
+      "PostedDate": "2010-08-03T11:16:04.7-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2011-01-07T03:43:24.763-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2012-08-03T20:53:26.073-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-21T17:58:46.61-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-16T04:59:41.057-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

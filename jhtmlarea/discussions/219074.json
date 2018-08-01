@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "465982",
+    "ThreadId": "219074",
+    "Html": "<p>In Chrome and FF new line (press &quot;Enter&quot; /&nbsp;Carriage return) added as &quot;div&quot; or nothing but in IE it adds &lt;p&gt;.</p>\r\n<p>This adding extra line in the text (in IE7 or IE8).</p>\r\n<p>Please help or guide me to the code that handle this.</p>\r\n<p>Thanks,</p>\r\n<p>Itay</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2010-07-11T08:31:35.193-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "508824",
+    "ThreadId": "219074",
+    "Html": "<blockquote style=\"border:solid .1em #ccc;font-style:italic;margin:.25em 1em 0 1em;padding:0 .25em 0 .25em\"><strong>itayher wrote:</strong><br>\r\n<p>In Chrome and FF new line (press &quot;Enter&quot; /&nbsp;Carriage return) added as &quot;div&quot; or nothing but in IE it adds &lt;p&gt;.</p>\r\n<p>This adding extra line in the text (in IE7 or IE8).</p>\r\n<p>Please help or guide me to the code that handle this.</p>\r\n<p>Thanks,</p>\r\n<p>Itay</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n</blockquote>\r\n<p>&nbsp;Did anyone has a solution for this ?</p>",
+    "PostedDate": "2010-10-18T07:43:57.21-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "846591",
+    "ThreadId": "219074",
+    "Html": "<p>I have noticed that all jQuery based editor have this behavior, to avoid this i have done:</p>\r\n<p>&nbsp;</p>\r\n<p>\r\n<div style=\"color: black; background-color: white;\">\r\n<pre> $(<span style=\"color: #a31515;\">'#'</span> + txtEditor).htmlarea({\r\n        loaded: <span style=\"color: blue;\">function</span> () {\r\n            $.myControl = { jhtmlarea: <span style=\"color: blue;\">this</span> };\r\n            $($.myControl.jhtmlarea.editor.body).keypress(<span style=\"color: blue;\">function</span> (e) {\r\n                <span style=\"color: blue;\">if</span> ((e.keyCode || e.which) == 13) { <span style=\"color: green;\">//override ENTER KEY to always add a line break</span>\r\n                    <span style=\"color: blue;\">if</span> ($.browser.msie) {\r\n                        $(<span style=\"color: #a31515;\">'#'</span> + txtEditor).htmlarea(<span style=\"color: #a31515;\">'pasteHTML'</span>, <span style=\"color: #a31515;\">\"&lt;br&gt;\"</span>);\r\n                        <span style=\"color: blue;\">return</span> <span style=\"color: blue;\">false</span>;\r\n                    }\r\n                }\r\n                <span style=\"color: blue;\">else</span> {\r\n                    <span style=\"color: blue;\">if</span> (e.which != 8 &amp;&amp; e.which != 0) { <span style=\"color: green;\">//8 is the backspace key</span>\r\n                        <span style=\"color: blue;\">var</span> c = String.fromCharCode(e.which);\r\n                        <span style=\"color: blue;\">if</span> (e.which == 32) { <span style=\"color: green;\">//32 is the space key</span>\r\n                            $(<span style=\"color: #a31515;\">'#'</span> + txtEditor).htmlarea(<span style=\"color: #a31515;\">'pasteHTML'</span>, <span style=\"color: #a31515;\">'&amp;nbsp;'</span>);\r\n                        }\r\n                        <span style=\"color: blue;\">else</span> {\r\n                            $(<span style=\"color: #a31515;\">'#'</span> + txtEditor).htmlarea(<span style=\"color: #a31515;\">'pasteHTML'</span>, c);\r\n                        }\r\n                        <span style=\"color: blue;\">return</span> <span style=\"color: blue;\">false</span>;\r\n                    }\r\n                }\r\n            });\r\n        },\r\n\r\n...\r\n}\r\n</pre>\r\n</div>\r\n</p>",
+    "PostedDate": "2012-06-08T07:03:32.483-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

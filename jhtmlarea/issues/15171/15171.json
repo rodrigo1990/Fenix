@@ -1,0 +1,50 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "I reuse the same jhtmlarea several times on a page.  In Firefox 12.0, I have a problem where the contents of the editor are not being refreshed by the javascript statement below.\n \nThe initial call sets \"Old test data\" successfully.\nWhen I call the same \"updateHtmlArea\" method with different data, only the textarea is updated.  The iframe body retains the old data.  \nSee the example of the resulting html code below.\n \n<script>\n//initial call\n$('#wysiwygEditor').text('Old test data').htmlarea('updateHtmlArea');\n \n//second call\n$('#wysiwygEditor').text('New test data').htmlarea('updateHtmlArea');\n</script>\n \n \n<div id=\"wysiwyg_editor\" style=\"display: block;\">\n<div class=\"jHtmlArea\" style=\"width: 1160px;\">\n<div class=\"ToolBar\" style=\"width: 1158px;\">\n<div>\n<iframe style=\"height: 97px; width: 1156px;\">\n<html>\n<head>\n<body>\nOld test data\n</body>\n</html>\n</iframe>\n</div>\n<textarea id=\"wysiwygEditor\" rows=\"5\" cols=\"50\" style=\"display: none;\">New test data</textarea>\n</div>\n</div>",
+    "LastUpdatedDate": "2013-02-21T17:58:42.437-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "jhtmlarea",
+    "ReportedDate": "2012-05-17T08:37:50.647-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Firefox is not refreshing body content",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 15171
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "This stumped me to for a while too.  To fix I updated the text area with .val() instead of .text().\r\n\r\n$('#wysiwygEditor').val('New test data').htmlarea('updateHtmlArea');\r\n\r\nHope this helps",
+      "PostedDate": "2012-09-22T06:04:11.37-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-21T17:58:42.437-08:00",
+      "Id": -2147483648
+    }
+  ]
+}

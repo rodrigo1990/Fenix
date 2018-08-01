@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "610500",
+    "ThreadId": "257109",
+    "Html": "\r\n<p>I have a project that works very nicely (for the most part)</p>\r\n<p>In version IE8 &amp; 9 it works perfectly.&nbsp; in IE7 when the tool bar encounters a group the is too wide (5 tools in the group) it puts all 5 on the right margin on new lines.&nbsp; When the group is done, the rest of the tools show up on the next line.&nbsp;\r\n So instead of taking two lines to display, it takes 7.</p>\r\n<p>Is there a way to force the tool bar to split at an earlier point?&nbsp; or get the wrapping function to change?</p>\r\n<p>Where is the toolbar wrapping function controlled?</p>\r\n<p>&nbsp;</p>\r\n<p>Thanks</p>\r\n<p>Jay</p>\r\n",
+    "PostedDate": "2011-05-10T13:02:31.95-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "623221",
+    "ThreadId": "257109",
+    "Html": "<p>It's a CSS thing. The toolbar is made of lists. Each group is a ul, and each item is an li within the ul. All the ul's and li's are floated left, so that in \"good\" browsers, they wrap properly depending on the width of the .ToolBar class. It sounds like IE 7 is getting confused. If you like, please post a link to your project so I can see exactly what's going on.</p>\r\n<p>Kyle</p>",
+    "PostedDate": "2011-06-05T13:37:06.007-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "993658",
+    "ThreadId": "257109",
+    "Html": "\r\n<p>Found myself faced with this problem, definitely not a css guru but I fixed it with the following to jHtmlArea.css which basically drops the margin.</p>\r\n<pre style=\"font-family:Consolas; background:white; color:black; font-size:13px\"><span style=\"color:maroon\">div.jHtmlArea</span>&nbsp;<span style=\"color:maroon\">.ToolBar</span>&nbsp;<span style=\"color:maroon\">ul</span>&nbsp;<span style=\"color:maroon\">li</span>&nbsp;{<span style=\"color:red\">list-style-type</span>:&nbsp;<span style=\"color:blue\">none</span>;&nbsp;<span style=\"color:red\">float</span>:&nbsp;<span style=\"color:blue\">left</span>;&nbsp;<span style=\"color:red\">border</span>:&nbsp;<span style=\"color:blue\">none</span>;&nbsp;&nbsp;<span style=\"color:red\">padding</span>:&nbsp;<span style=\"color:blue\">1px</span>;&nbsp;}</pre>\r\n<pre style=\"font-family:Consolas; background:white; color:black; font-size:13px\">Defo seems like a limitation of IE7.\r\n</pre>\r\n",
+    "PostedDate": "2013-01-29T06:51:38.377-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

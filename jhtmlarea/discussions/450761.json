@@ -1,0 +1,50 @@
+[
+  {
+    "Id": "1071105",
+    "ThreadId": "450761",
+    "Html": "I make some web system with jHtmlArea.\r<br />\n<br />\nThe page with jquery-1.8.3.min.js works well.\r<br />\nBut with jquery-1.9.1, jquery-1.10.2, cannot work well.\r<br />\n<br />\nWhat should I do?\r<br />\nIf I should change something to jquery-1.9.1 or jquery-1.10.2, \r<br />\nplease tell me.<br />\n",
+    "PostedDate": "2013-07-22T00:01:10.143-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1074266",
+    "ThreadId": "450761",
+    "Html": "I had the solution by myself.<br />\n<br />\nThat is the addition of jquery migrate like follows.<br />\n<pre><code>&lt;script type=&quot;text/javascript&quot; src=&quot;http://code.jquery.com/jquery-1.10.2.min.js&quot;&gt;&lt;/script&gt;\n&lt;script type=&quot;text/javascript&quot; src=&quot;http://code.jquery.com/jquery-migrate-1.2.1.min.js&quot;&gt;&lt;/script&gt;\n</code></pre>\n\nref) <a href=\"http://blog.jquery.com/2013/01/31/jquery-migrate-1-1-0-released/\" rel=\"nofollow\">jquery migrate</a><br />\n",
+    "PostedDate": "2013-07-29T03:33:08.327-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1080181",
+    "ThreadId": "450761",
+    "Html": "jHtmlArea breaks with jQuery 1.9+ because $.browser has been removed.  Use of $.browser is frowned upon.  jQuery recommends using the Modernizr library to detect specific features instead, but this does not seem straightforward to apply in this case.  Using jquery-migrate, as noznoz7 suggested, will work, but this does not seem like the best solution...<br />\n",
+    "PostedDate": "2013-08-13T10:34:28.203-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1090521",
+    "ThreadId": "450761",
+    "Html": "Hello,\r<br />\nVersion 0.8 will solve these problems. It is found under the &quot;Source code&quot; - <a href=\"https://jhtmlarea.codeplex.com/SourceControl/latest\" rel=\"nofollow\">https://jhtmlarea.codeplex.com/SourceControl/latest</a><br />\n",
+    "PostedDate": "2013-09-10T01:57:43.307-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1090750",
+    "ThreadId": "450761",
+    "Html": "Thanks Steffan!  I found the verson 0.8 code under the jHtmlArea Website directory.  I think your solution to include a $.browser in the script is reasonable.<br />\n",
+    "PostedDate": "2013-09-10T10:25:53.763-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1092801",
+    "ThreadId": "450761",
+    "Html": "Thanks Steffan.\r<br />\nI've confirmed new version without jquery-migrate.<br />\n",
+    "PostedDate": "2013-09-15T02:06:37.763-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

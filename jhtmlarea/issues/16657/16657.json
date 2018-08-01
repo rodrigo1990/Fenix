@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Is there a way to get jHTMLArea's ColorPicker to work in IE11?  Thanks!",
+    "LastUpdatedDate": "2014-08-10T09:16:19.677-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "jhtmlarea",
+    "ReportedDate": "2014-01-17T09:25:12.373-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "ColorPicker not working in IE11",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 16657
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Although this post is 7 months old and I am sure by now you would have achieved the same. Initially I had the same issue but after including the Color Picker Scripts and CSS, it will work...see below\r\n\r\n```\n<link rel=\"Stylesheet\" type=\"text/css\" href=\"jhtml5/style/jHtmlArea.css\" />\n<link rel=\"stylesheet\" type=\"text/css\" href=\"jhtml5/style/jHtmlArea.ColorPickerMenu.css\" />\r\n\r\n<script type=\"text/javascript\" src=\"jhtml5/scripts/jHtmlArea-0.8.js\"></script>\n<script type=\"text/javascript\" src=\"jhtml5/scripts/jHtmlArea.ColorPickerMenu-0.8.js\"></script>\n```",
+      "PostedDate": "2014-08-10T09:16:19.677-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

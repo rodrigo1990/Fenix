@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "423716",
+    "ThreadId": "207329",
+    "Html": "<p>Hey folks,</p>\r\n<p>So, Im trying to .remove() my textarea, and this is not happening.</p>\r\n<p>the code:</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<div style=\"color:Black;background-color:White\">\r\n<pre>$(<span style=\"color:#A31515\">&quot;#news&quot;</span>).htmlarea();\r\n\r\n</pre>\r\n</div>\r\n<p>and then:</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<pre><div style=\"color:Black;background-color:White\"><pre>$(<span style=\"color:#A31515\">&quot;#news&quot;</span>).remove();\r\n</pre>\r\n</div>\r\n</pre>\r\n<pre>but not succesfull.</pre>\r\n<pre></pre>\r\n<pre>By the way, I also would like to fill the textarea with some text, used to to this with .val() in a normal textarea, but now seems to dont work.</pre>\r\n<pre></pre>\r\n<pre>Is there any documentation, examples, etcs etcs?</pre>\r\n<pre></pre>\r\n<pre>Thanks.</pre>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2010-03-25T11:57:27.097-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

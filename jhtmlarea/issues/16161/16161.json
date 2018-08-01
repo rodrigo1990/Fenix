@@ -1,0 +1,70 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Fixed",
+    "ClosedDate": "2013-07-31T18:53:35.703-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Doesn't work with latest version of jQuery, I get this error:\n\n Unable to get value of the property 'msie':",
+    "LastUpdatedDate": "2013-07-31T18:53:35.703-07:00",
+    "PlannedForRelease": "0.8.0",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "High",
+      "Severity": 150,
+      "Id": 3
+    },
+    "ProjectName": "jhtmlarea",
+    "ReportedDate": "2013-04-15T08:33:27.323-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Fixed"
+    },
+    "Summary": "Unable to get value of the property 'msie':",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 4,
+    "Id": 16161
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "+1",
+      "PostedDate": "2013-04-26T21:35:17.787-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-04-27T01:03:15.747-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-01T12:51:13.317-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Duplicate of bug #15990 \r\n\r\n[http://jhtmlarea.codeplex.com/workitem/15990](http://www.example.com)",
+      "PostedDate": "2013-05-08T19:07:52.347-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-07-31T18:53:28.637-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-07-31T18:53:35.703-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

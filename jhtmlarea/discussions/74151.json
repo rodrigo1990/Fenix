@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "253659",
+    "ThreadId": "74151",
+    "Html": "<p>What is the best way to get the editable content to inherit the page's css while editing?</p>",
+    "PostedDate": "2009-11-05T01:20:35.887-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "253737",
+    "ThreadId": "74151",
+    "Html": "<p>ok figured it out if anyone else wants to know, you can achieve this by putting the following code into the initialisation function in the jhtmlarea js file:</p>\r\n<p>priv.initEditor.call(this, opts);<br>priv.attachEditorEvents.call(this);</p>\r\n<p>//--- start inserted code----- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>&nbsp;var cssLinks = $('head').children('link');<br>&nbsp;for(var i = 0; i&lt;cssLinks.length;i++)<br>&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $(cssLinks[i]).clone().appendTo(iframe.contents().find('head'));<br>&nbsp;}</p>\r\n<p>//--- end inserted code----- &nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>Note: this includes all css from your current page, which includes backgrounds etc. you'll want to include a text only css file that deals only with p, h1, h2 etc.</p>",
+    "PostedDate": "2009-11-05T05:29:42.1-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "256542",
+    "ThreadId": "74151",
+    "Html": "<p>Thanks noodols. Solved a similar problem I had.</p>",
+    "PostedDate": "2009-11-12T18:24:04.663-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "501071",
+    "ThreadId": "74151",
+    "Html": "<p>this doesn't work for me in IE6. It doesn't seem to like the '.appendTo' command. Anyone have a workaround?</p>",
+    "PostedDate": "2010-10-01T07:11:53.8-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

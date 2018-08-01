@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "duplicate",
+    "ClosedDate": "2012-03-06T05:56:03.607-08:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Hi All,\nI want to disable something on keyup or keypress event\nI tried following code but not working\n \njQuery(\"#textarea\").htmlarea({\nloaded: function(){\njQuery(\"#textarea\").keyup(function(event){ \nalert(\"hi\");\n});\n}\n});\n \nany suggestion really appreciate ...",
+    "LastUpdatedDate": "2013-05-16T04:59:39.333-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "jhtmlarea",
+    "ReportedDate": "2011-12-20T03:38:12.123-08:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "keyup or keypress Event is not working in jHtmlArea",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 14568
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

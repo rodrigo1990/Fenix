@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "259179",
+    "ThreadId": "75753",
+    "Html": "<p>I was surprised to see the optional ColorPickerMenu inserting &lt;font color=&quot;xxx&quot;/&gt; tags around selected text. I'd like to edit the script to use proper inline styles. Can anyone point me in the right direction? I'll keep looking but so far the relevant code has eluded me.</p>",
+    "PostedDate": "2009-11-20T11:21:33.313-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "259869",
+    "ThreadId": "75753",
+    "Html": "<p>Here is one solution. It turns out that the <a href=\"http://msdn.microsoft.com/en-us/library/ms535872(VS.85).aspx\">IE TextRange</a> object is to blame for this and likely many other of the world's evils. I added this function to jHtmlArea:</p>\r\n<p>&nbsp;</p>\r\n<div style=\"color:Black;background-color:White\">\r\n<pre><strong>wrapSelection</strong>: <span style=\"color:Blue\">function</span>(startTag, range) {<br>\trange = (range) ? range : <span style=\"color:Blue\">this</span>.getRange();<br>\t<span style=\"color:Blue\">var</span> tag = /^&lt;(\\w+)/.exec(startTag)[1];<br>\t<span style=\"color:Blue\">var</span> html = startTag + range.htmlText + <span style=\"color:#A31515\">&quot;&lt;/&quot;</span> + tag + <span style=\"color:#A31515\">&quot;&gt;&quot;</span>;<br>\t<span style=\"color:Blue\">this</span>.pasteHTML(html, range);<br>},<br></pre>\r\n</div>\r\n<p>I updated <strong>pasteHTML </strong>as follows:</p>\r\n<p>\r\n<div style=\"color:Black;background-color:White\">\r\n<pre><strong>pasteHTML</strong>: <span style=\"color:Blue\">function</span>(html, range) {<br>\t<span style=\"color:Blue\">this</span>.iframe[0].contentWindow.focus();<br>\t<span style=\"color:Green\">// use given range if supplied or get new range</span>\r\n\tr = (range) ? range : <span style=\"color:Blue\">this</span>.getRange();<br></pre>\r\n</div>\r\n</p>\r\n<p>This allowed me to updated jHtmlArea.ColorPickerMenu around line 20 to look like</p>\r\n<p>\r\n<div style=\"color:Black;background-color:White\">\r\n<pre>jHtmlAreaColorPickerMenu($(<span style=\"color:#A31515\">&quot;.forecolor&quot;</span>, <span style=\"color:Blue\">this</span>.toolbar), {\r\n      colorChosen: <span style=\"color:Blue\">function</span>(color) {\r\n            <span style=\"color:Blue\">if</span> ($.browser.msie) {\r\n\t        <span style=\"color:Blue\">var</span> tag = <span style=\"color:#A31515\">&quot;&lt;span style=\\&quot;</span>color:<span style=\"color:#A31515\">&quot; + color + &quot;</span>\\<span style=\"color:#A31515\">&quot;&gt;&quot;</span>;\r\n\t\teditor.wrapSelection(tag, range);\r\n            } <span style=\"color:Blue\">else</span> {\r\n\t\teditor.forecolor(color);\r\n            }\r\n      }\r\n });\r\n</pre>\r\n</div>\r\n</p>\r\n<p>Using <strong>wrapSelection </strong>lets me specify whatever tag I want. This also let me add a usable blockquote function:</p>\r\n<p>\r\n<pre>blockquote: function() { this.wrapSelection(&quot;&lt;blockquote&gt;&quot;); }</pre>\r\n</p>\r\n<p>&nbsp;</p>\r\n<p>This is only lightly tested so there could be issues with other browsers and scenarios but it's working well enough for my current need.</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2009-11-23T09:34:02.03-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

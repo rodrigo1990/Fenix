@@ -1,0 +1,60 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Fixed",
+    "ClosedDate": "2012-08-03T20:55:23.653-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Line 105 of jHtmlArea-0.7.0.js contains a typo: \"this.pastHTML(v);\" should be:  \"this.pasteHTML(v);\"",
+    "LastUpdatedDate": "2013-05-16T04:59:41.633-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "jhtmlarea",
+    "ReportedDate": "2010-01-18T07:39:52.933-08:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Error in html function",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 10001
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Confirmed this in my copy.  Bug exists",
+      "PostedDate": "2010-03-25T08:58:12.613-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2012-08-03T20:55:23.653-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-21T17:58:48.46-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-16T04:59:41.633-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

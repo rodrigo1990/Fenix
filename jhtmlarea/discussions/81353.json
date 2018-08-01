@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "279187",
+    "ThreadId": "81353",
+    "Html": "<p>Anyone know of a way of making jHtmlArea support table content, and allow the user to add tables/cells/rows to the editor box?</p>",
+    "PostedDate": "2010-01-19T14:09:16.113-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "432631",
+    "ThreadId": "81353",
+    "Html": "<p>Hello jlechowicz,</p>\r\n<p>Did you find a solution in order to add a table, cell and row?</p>\r\n<p>I am very interrested on it?</p>\r\n<p>Thank for your help</p>",
+    "PostedDate": "2010-04-19T02:35:48.08-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

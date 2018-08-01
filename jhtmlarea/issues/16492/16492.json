@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "I am listening to the textarea 'change' event.\n\nIf I paste text in the jHtmlArea using the mouse (right click + 'Paste'), the textarea is not being updated\n\nSee http://jsbin.com/OdIReSo/1/edit",
+    "LastUpdatedDate": "2013-11-06T01:02:19.06-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "jhtmlarea",
+    "ReportedDate": "2013-11-06T00:47:32.733-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "[bug] Textarea not updated when pasting using mouse",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 16492
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Fixed it by adding this code to \"attachEditorEvents\":\r\n\r\n```\n$(this.textarea).on('paste', function() {\n                window.setTimeout(fnTA, 100);\n              });\r\n\r\n....\r\n\r\n$(this.editor).on('paste', function() {\n                window.setTimeout(fnTA, 100);\n              });\n```\r\n\r\n",
+      "PostedDate": "2013-11-06T01:02:19.06-08:00",
+      "Id": -2147483648
+    }
+  ]
+}

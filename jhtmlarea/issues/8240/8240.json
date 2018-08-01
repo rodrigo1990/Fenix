@@ -1,0 +1,70 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "jHtmlArea",
+      "DisplayName": "jHtmlArea"
+    },
+    "ClosedComment": "Done",
+    "ClosedDate": "2009-08-08T11:15:06.49-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Hey,\n \nGreat job with jHtmlArea... It looks great...\n \nIf you use jHtmlArea in a form, it's possible that the text you've typed does not get sent. If you click on the form, type some text, and then click submit, no text will be submitted.\n \nI checked the code and I think it's because updateTextArea() does not get called when typing text. The handlers in attachEditorEvents do not seem to fire when typing text or when losing focus.\n \nI was able to get this working on my machine by adding this to attachEditorEvents:\n \n        $(this.editor).blur(function() {\n            t.updateTextArea();\n        });\n \nI don't know if this is the best way to do it but it seems to work OK.\n \nI also can't get cut/paste working... Doesn't work on the demo in windows firefox 3.0.12 or chrome 2.0.172.37. Text sometimes is cut, but paste never works. Haven't had a chance to take a peek at the code yet.\n \nRegards,\nTom",
+    "LastUpdatedDate": "2013-05-16T04:59:43.343-07:00",
+    "PlannedForRelease": "0.7.0",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "jhtmlarea",
+    "ReportedDate": "2009-07-29T06:41:37.833-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "attachEditorEvents do not fire, text can be lost when submitting form",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 8240
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "I am having the same problem, i have a textarea inside a form, if i type and dont click any of the buttons but just do a submit, the text does not get posted :(\r\n\r\nI have used the code snippet you suggested in but it has made no difference .\r\n\r\nAny other ideas?",
+      "PostedDate": "2009-08-07T03:09:57.64-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2009-08-08T11:14:42.21-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2009-08-08T11:15:06.49-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "The latest code now fixes this bug. :) Thank you! Works like a charm!",
+      "PostedDate": "2009-08-08T21:25:14.39-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-21T17:58:50.977-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-16T04:59:43.343-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

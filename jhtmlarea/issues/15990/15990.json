@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "jHtmlArea",
+      "DisplayName": "jHtmlArea"
+    },
+    "ClosedComment": "Done",
+    "ClosedDate": "2013-07-31T18:52:11.823-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "[http://jquery.com/upgrade-guide/1.9/#jquery-browser-removed](http://jquery.com/upgrade-guide/1.9/#jquery-browser-removed)\n\njQuery1.9 removed the .browser method entirely.  Checks like ($.browser.msie?0:4) are now broken.",
+    "LastUpdatedDate": "2013-07-31T18:52:11.823-07:00",
+    "PlannedForRelease": "0.8.0",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "High",
+      "Severity": 150,
+      "Id": 3
+    },
+    "ProjectName": "jhtmlarea",
+    "ReportedDate": "2013-01-24T01:20:09.733-08:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Fixed"
+    },
+    "Summary": "Incompatible with jQuery1.9",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 8,
+    "Id": 15990
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

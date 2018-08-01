@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "DoneA simple method for grouping Toolbar Buttons has been implemented that didn&#39;t take very much additional code. Still trying to keep this thing as lightweight as possible.",
+    "ClosedDate": "2009-07-24T12:27:26.9-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Since the number of Toolbar Buttons is growing in the 0.6.0 release; it would be nice to be able to have the button separated into some kind of Groups and/or Rows.",
+    "LastUpdatedDate": "2013-05-16T04:59:44.043-07:00",
+    "PlannedForRelease": "0.6.0",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Medium",
+      "Severity": 100,
+      "Id": 2
+    },
+    "ProjectName": "jhtmlarea",
+    "ReportedDate": "2009-07-23T16:22:26.147-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Add ability to have Toolbar Button Groups",
+    "Type": {
+      "Name": "Feature",
+      "Id": 1
+    },
+    "VoteCount": 1,
+    "Id": 8155
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

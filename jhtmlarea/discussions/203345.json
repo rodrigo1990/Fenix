@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "412463",
+    "ThreadId": "203345",
+    "Html": "<p>I'm sorry to have to ask, I am sure this is very easy and it is just me being dim.</p>\r\n<p>I have JHtmlArea plugged into a form and all working fine. &nbsp;But I am using this on an asp update page so I have to update the textarea from the htmlarea, before submission, and I am struggling to do this. &nbsp;I would love to do it onSubmit of the form and tried with an onClick of the submit button with the submit action tacked on. &nbsp;That failed. &nbsp;I tried creating a&nbsp;separate&nbsp;form button with without the submit, again that failed.</p>\r\n<p>So, now I am trying with a custom button, &nbsp;again without success. &nbsp;I tried substituting the updateTextArea() code with updateHtmlArea() and that works just fine. So, it is only the updateTextArea() that isn't working.</p>\r\n<p>My page is here <a href=\"http://62.233.100.75/$sitepreview/notworkers.co.uk/admin/edit.asp\">http://62.233.100.75/$sitepreview/notworkers.co.uk/admin/edit.asp</a>&nbsp;and the custom button is the end one with the exclamation mark.</p>\r\n<p>Any method for updating the textarea would be fine ... I just need one that works.</p>\r\n<p>Any help would be greatly appreciated because I have been tearing my hair out with this all day!</p>\r\n<p>Many thanks</p>\r\n<p>Karen</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2010-02-28T10:13:28.963-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "412488",
+    "ThreadId": "203345",
+    "Html": "<p>Yep, it was me being dim.</p>\r\n<p>Please just ignore this request!</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2010-02-28T12:42:10.363-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

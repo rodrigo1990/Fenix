@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "1255888",
+    "ThreadId": "548538",
+    "Html": "I have implemented jHTMLArea control for one of my textbox. Now, my requirement is that I want its height to be resizable by using a mouse as per requirement after the control is loaded on the page. In case the text is more and the user wants to view it all at once, he/she should be able to simply drag the textbox corner(s) to get the desired height? Please let me know how this would be possible. <br />\n",
+    "PostedDate": "2014-06-12T23:19:54.463-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

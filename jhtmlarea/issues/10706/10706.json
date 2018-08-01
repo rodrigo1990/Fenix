@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "This dialog is handled by the browsers directly and not jHtmlArea",
+    "ClosedDate": "2012-08-03T20:54:32.593-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "in IE a nice popup window comes up with various image properties like alignment...\n \non FF 3.6.3 I only get a limited box asking of image URL\n \n \nShould be dead easy to fix but I have no understanding of the execCommand syntax",
+    "LastUpdatedDate": "2013-05-16T04:59:41.2-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "jhtmlarea",
+    "ReportedDate": "2010-04-23T23:05:51.43-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "insertImage doesn't work/limited on Firefox",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 10706
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

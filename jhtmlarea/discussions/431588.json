@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "994856",
+    "ThreadId": "431588",
+    "Html": "I'm using jQuery Sortable with jHTMLArea. I basically have DIVs that are sortable and the DIVs are sortable. However, when you drop the DIV on any location, the contents of the jHTMLArea become empty and jHTMLArea becomes disabled. The iFrame and textarea both get disabled. You cannot write anything inside of it.\r<br />\n<br />\nI'm not sure what the issue, so I'm wondering if this is has to do with the libaries themselves.\r<br />\n<br />\nThe code I'm using is this:<br />\n<pre><code>// Enable Sortables\n$(&quot;div.nnUtil&quot;).sortable({\n    cancel: &quot;.nnSettings&quot;,\n    connectWith: 'div.nnUtil',\n    distance: 5,\n    forcePlaceholderSize: true,\n    items: '&gt; div.nnItems',\n    placeholder: 'ui-state-highlight',\n    revert: 250\n});</code></pre>\n\n",
+    "PostedDate": "2013-01-31T11:43:12.617-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

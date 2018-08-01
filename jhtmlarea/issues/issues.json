@@ -1,0 +1,466 @@
+[
+  {
+    "Id": 8130,
+    "Title": "Fix typo in jHtmlArea.toString method"
+  },
+  {
+    "Id": 8131,
+    "Title": "Add jHtmlArea.dispose method"
+  },
+  {
+    "Id": 8132,
+    "Title": "Hide All Toolbar buttons except the \"html\" button when entering HTML Source view"
+  },
+  {
+    "Id": 8133,
+    "Title": "Add Indent and Outdent functionality"
+  },
+  {
+    "Id": 8134,
+    "Title": "Add \"insertHorizontalRule\" method/functionality"
+  },
+  {
+    "Id": 8135,
+    "Title": "Add Justify Functionality - Left, Center and Right"
+  },
+  {
+    "Id": 8136,
+    "Title": "Added an \"alias\" method for jHtmlArea.execCommand named \"ec\""
+  },
+  {
+    "Id": 8137,
+    "Title": "Add \"increaseFontSize\" and \"decreaseFontSize\" functionality"
+  },
+  {
+    "Id": 8138,
+    "Title": "Fix increaseFontSize and decreaseFontSize in Safari"
+  },
+  {
+    "Id": 8139,
+    "Title": "Add \"forecolor\" method"
+  },
+  {
+    "Id": 8140,
+    "Title": "Move \"html\" button to be first in the Default Toolbar configuration"
+  },
+  {
+    "Id": 8141,
+    "Title": "Create a Color Picker Plugin/Extension"
+  },
+  {
+    "Id": 8154,
+    "Title": "Arrange \"default\" Toolbar Buttons in a nice order"
+  },
+  {
+    "Id": 8155,
+    "Title": "Add ability to have Toolbar Button Groups"
+  },
+  {
+    "Id": 8174,
+    "Title": "Fix increaseFontSize and decreaseFontSize \"properly\" in Safari"
+  },
+  {
+    "Id": 8205,
+    "Title": "Add jHtmlArea.p method and \"paragraph\" functionality + toolbar button"
+  },
+  {
+    "Id": 8206,
+    "Title": "Add \"Automatic\" option to the ColorPickerMenu plugin"
+  },
+  {
+    "Id": 8207,
+    "Title": "Hide ColorPickerMenu when loses focus"
+  },
+  {
+    "Id": 8208,
+    "Title": "Add jHtmlArea.font method and toolbar button (\"Choose Font...\" menu)"
+  },
+  {
+    "Id": 8240,
+    "Title": "attachEditorEvents do not fire, text can be lost when submitting form"
+  },
+  {
+    "Id": 8384,
+    "Title": "Text not submitted from inside a form if you dont click a button"
+  },
+  {
+    "Id": 8395,
+    "Title": "Add \"jHtmlArea.html\" method that works the same as jQuery's \"html\" method"
+  },
+  {
+    "Id": 8396,
+    "Title": "Add \"jHtmlArea.html\" method that works the same as jQuery's \"html\" method"
+  },
+  {
+    "Id": 8456,
+    "Title": "Color picker position incorrect if inside relative div element"
+  },
+  {
+    "Id": 8499,
+    "Title": "JHTMLArea is not working when used with JqueryUI Dialog"
+  },
+  {
+    "Id": 8502,
+    "Title": "TextArea is populated only if you apply some transformation"
+  },
+  {
+    "Id": 8627,
+    "Title": "Auto resize on fluid layouts and toolbar rearrangement"
+  },
+  {
+    "Id": 8789,
+    "Title": "Heading tags does not work in IE 8"
+  },
+  {
+    "Id": 8794,
+    "Title": "W3C Validation"
+  },
+  {
+    "Id": 8898,
+    "Title": "getSelectedHTML() not returning value for selected image"
+  },
+  {
+    "Id": 8899,
+    "Title": "$(this.editor.body).click not firing in Firefox"
+  },
+  {
+    "Id": 8969,
+    "Title": "jHtmlArea returning empty string"
+  },
+  {
+    "Id": 9125,
+    "Title": "this.pasteHTML() returning 'r.select is not a function' error in firefox"
+  },
+  {
+    "Id": 9127,
+    "Title": "jHtmlArea and jQuery dialog again"
+  },
+  {
+    "Id": 10001,
+    "Title": "Error in html function"
+  },
+  {
+    "Id": 10192,
+    "Title": "pastehtml placing text at the beginning of the textarea not where the cursor is."
+  },
+  {
+    "Id": 10458,
+    "Title": "The hidden textarea does not update if you dont blur and focus jHtmlArea again"
+  },
+  {
+    "Id": 10546,
+    "Title": "this.pastHTML is not a function !!!"
+  },
+  {
+    "Id": 10697,
+    "Title": "createLink doesn't work in firefox"
+  },
+  {
+    "Id": 10706,
+    "Title": "insertImage doesn't work/limited on Firefox"
+  },
+  {
+    "Id": 10741,
+    "Title": "Inserting text into htmlarea fails in IE7"
+  },
+  {
+    "Id": 10746,
+    "Title": "IE: Clear text area when updating"
+  },
+  {
+    "Id": 10866,
+    "Title": "textarea strips carriage returns on form submission after calling \"detach\" when using IE8"
+  },
+  {
+    "Id": 10907,
+    "Title": "Problems when textarea nested in display:none"
+  },
+  {
+    "Id": 11034,
+    "Title": "I found the h1 h2 function donesn't work on my IE8"
+  },
+  {
+    "Id": 11127,
+    "Title": "Menu Items on IE8 trigger onBeforeUnload"
+  },
+  {
+    "Id": 11454,
+    "Title": "Is the control supports only full postback in asp.net?"
+  },
+  {
+    "Id": 11758,
+    "Title": "Insert Image then click Cancel throws exception"
+  },
+  {
+    "Id": 12259,
+    "Title": "cut/copy/paste does not work in firefox"
+  },
+  {
+    "Id": 12366,
+    "Title": "Error hit when creating the editor dynamically and append to a dynamic element."
+  },
+  {
+    "Id": 12801,
+    "Title": "Bugs Found WHen Trying to Replace Editable HTML"
+  },
+  {
+    "Id": 13007,
+    "Title": "Problem with edit table in Firefox 3.6.13"
+  },
+  {
+    "Id": 13025,
+    "Title": "you demo site is down"
+  },
+  {
+    "Id": 13142,
+    "Title": "Problems with text area bounds disappearing with Blueprint CSS"
+  },
+  {
+    "Id": 13221,
+    "Title": "Cannot undo in IE"
+  },
+  {
+    "Id": 13593,
+    "Title": "How to disable JHtml text area?"
+  },
+  {
+    "Id": 13620,
+    "Title": "how to set the value dynamically in JHTML area"
+  },
+  {
+    "Id": 13863,
+    "Title": "Post the local image to server"
+  },
+  {
+    "Id": 14072,
+    "Title": "JHTMLarea to affect only one textbox?"
+  },
+  {
+    "Id": 14279,
+    "Title": "selecting an area in scrollable text"
+  },
+  {
+    "Id": 14567,
+    "Title": "keyup or keypress Event is not working in jHtmlArea"
+  },
+  {
+    "Id": 14568,
+    "Title": "keyup or keypress Event is not working in jHtmlArea"
+  },
+  {
+    "Id": 15024,
+    "Title": "Set TextArea text on page load"
+  },
+  {
+    "Id": 15171,
+    "Title": "Firefox is not refreshing body content"
+  },
+  {
+    "Id": 15179,
+    "Title": "Sample of using jHtmlArea within jQuery UI Dialog does not work well"
+  },
+  {
+    "Id": 15180,
+    "Title": "Dialog does not work well in sample page"
+  },
+  {
+    "Id": 15192,
+    "Title": "Typo on Line 105 of jHtmlArea-0.7.0.js"
+  },
+  {
+    "Id": 15272,
+    "Title": "multiple jHtmlAreas of same type at once on a screen"
+  },
+  {
+    "Id": 15274,
+    "Title": "Form Submit Fix on Line 380 Causes Issues in MVC3"
+  },
+  {
+    "Id": 15339,
+    "Title": "Drag & drop of toolbar items in input fields adds javascript code to the value."
+  },
+  {
+    "Id": 15371,
+    "Title": "Headings&Paragraphs in Internet Explorer 9"
+  },
+  {
+    "Id": 15389,
+    "Title": "Using jHtmlArea totally increases page width"
+  },
+  {
+    "Id": 15503,
+    "Title": "Html markup closing tags"
+  },
+  {
+    "Id": 15541,
+    "Title": "Display <head> element"
+  },
+  {
+    "Id": 15600,
+    "Title": "add attachEditorEvents events"
+  },
+  {
+    "Id": 15635,
+    "Title": "html() function dont set blank value"
+  },
+  {
+    "Id": 15669,
+    "Title": "IE strips any html tags ?"
+  },
+  {
+    "Id": 15843,
+    "Title": "IE9 Issue with second textarea"
+  },
+  {
+    "Id": 15963,
+    "Title": "jHtmlArea - Cursor position issue"
+  },
+  {
+    "Id": 15990,
+    "Title": "Incompatible with jQuery1.9"
+  },
+  {
+    "Id": 16028,
+    "Title": "IFRAME within jHtmlArea losing content on drag"
+  },
+  {
+    "Id": 16032,
+    "Title": "r.select()  not a function on line 124 of version 0.7.5"
+  },
+  {
+    "Id": 16077,
+    "Title": "How to disable edit text"
+  },
+  {
+    "Id": 16111,
+    "Title": "using jhtmlarea in jtable"
+  },
+  {
+    "Id": 16161,
+    "Title": "Unable to get value of the property 'msie':"
+  },
+  {
+    "Id": 16190,
+    "Title": "Bug: $element.htmlarea('html', '') doesn't do anything"
+  },
+  {
+    "Id": 16263,
+    "Title": "Not working with jQuery 1.9.1 and above"
+  },
+  {
+    "Id": 16317,
+    "Title": "textarea getting  disabled  when  using  with  dialogbox"
+  },
+  {
+    "Id": 16386,
+    "Title": "clicking on HTML view appends root url into href links"
+  },
+  {
+    "Id": 16472,
+    "Title": "Javascript model dialouge doesn't work along with JHtmlArea"
+  },
+  {
+    "Id": 16492,
+    "Title": "[bug] Textarea not updated when pasting using mouse"
+  },
+  {
+    "Id": 16503,
+    "Title": "image: function (url)"
+  },
+  {
+    "Id": 16652,
+    "Title": "jhtmlarea does not work in IE 8."
+  },
+  {
+    "Id": 16657,
+    "Title": "ColorPicker not working in IE11"
+  },
+  {
+    "Id": 16729,
+    "Title": "change event not fired"
+  },
+  {
+    "Id": 16825,
+    "Title": "IE 'sure you want to leave page' message displayed after toolbar action"
+  },
+  {
+    "Id": 16828,
+    "Title": "Unable to resize images in chrome"
+  },
+  {
+    "Id": 16870,
+    "Title": "Problems with horizontal rule <hr>"
+  },
+  {
+    "Id": 16889,
+    "Title": "Foundation Zurb on mobile issue"
+  },
+  {
+    "Id": 16894,
+    "Title": "word between <>"
+  },
+  {
+    "Id": 16945,
+    "Title": "Auto URL doesn't open in external window"
+  },
+  {
+    "Id": 16956,
+    "Title": "JHtmlAreaEditor in Chrome browser Copy Paste issue"
+  },
+  {
+    "Id": 16957,
+    "Title": "jHtmlArea removes end tags in Firefox 31"
+  },
+  {
+    "Id": 16968,
+    "Title": "How to disable or Readonly jHtmlArea?"
+  },
+  {
+    "Id": 16973,
+    "Title": "Unwanted Image delete when i touching backspace in IE8"
+  },
+  {
+    "Id": 17036,
+    "Title": "HtmlArea Are Not Getting Focus"
+  },
+  {
+    "Id": 17400,
+    "Title": "Custom Button Image Does Not Display"
+  },
+  {
+    "Id": 17413,
+    "Title": "Adding capability to resize"
+  },
+  {
+    "Id": 17445,
+    "Title": "Create bower package"
+  },
+  {
+    "Id": 17459,
+    "Title": "Move to GitHub"
+  },
+  {
+    "Id": 17482,
+    "Title": "jHTML Toolbar icons conflict with Bootstrap styles"
+  },
+  {
+    "Id": 17603,
+    "Title": "jHtmlArea function images not showing"
+  },
+  {
+    "Id": 17619,
+    "Title": "jHtmlArea Color Picker : use of 'black' color is not reflected in corresponding html view."
+  },
+  {
+    "Id": 17648,
+    "Title": "this.getSelectedHTML(); method is returning undefined. Any clue? Using it to create a custom button"
+  },
+  {
+    "Id": 17671,
+    "Title": "Error using IE 11 and IE edge"
+  },
+  {
+    "Id": 17713,
+    "Title": "Null is populated when cancel link or picture in Chrome"
+  }
+]

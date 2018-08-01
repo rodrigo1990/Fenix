@@ -1,0 +1,50 @@
+[
+  {
+    "Id": "258996",
+    "ThreadId": "75694",
+    "Html": "<p>hi,</p>\r\n<p>the default font-family in my jhtml editor is Times, but i need to change it to Verdana or something alike, i have try with css but the font stays the same ?</p>\r\n<p>(i am able to change the font family if you click &quot;view source&quot; but cant change it in the editor preview)</p>\r\n<p>thanks</p>",
+    "PostedDate": "2009-11-20T01:40:27.77-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "274690",
+    "ThreadId": "75694",
+    "Html": "<p>Hi Cris,</p>\r\n<p>Simply create a CSS file with the font-family declaration set on the &lt;body&gt; tag selector. Then, add the path to the CSS file in your jHTMLEditor options. For example:</p>\r\n<p>&nbsp;</p>\r\n<div style=\"color:Black;background-color:White\">\r\n<pre>&lt;script type=<span style=\"color:#A31515\">&quot;text/javascript&quot;</span>&gt;\r\n$(document).ready(<span style=\"color:Blue\">function</span>() {\r\n    $(<span style=\"color:#A31515\">'textarea'</span>).htmlarea({\r\n        css: <span style=\"color:#A31515\">'/css/editor.css'</span>\r\n    });\r\n});\r\n&lt;/script&gt;\r\n</pre>\r\n</div>\r\n<p>Hope this helps.</p>\r\n<p>Regards,<br>Martin&nbsp;</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2010-01-08T01:54:05.447-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "551109",
+    "ThreadId": "75694",
+    "Html": "\r\n<p>Hello Martin,</p>\r\n<p>I am also having the same problem. I want to change the default font of the editor and I applied as you wrote but no result. Can you please show me an example with javascript and css.</p>\r\n",
+    "PostedDate": "2011-01-18T02:19:50.84-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "563051",
+    "ThreadId": "75694",
+    "Html": "\r\n<p>This is a great plugin.&nbsp; Thanks.&nbsp;</p>\r\n<p>This is the only issue I'm having.&nbsp; I tried the following and still could not get the font within the jHtmlArea textarea to use these settings.&#65279;</p>\r\n<div style=\"color:black; background-color:white\">\r\n<pre>    $(<span style=\"color:#a31515\">&quot;#eventDescriptionEdit&quot;</span>).htmlarea({\r\n\ttoolbar: [\r\n\t  <span style=\"color:#a31515\">&quot;html&quot;</span>, <span style=\"color:#a31515\">&quot;|&quot;</span>, <span style=\"color:#a31515\">&quot;forecolor&quot;</span>, <span style=\"color:#a31515\">&quot;|&quot;</span>, <span style=\"color:#a31515\">&quot;bold&quot;</span>, <span style=\"color:#a31515\">&quot;italic&quot;</span>, <span style=\"color:#a31515\">&quot;underline&quot;</span>, <span style=\"color:#a31515\">&quot;|&quot;</span>, <span style=\"color:#a31515\">&quot;increaseFontSize&quot;</span>, <span style=\"color:#a31515\">&quot;decreaseFontSize&quot;</span>, \r\n\t  <span style=\"color:#a31515\">&quot;indent&quot;</span>, <span style=\"color:#a31515\">&quot;outdent&quot;</span>, <span style=\"color:#a31515\">&quot;|&quot;</span>, <span style=\"color:#a31515\">&quot;orderedList&quot;</span>, <span style=\"color:#a31515\">&quot;unorderedList&quot;</span>, <span style=\"color:#a31515\">&quot;|&quot;</span>, <span style=\"color:#a31515\">&quot;link&quot;</span>, <span style=\"color:#a31515\">&quot;unlink&quot;</span>\r\n\t],\r\n\tcss: <span style=\"color:#a31515\">'jHtmlAreaCustom.css'</span>\r\n    });\r\n\r\n</pre>\r\n</div>\r\n<p>where the jHtmlAreaCustom.css file contains</p>\r\n<div style=\"color:black; background-color:white\">\r\n<pre><span style=\"color:green\">/*\r\n * Custom styles to force font size in jHtmlArea\r\n *\r\n */</span>\r\n\r\n<span style=\"color:#a31515\">body </span>{ <span style=\"color:red\">font-family</span>: <span style=\"color:blue\">Verdana,Arial,sans-serif/*{ffDefault}*/</span>; <span style=\"color:red\">font-size</span>: <span style=\"color:blue\">1.1em/*{fsDefault}*/</span>; }\r\n\r\n</pre>\r\n<pre>I also tried setting style for text and textarea elements with the same result of no change to the jHtmlArea within my jQuery UI dialog.</pre>\r\n</div>\r\n",
+    "PostedDate": "2011-02-08T19:47:46.46-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1003482",
+    "ThreadId": "75694",
+    "Html": "Hi\r<br />\nAny news on this? I'm also not able to use default css for the jhtmlarea.\r<br />\nThanks\r<br />\n<br />\nCornelia Sihota<br />\n",
+    "PostedDate": "2013-02-19T07:56:07.343-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1133849",
+    "ThreadId": "75694",
+    "Html": "you can use jquery to change the default font styling<br />\n<pre><code>$(&quot;.jHtmlArea iframe&quot;).contents().find(&quot;body&quot;).css('color','blue').css('font-family','cursive');</code></pre>\n\n",
+    "PostedDate": "2013-12-10T12:25:32.227-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

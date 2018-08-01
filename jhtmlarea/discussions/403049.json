@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "941020",
+    "ThreadId": "403049",
+    "Html": "\r\n<p>Hi, would it be possible to extend this plugin by adding a method for selecting a specific portion of the text starting from its indexes? This would be a requirement for every application requiring some text processing whose results could be marked with\r\n some specific formatting. Say I have some HTML code and I'd like to make red the text range from index 6 to 13. By looking at your code I can find a lot of methods for formatting the current selection using executeCommand, but I'd need to programmatically\r\n define the selection for this, starting from raw indexes. Do you have any hint about this? I cannot find an RTE editor which&nbsp;takes into account this scenario, but I was hoping to be able to extend yours in this direction as it seems the most simple, clean\r\n and extensible.&nbsp;Thanks!</p>\r\n",
+    "PostedDate": "2012-11-13T07:35:54.99-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

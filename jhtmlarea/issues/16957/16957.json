@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "I was using jQuery-te as my WYSIWYG editor and tried jHtmlArea because the former removes end tags from the HTML markup that I enter.  It looks like jHtmlArea is doing the same thing.  I enter an <img src=\"xxx\" /> and it changes it to <img src=\"xxx\">.  I also tried inserting a </img> and it removed it when I switched from markup to WYSIWYG and back.  Anyway to change this behavior?  I need to save well-formed HTML.",
+    "LastUpdatedDate": "2014-08-22T12:10:18.127-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "jhtmlarea",
+    "ReportedDate": "2014-08-20T12:38:08.53-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "jHtmlArea removes end tags in Firefox 31",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 16957
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Looks like it is the web browser that insists on removing the end tags from the value of textarea.  I'll just have to make selected tags self-closing on the server side before I save them.",
+      "PostedDate": "2014-08-22T12:10:18.127-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

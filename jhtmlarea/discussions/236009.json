@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "526898",
+    "ThreadId": "236009",
+    "Html": "\r\n<p>Hi,</p>\r\n<p>I've just try to paste the youtube videos HTML embedding code into the HTML jHtmlArea. I have pasted the code in the HTML view of the jHtmlArea, but when I go back to the wysiwyg view, I see nothing. The content is there, but the end user have no feedback\r\n at all in the wysiwyg area.</p>\r\n<p>Would it be possible to visualize the youtube video or, at least, some icon in order to have some feedback?</p>\r\n<p>Regards,</p>\r\n<p>David</p>\r\n",
+    "PostedDate": "2010-11-25T03:34:30.467-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "600475",
+    "ThreadId": "236009",
+    "Html": "<p>1. init</p>\r\n<p>\r\n<div style=\"color: black; background-color: white;\">\r\n<pre>$(<span style=\"color: #a31515;\">'textarea'</span>).htmlarea({css: <span style=\"color: #a31515;\">'/inc/css/jHtmlArea-inner.css'</span>});\r\n</pre>\r\n</div>\r\n</p>\r\n<p>2. css</p>\r\n<p>\r\n<div style=\"color: black; background-color: white;\">\r\n<pre><span style=\"color: #a31515;\">object </span>{\r\n    <span style=\"color: red;\">background</span>: <span style=\"color: blue;\">silver</span>;\r\n    <span style=\"color: red;\">border</span>: <span style=\"color: blue;\">1px solid red</span>;\r\n    <span style=\"color: red;\">display</span>: <span style=\"color: blue;\">block</span>;\r\n}\r\n\r\n<span style=\"color: #a31515;\">object object</span>{\r\n    <span style=\"color: red;\">background</span>: <span style=\"color: blue;\">none</span>;\r\n    <span style=\"color: red;\">border</span>: <span style=\"color: blue;\">0</span>;\r\n    <span style=\"color: red;\">display</span>: <span style=\"color: blue;\">none</span>;\r\n}\r\n\r\n</pre>\r\n</div>\r\n</p>",
+    "PostedDate": "2011-04-20T08:53:22.613-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

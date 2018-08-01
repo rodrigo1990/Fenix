@@ -1,0 +1,60 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Am implementing jHtmlArea on several TEXTAREA's in my site and in one spot I have these elements within table rows that can be dragged using jQuery UI. But when they are dragged all the content in the IFRAME is lost. Explanation here:\n\nhttp://www.sitepoint.com/forums/showthread.php?901148-Need-jquery-drag-and-drop-reorder-renumber-table-row-functionality&p=5312938&viewfull=1#post5312938\n\nJSFiddle here:\n\nhttp://jsfiddle.net/5QL7W/1/",
+    "LastUpdatedDate": "2013-07-15T22:04:19.71-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "jhtmlarea",
+    "ReportedDate": "2013-02-05T13:19:41.647-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "IFRAME within jHtmlArea losing content on drag",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 16028
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "The problem seems to stem from the fact that jHtmlArea uses IFRAME's to take the place of TEXTAREA's. But might it make sense to use DIV's instead of IFRAME's?",
+      "PostedDate": "2013-02-06T12:29:09.523-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-21T17:58:39.09-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "here is the solution for you. \nYou just need to dispose and re render the jHTMLArea on your textbox.\r\n\r\n[TEXT](http://jsfiddle.net/h2KAa/1/)",
+      "PostedDate": "2013-07-15T21:20:13.79-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Thanks, Zahidriaz.",
+      "PostedDate": "2013-07-15T22:04:19.71-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

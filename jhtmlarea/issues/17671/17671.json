@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Does anyone are getting errors on method pasteHTML?\nOn IE 11 I got the error on line 171 (r.pasteHTML(html)) and it makes jHTMLArea impossible to use in IE 11.\nAt EDGE I got the error on line 180 (r.select()), in EDGE I can still keep using jHTMLArea.\n\nBoth erros I got using version 0.8.\n\nAny patch for this error?\n\nThanks a lot.",
+    "LastUpdatedDate": "2016-05-31T15:51:12.55-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "jhtmlarea",
+    "ReportedDate": "2016-05-31T15:42:49.877-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Error using IE 11 and IE edge",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 17671
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "For now, to solve the error in IE 11, I did it:\r\n\r\n if (typeof r.select == 'function') {\n                r.pasteHTML(html);\n            }\n            else\n            {\n                r.deleteContents();\n                r.insertNode($(this.iframe[0].contentWindow.document.createElement(\"span\")).append($((html.indexOf(\"<\") != 0) ? \"<span>\" + html + \"</span>\" : html))[0]);\n            }",
+      "PostedDate": "2016-05-31T15:51:12.55-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

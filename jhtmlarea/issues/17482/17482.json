@@ -1,0 +1,61 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "When using jHtmlArea in a site that uses Bootstrap, there is a conflict between the toolbar classes and bootstrap's definition of .h1, .h2, etc.  This causes the buttons to take more than one line in the toolbar.",
+    "LastUpdatedDate": "2017-09-26T05:34:10.3-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "jhtmlarea",
+    "ReportedDate": "2015-07-22T10:39:57.61-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "jHTML Toolbar icons conflict with Bootstrap styles",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 3,
+    "Id": 17482
+  },
+  "FileAttachments": [
+    {
+      "FileId": 5057,
+      "FileName": "jhtmlerror.png",
+      "DownloadUrl": ".\\5057"
+    },
+    {
+      "FileId": 6173,
+      "FileName": "2016-06-21_10-40-37.png",
+      "DownloadUrl": ".\\6173"
+    }
+  ],
+  "Comments": [
+    {
+      "Message": "Encountered this as well, it skews the alignment of the toolbar... ",
+      "PostedDate": "2016-06-21T08:41:25.857-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2017-09-26T05:34:10.3-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

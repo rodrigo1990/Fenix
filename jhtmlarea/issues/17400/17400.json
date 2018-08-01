@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "I have tried to add a custom button image to my project, and while the rest of the toolbar works fine, the custom image does not display.\n\nI believe the problem may be that the toolbar image is displayed at full width in the toolbar.\n\nThe alt-text displays, but the image does not.\n\nIt would be nice if the image displayed as well.",
+    "LastUpdatedDate": "2015-03-19T07:53:18.797-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "jhtmlarea",
+    "ReportedDate": "2015-03-19T06:36:11.707-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Custom Button Image Does Not Display",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 17400
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "I found a fix.\r\n\r\nYou modify the jHtmlArea .css file to add the following for your custom buttons:\r\n\r\ndiv.jHtmlArea .ToolBar ul li a.{custom button name}{ background-position: -80px -32px;background: url(refreshIcon.png);}\n",
+      "PostedDate": "2015-03-19T07:53:18.797-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

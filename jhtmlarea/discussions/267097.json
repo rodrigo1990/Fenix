@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "649714",
+    "ThreadId": "267097",
+    "Html": "\r\n<p>Does anybody know how to pre populate the textarea with data?</p>\r\n<p>I have tried without success:</p>\r\n<p>var data = 'hello world';</p>\r\n<p>$('#txtDefaultHtmlArea').val(data);</p>\r\n",
+    "PostedDate": "2011-07-29T12:09:26.063-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "677192",
+    "ThreadId": "267097",
+    "Html": "<p>This is how I have done it in the past.&nbsp; Set the text attribute of the text area, then call the updateHtmlArea() method to repopulate the HTML.</p>\r\n<div style=\"color: black; background-color: white;\">\r\n<pre>$('#txtDefaultHtmlArea').text(data).htmlarea('updateHtmlArea');</pre>\r\n</div>",
+    "PostedDate": "2011-09-27T08:04:08.853-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "https://gyazo.com/dce3106e076462160e7b3e13246b8f0b\n\nThe functions are working well but the function images are not showing.... May i know a solution to this? Thanks in advance!\n\nI've attached of the situation in the link above.",
+    "LastUpdatedDate": "2016-01-27T17:40:30.253-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "jhtmlarea",
+    "ReportedDate": "2016-01-27T17:40:30.253-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "jHtmlArea function images not showing",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 17603
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

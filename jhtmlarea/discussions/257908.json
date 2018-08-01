@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "613840",
+    "ThreadId": "257908",
+    "Html": "\r\n<p>I want to use drag and drop control. It is working fine in html view but i m not able to drop the content in htmleditor view.</p>\r\n<p>I am using default one&nbsp;&nbsp;$(&quot;#HtmlArea&quot;).htmlarea();&nbsp;</p>\r\n<p>Any help is apreciated.Thanks in advance.</p>\r\n",
+    "PostedDate": "2011-05-17T04:05:52.04-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

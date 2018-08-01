@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "841376",
+    "ThreadId": "357305",
+    "Html": "\r\n<p>I have created a simple textarea and then invoked the htmlarea() method to instantiate the jHtmlArea element. The editor is created as expected but at the end, the textarea inside the iframe gets deleted.</p>\r\n<p>This is the rendered HTML.</p>\r\n<p>&lt;div class=&quot;jHtmlArea&quot; style=&quot;width: 579px;&quot;&gt;</p>\r\n<p>&lt;div class=&quot;ToolBar&quot; style=&quot;width: 577px;&quot;&gt;...&lt;/div&gt;</p>\r\n<p>&lt;div&gt;</p>\r\n<p>&lt;iframe style=&quot;height: 417px; width: 575px;&quot;&gt;&lt;/iframe&gt;</p>\r\n<p>&lt;/div&gt;</p>\r\n<p>&lt;textarea cols=&quot;70&quot; rows=&quot;25&quot; name=&quot;answerText&quot; id=&quot;answerText&quot; style=&quot;display: none;&quot;&gt;&amp;lt;p&amp;gt;&amp;lt;h3&amp;gt;Another TextArea&amp;lt;/h3&amp;gt;This is some sample text to test out the &amp;lt;b&amp;gt;WYSIWYG Control&amp;lt;/b&amp;gt;.&amp;lt;/p&amp;gt;&lt;/textarea&gt;</p>\r\n<p>&lt;/div&gt;</p>\r\n<p>As you can see, the &lt;iframe&gt; is empty!</p>\r\n<p>I am using jquery 1.5.2 &amp; jquery UI 1.8.13</p>\r\n<p>Is there any way iframe contents can get deleted in this manner?</p>\r\n",
+    "PostedDate": "2012-05-27T05:55:12.947-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "841387",
+    "ThreadId": "357305",
+    "Html": "<p>Found how to fix this but did not understand the cause yet.</p>\r\n<p>When I add jquery.min.js to my page, the problem is resolved.</p>\r\n<p>But my page is dynamically generated via AJAX and I have already included jquery.min.js in my container page so I should not have to include it again. But if I don't, then the &lt;iframe&gt; contents disappear!</p>\r\n<p>Also, this is a problem with Firefox 12. Chrome seems to be working fine without inclusion of the jquery main js.</p>\r\n<p>Strange issues! If anyone understands the cause, please share your knowledge.</p>",
+    "PostedDate": "2012-05-27T07:32:03.793-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

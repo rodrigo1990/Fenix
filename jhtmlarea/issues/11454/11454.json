@@ -1,0 +1,75 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2012-08-03T20:52:11.36-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "How do we handle asynchronus postback in asp.net. When we do a postback on click of a button, editor looses typed in values and also toolbar becomes invisible and only plain textarea is visible.\n \nWhat I noticed is when we put the button inside updatepanel (ajax) editor looses the toolbar.\n \n \nAny suggestion to make this control supports partial postback?\n \nThanks,\nMani.",
+    "LastUpdatedDate": "2013-05-16T04:59:40.79-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "jhtmlarea",
+    "ReportedDate": "2010-07-08T06:41:36.787-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Is the control supports only full postback in asp.net?",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 11454
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Im using ASP.NET MVC 1.0\r\nWhen I use the component inside an Ajax Form (Ajax.BeginForm method), the HTTP request is made without the content of the text-area.\r\n\r\nWhat can I do?\r\n\r\nThe weirdest thing is that the component works fine sometimes!",
+      "PostedDate": "2010-09-10T18:52:17.56-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "I have figured out what is happening:\r\nThe content is being stored in the iframe which is created by the component... This content is only copied to the textarea when I click the <HTML> button (first button of the toolbar).\r\nThe iframe content is not passed to the HTTP POST request when the form is submitted, but the textarea content is, and its null if I do not click the <HTML> button.\r\n\r\nI think this is a bug, but I need to workaround this. What should I do?",
+      "PostedDate": "2010-09-10T19:24:31.013-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Sorry for multiple posts. I have got an workaround for this issue.\r\nBefore form is submitted, Im setting the textarea.value property with the htmlarea(\"toHtmlString\") method. This way the form is submitted correctly.",
+      "PostedDate": "2010-09-10T20:01:42.72-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "My problem wasn't with the updatepanel but with any jquery async postback.\r\n\r\nThe error is that the jHtmlArea change to HTML view mode (that's why the tool bar hides). To solve it just do \r\n\r\n$(\"#<%= yourcontrol.ClientID %>\").htmlarea(\"hideHTMLView\");\r\n\r\nafter everytime you do an async postback.",
+      "PostedDate": "2012-05-16T13:57:57.913-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2012-08-03T20:52:11.36-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-21T17:58:46.217-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-16T04:59:40.79-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

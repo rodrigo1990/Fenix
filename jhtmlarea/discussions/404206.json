@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "945574",
+    "ThreadId": "404206",
+    "Html": "\r\n<p>Firstly, Many thanks for the editor. It's a pretty cool one.</p>\r\n<p>I have an issue with the jHtmlArea. Whenever I enter an @ symbol the text automatically converts to hyperlink (an anchor tag with mailto: ).</p>\r\n<p>Is there any way to disallow this change?</p>\r\n",
+    "PostedDate": "2012-11-22T03:33:50.727-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

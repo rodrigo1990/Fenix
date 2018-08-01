@@ -1,0 +1,70 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "line 123 of jHTMLArea-0.7.0.js is causes an error in firefox.\n \ncommenting out this line seems to fix this issue.",
+    "LastUpdatedDate": "2016-05-31T15:49:17.36-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "jhtmlarea",
+    "ReportedDate": "2009-11-05T05:37:49.727-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "this.pasteHTML() returning 'r.select is not a function' error in firefox",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 4,
+    "Id": 9125
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Since it only throws and error in firefox you might prefer to handle the error instead of leaving out the line completely. I would suggest to replace it with the following code until a solution for firefox is found:\r\n\r\nif (typeof r.select == 'function') {\r\n    r.select();\r\n}",
+      "PostedDate": "2011-03-16T09:50:06.95-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2012-11-27T07:14:32.79-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "The problem is still present in jHTMLArea-0.7.5, and the firefox version of 2012-11-27 (don't know which version number, I have lost count).\nThe suggested fix works.",
+      "PostedDate": "2012-11-27T07:16:13.05-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-21T17:58:48.793-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "in 0.8 this error appear in IE 11 too.",
+      "PostedDate": "2016-05-31T15:46:08.52-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Thats what I did:\r\n\r\n                if (typeof r.select == 'function') {\n                    r.pasteHTML(html);\n                }\n                else\n                {\n                    r.deleteContents();\n                    r.insertNode($(this.iframe[0].contentWindow.document.createElement(\"span\")).append($((html.indexOf(\"<\") != 0) ? \"<span>\" + html + \"</span>\" : html))[0]);\n                }\n",
+      "PostedDate": "2016-05-31T15:49:17.36-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

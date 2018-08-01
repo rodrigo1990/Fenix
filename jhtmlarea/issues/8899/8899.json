@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "The updateTextArea() method was not firing in Firefox for a custom toolbar button I added. This turned out to be a problem with attaching the 'click' event to 'this.editor.body'. Changing it to $(this.editor).click() seems to work across IE and Firefox. Other browsers have not been tested. A pacth file is attached (the path also includes the update for this bug: http://jhtmlarea.codeplex.com/WorkItem/View.aspx?WorkItemId=8898).",
+    "LastUpdatedDate": "2013-02-21T17:58:49.147-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "jhtmlarea",
+    "ReportedDate": "2009-10-02T04:22:18.34-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "$(this.editor.body).click not firing in Firefox",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 8899
+  },
+  "FileAttachments": [
+    {
+      "FileId": 2338,
+      "FileName": "jhtmlarea.patch",
+      "DownloadUrl": ".\\2338"
+    }
+  ],
+  "Comments": []
+}

@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "406246",
+    "ThreadId": "197786",
+    "Html": "<p>I have created a jHtmlArea on my web page.<br>I am giving my users some pre-created templates to use as a starting point for creating a message with jHtmlArea.</p>\r\n<p>My templates are showing up fine in the editor, but I am experiencing issues when any HTML elements have a 'width'<br>For example, if I pre-load the following into the editor:</p>\r\n<div style=\"color:Black;background-color:White\">\r\n<pre><span style=\"color:Blue\">&lt;</span><span style=\"color:#A31515\">span</span><span style=\"color:Blue\">&gt;</span>Template<span style=\"color:Blue\">&lt;/</span><span style=\"color:#A31515\">span</span><span style=\"color:Blue\">&gt;</span>\r\n<span style=\"color:Blue\">&lt;</span><span style=\"color:#A31515\">span</span> <span style=\"color:Red\">style</span><span style=\"color:Blue\">=</span><span style=\"color:Blue\">&quot;width: 30%&quot;</span><span style=\"color:Blue\">&gt;</span>This is a message template<span style=\"color:Blue\">&lt;/</span><span style=\"color:#A31515\">span</span><span style=\"color:Blue\">&gt;</span></pre>\r\n</div>\r\n<p>I can click and edit the word 'Template' fine, but if I click on the second line, the editor treats it similar to like what MS Word does to images. <br>It gives me the resize cursor and draws a box around the element trying to allow me to resize it.</p>\r\n<p>Has anyone else experienced this issue, or know how I can set widths on elements in the editor without this behaviour?<br>Thanks.</p>",
+    "PostedDate": "2010-02-25T11:02:12.663-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

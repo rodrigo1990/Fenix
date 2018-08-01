@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "494913",
+    "ThreadId": "227603",
+    "Html": "<p>I'am having a big problem with this plugin but only on firefox.</p>\r\n<p>When i call the jhtmlarea function the textarea contetn at first appears on the editable area for a second or so, then it disapears and i can't do anything in that area (no write, no focus, no nothing).</p>\r\n<p>Though if i switch to html mode my content is there.</p>\r\n<p>I've tested this with IE8, Chrome, Opera and FireFox, being these last one the only with this problem.</p>\r\n<p>the code when i call the plugin is bellow this line, there's nothing complex about it, i just don' understand.</p>\r\n<p>&nbsp;</p>\r\n<p>\r\n<div style=\"color:black;background-color:white\">\r\n<pre><span style=\"color:blue\">for</span>(i = 0; i &lt; json.ficha.descricoes.length; i++)\r\n{\t\r\n   $(<span style=\"color:#a31515\">&quot;#descText-&quot;</span>+json.ficha.descricoes[i].ididioma).htmlarea(\r\n      {\r\n         toolbar:[\r\n\t\t      [<span style=\"color:#a31515\">&quot;html&quot;</span>],\r\n\t\t      [<span style=\"color:#a31515\">&quot;bold&quot;</span>, <span style=\"color:#a31515\">&quot;italic&quot;</span>, <span style=\"color:#a31515\">&quot;underline&quot;</span>],\r\n\t\t      [<span style=\"color:#a31515\">&quot;increaseFontSize&quot;</span>, <span style=\"color:#a31515\">&quot;decreaseFontSize&quot;</span>],\r\n\t\t      [<span style=\"color:#a31515\">&quot;justifyLeft&quot;</span>, <span style=\"color:#a31515\">&quot;justifyCenter&quot;</span>, <span style=\"color:#a31515\">&quot;justifyRight&quot;</span>],\r\n\t\t      [<span style=\"color:#a31515\">&quot;orderedlist&quot;</span>, <span style=\"color:#a31515\">&quot;unorderedlist&quot;</span>],\r\n\t\t      [<span style=\"color:#a31515\">&quot;h1&quot;</span>, <span style=\"color:#a31515\">&quot;h2&quot;</span>, <span style=\"color:#a31515\">&quot;h3&quot;</span>, <span style=\"color:#a31515\">&quot;p&quot;</span>],\r\n\t\t      [<span style=\"color:#a31515\">&quot;link&quot;</span>, <span style=\"color:#a31515\">&quot;unlink&quot;</span>]\r\n\t\t    ]\r\n\t}\r\n   );\r\n}\r\n</pre>\r\n</div>\r\n</p>",
+    "PostedDate": "2010-09-17T05:16:18.24-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "582208",
+    "ThreadId": "227603",
+    "Html": "<p>I had the same problem and it was due to having some other scripts included that caused it. With me it was some Dijit/Dojo Scripts.</p>\r\n<p>Take your html output, put it in a testfile and start ripping everything out of it poart by part and see when it starts to work. That's how i found the solution.</p>",
+    "PostedDate": "2011-03-17T10:12:39.523-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

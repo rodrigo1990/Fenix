@@ -1,0 +1,75 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "jHtmlArea",
+      "DisplayName": "jHtmlArea"
+    },
+    "ClosedComment": "DONE&#58;Fixed issue with Text not getting Posted when Page is Submitted. Also, fixed an issue with the control that causes it to not work with an ASP.NET Postback.",
+    "ClosedDate": "2009-08-25T13:31:43.223-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "This control is awesome. I found that just entering some text in the control (without applying any html transformation)  and posting the form will post an empty string to the server.\nIt seems that that the textarea is populated only if some transformation is applied to the content.",
+    "LastUpdatedDate": "2013-05-16T04:59:42.17-07:00",
+    "PlannedForRelease": "0.7.0",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "High",
+      "Severity": 150,
+      "Id": 3
+    },
+    "ProjectName": "jhtmlarea",
+    "ReportedDate": "2009-08-14T10:06:31.14-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "TextArea is populated only if you apply some transformation",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 8502
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "I noticed this bug aswell. Reason is the keyup event never triggers, only the click event works.\r\n\r\n$(this.editor.body).click(function() { t.updateTextArea(); });    //works\r\n$(this.editor.body).keyup(function() { t.updateTextArea(); });  //never triggers\r\n\r\nA solution would be to updateTextArea when the form submits.\r\n",
+      "PostedDate": "2009-08-19T05:13:07.143-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2009-08-19T05:13:38.517-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "quick fix\r\n\r\nIn attachEditorEvents function add: $(this.textarea).closest(\"form\").bind(\"submit\", function() { t.updateTextArea(); });",
+      "PostedDate": "2009-08-19T05:30:44.157-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2009-08-25T13:31:16.423-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2009-08-25T13:31:43.223-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-21T17:58:49.967-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-16T04:59:42.17-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "838992",
+    "ThreadId": "356571",
+    "Html": "\r\n<p>Hi,</p>\r\n<p>I have enough buttons and groupings that the toolbar will wrap. &nbsp;When I hover over the topmost toolbar, the lower (wrapped) toolbar groupings will automatically shift to the right and back. &nbsp;</p>\r\n<p>Is there a way to prevent this behavior?</p>\r\n<p>This occurs in the latest&nbsp;versions&nbsp;of Chrome, IE, FF, and Safari. &nbsp;Also, this may be connected to another discussion I posted here where the button size changes on hover, which causes the toobar to change sizes, and the content below to &quot;bounce&quot;.</p>\r\n",
+    "PostedDate": "2012-05-21T09:58:48.233-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "839038",
+    "ThreadId": "356571",
+    "Html": "<p>&nbsp;</p>\r\n<p>I figured this out. &nbsp;</p>\r\n<p>The issue was the ul li:hover style was creating a border, which did not exist in ul li. &nbsp;This caused the css engine to get confused and throw the ul around a bit.</p>\r\n<p>&nbsp; &nbsp;<span style=\"color: #008080;\">div.jHtmlArea .ToolBar ul li {... no border...&nbsp;<em>etc</em>...)</span></p>\r\n<p>&nbsp; &nbsp;<span style=\"color: #008080;\">div.jHtmlArea .ToolBar ul li:hover { border: solid 1px #ccc;...&nbsp;<em>etc</em>...}</span></p>\r\n<p>The fix was to add a transparent border to the ul li. &nbsp;This 'reserves' the space and does not&nbsp;adversely&nbsp;impact the design. &nbsp;</p>\r\n<p>&nbsp;&nbsp;<span style=\"color: #008080;\">&nbsp;div.jHtmlArea .ToolBar ul li {<span style=\"color: #800000;\">border: solid 1px transparent;</span>...&nbsp;<em>etc</em>...)</span></p>\r\n<p>I tested the solution in Chrome v19, IE v9, FF v11, and Safari v5.1.7 and it behaves the same across all of them.</p>",
+    "PostedDate": "2012-05-21T11:36:54.823-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

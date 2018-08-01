@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "The editor relies on the web browser for generating the html markup. Any html markup compliance issues are related to the web browser you are using. This is nothing that I can really fix.",
+    "ClosedDate": "2013-07-31T18:59:55.74-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "When using a break like <br/> or image like <img src=\"\" alt=\"\" /> the editor keeps removing the slash. This is in conflict when i check my site for markup at w3c. I think this shouldnt happen.",
+    "LastUpdatedDate": "2013-07-31T18:59:55.74-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "jhtmlarea",
+    "ReportedDate": "2012-08-17T03:18:26.52-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Html markup closing tags",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 15503
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

@@ -1,0 +1,71 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Hello, I've writen a workaround for fixing this.\n \nAt the bottom of the init function:\n \n$(this.iframe.get(0).contentWindow.document).keyup(function(){\n                    jHtmlArea(elem).updateTextArea();\n                });\n \nPs: I love this plugin. It's extremely easy to extend and understand code.",
+    "LastUpdatedDate": "2013-02-21T17:58:48.087-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "jhtmlarea",
+    "ReportedDate": "2010-03-18T05:23:58.477-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "The hidden textarea does not update if you dont blur and focus jHtmlArea again",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 3,
+    "Id": 10458
+  },
+  "FileAttachments": [
+    {
+      "FileId": 2783,
+      "FileName": "jHtmlArea-0.7.0.js",
+      "DownloadUrl": ".\\2783"
+    }
+  ],
+  "Comments": [
+    {
+      "Message": "In addition, I've made the inner editor to have dinamic width (depending on the textarea width), setting % widths. See init function in the attachment.",
+      "PostedDate": "2010-03-18T05:26:14.657-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2010-03-25T09:08:54.507-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "This is the same issue as #8969 - The fix presented in the comments there also works w/ less effort on the browsers part.  An onSubmit function call instead of every keypress.  Either way, this needs fixed.  Thanks.",
+      "PostedDate": "2010-03-25T09:09:32.39-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2011-06-10T14:30:18.87-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-21T17:58:48.087-08:00",
+      "Id": -2147483648
+    }
+  ]
+}

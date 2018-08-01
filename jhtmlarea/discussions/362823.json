@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "860380",
+    "ThreadId": "362823",
+    "Html": "\r\n<p>Hey,</p>\r\n<p>Basically what I want to achieve is to have the total height of the jHtmlArea to be the same as the content inside of the rendered iframe.</p>\r\n<p>I tried playing around with</p>\r\n<pre>loaded: function () {\r\n\t//Change iframe here\r\n},</pre>\r\n<p>But I couldn't latch onto the iframe to grabs the contents height.</p>\r\n<p>Any suggestions?</p>\r\n",
+    "PostedDate": "2012-07-11T09:10:43.627-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

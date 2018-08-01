@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "857422",
+    "ThreadId": "361967",
+    "Html": "\r\n<p>Hello,<br>\r\nso everything is the title,</p>\r\n<p>I have tested all this without success :</p>\r\n<p>$(&quot;#Mytextarea&quot;).htmlarea('updateHtmlArea'); (strange behaviour, works burt not every time)</p>\r\n<p>$(&quot;#Mytextarea&quot;).val('');&nbsp;</p>\r\n<p>$(&quot;#Mytextarea&quot;).text('').val('');&nbsp;</p>\r\n<p>Any help ?</p>\r\n",
+    "PostedDate": "2012-07-04T08:16:06.327-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "859557",
+    "ThreadId": "361967",
+    "Html": "<p>Try This , its working.</p>\r\n<p>$(\"#Mytextarea\").val('');</p>\r\n<p>$(\"#Mytextarea\").htmlarea('updateHtmlArea');</p>",
+    "PostedDate": "2012-07-10T02:54:47.99-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "859632",
+    "ThreadId": "361967",
+    "Html": "<p>Hello,&nbsp;</p>\r\n<p>thank you, if anybdy have the same problem &nbsp;I had to use this to empty the textarea (the other option did not worked):</p>\r\n<p>$(\"#Mytextarea\").val('').htmlarea('updateHtmlArea');</p>\r\n<p>Regards</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2012-07-10T05:30:25.893-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

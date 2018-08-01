@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Have a requirement where I need to convert a selected text into arial 10 using a custom button so need to use getSelectedHTML() but this method is returning underfined. \ntoolbar:[\n                    [\"\"html\"\"],\n                    [\"\"bold\"\", \"\"underline\"\"],\n                    [\"\"orderedlist\"\", \"\"unorderedlist\"\"],\n                    [\"\"link\"\", \"\"unlink\"\"],\n                    [\"\"cut\"\", \"\"copy\"\", \"\"paste\"\"],\n                    [\"\"forecolor\"\"],\n                    [{\n                        css: \"\"font_arial\"\",\n                        text: \"\"To Arial 10pt\"\",\n                        action: function (btn) {\n                            var selectedText = this.getSelection();\n                            var selectedTextHtml = this.getSelectedHTML();\n                            alert(selectedTextHtml);\n                            formattedSelectedText = \"\"<span style='font-family:Arial;font-size:10pt;'>\"\" + selectedText + \"\"</span>\"\";                                                                                    \n                            var wholeText = $('ididid').htmlarea('html');\n                            //alert(wholeText);\n                            var finalText = wholeText.replace(this.getSelection(), formattedSelectedText);\n                            //paste the final text in text area\n                            $('ididid').htmlarea('html', finalText);\n                        }\n                    }]\n                ]\n            }\";",
+    "LastUpdatedDate": "2016-04-23T19:56:01.053-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "jhtmlarea",
+    "ReportedDate": "2016-04-23T19:55:12.193-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "this.getSelectedHTML(); method is returning undefined. Any clue? Using it to create a custom button",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 17648
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Please help",
+      "PostedDate": "2016-04-23T19:56:01.053-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

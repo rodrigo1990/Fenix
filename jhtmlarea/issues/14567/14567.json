@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Hi All,\nI want to disable something on keyup or keypress event\nI tried following code but not working\n \njQuery(\"#textarea\").htmlarea({\nloaded: function(){\njQuery(\"#textarea\").keyup(function(event){ \nalert(\"hi\");\n});\n}\n});\n \nany suggestion really appreciate ...",
+    "LastUpdatedDate": "2013-08-01T05:45:55.48-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "jhtmlarea",
+    "ReportedDate": "2011-12-20T03:38:04.793-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "keyup or keypress Event is not working in jHtmlArea",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 14567
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "That's a pretty old thread, yet if anyone stumbles upon the same issue I find that it works like that:\r\n\r\n$('#textarea').htmlarea({\n     loaded: function() {\n                  // 'this' refers to the htmlarea object\n                  $(this.editor.body).keyup(function(event) { \n                            alert(event.which); // alerts keycode\n                  });\n           }\n       });",
+      "PostedDate": "2013-08-01T05:45:55.48-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

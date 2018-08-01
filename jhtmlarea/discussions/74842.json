@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "256149",
+    "ThreadId": "74842",
+    "Html": "<p>I'm a user of this control and I fix two bug that I found:</p>\r\n<p>First - Edit content inserts &lt;div&gt; element instead a &lt;p&gt; for paragraphs, the solution. In the</p>\r\n<p>&nbsp;</p>\r\n<div style=\"color:Black;background-color:White\">\r\n<pre>init: <span style=\"color:Blue\">function</span>(elem, options)\r\n</pre>\r\n</div>\r\n<p>after of&nbsp;</p>\r\n<div style=\"color:Black;background-color:White\">\r\n<pre>priv.initEditor.call(<span style=\"color:Blue\">this</span>, opts)\r\n</pre>\r\n</div>\r\n<p>&nbsp;add this code:</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p><span style=\"color:#0000ff\">\r\n<div style=\"color:Black;background-color:White\">\r\n<pre><span style=\"color:Blue\">var</span> htmlValue = jQuery.trim(<span style=\"color:Blue\">this</span>.iframe[0].contentDocument.body.innerHTML);\r\n<span style=\"color:Blue\">if</span> (htmlValue.length == 0) { <span style=\"color:Blue\">this</span>.iframe[0].contentDocument.body.innerHTML = <span style=\"color:#A31515\">&quot;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&quot;</span>; }\r\n</pre>\r\n</div>\r\n</span></p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;return $(&quot;&lt;p&gt;&quot; + this.editor.body.innerHTML + &quot;&lt;/p&gt;&quot;).text();</p>\r\n<div id=\"_mcePaste\" style=\"left:-10000px;top:0px;width:1px;height:1px;overflow-x:hidden;overflow-y:hidden\">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;}</div>\r\n<p>Second - toString function don't returns text plain content, using jquery result function:</p>\r\n<p>&nbsp;</p>\r\n<div style=\"color:Black;background-color:White\">\r\n<pre>toString: <span style=\"color:Blue\">function</span>() {\r\n\t<span style=\"color:Blue\">return</span> $(<span style=\"color:#A31515\">&quot;&lt;p&gt;&quot;</span> + <span style=\"color:Blue\">this</span>.editor.body.innerHTML + <span style=\"color:#A31515\">&quot;&lt;/p&gt;&quot;</span>).text();\r\n}\r\n</pre>\r\n</div>\r\n<p>I hope it can be usefulllll.</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2009-11-11T15:20:39.393-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

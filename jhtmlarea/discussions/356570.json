@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "838985",
+    "ThreadId": "356570",
+    "Html": "\r\n<p>When I hover the toolbar it expands by a few pixels, which causes the textarea below to &quot;bounce&quot;. &nbsp;Can anyone point me to the&nbsp;relevant&nbsp;element in the css? &nbsp;I think adding a few pixels to make the default size of the toolbar taller will\r\n eliminate the bounce.</p>\r\n",
+    "PostedDate": "2012-05-21T09:48:36.057-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "839036",
+    "ThreadId": "356570",
+    "Html": "<p>I figured this out. &nbsp;</p>\r\n<p>The issue was the ul li:hover style was creating a border, which did not exist in ul li</p>\r\n<p>&nbsp; &nbsp;<span style=\"color: #008080;\">div.jHtmlArea .ToolBar ul li {... no border... <em>etc</em>...)</span></p>\r\n<p>&nbsp; &nbsp;<span style=\"color: #008080;\">div.jHtmlArea .ToolBar ul li:hover { border: solid 1px #ccc;... <em>etc</em>...}</span></p>\r\n<p>The fix was to add a transparent border to the ul li. &nbsp;This 'reserves' the space and does not&nbsp;adversely&nbsp;impact the design. &nbsp;</p>\r\n<p>&nbsp; <span style=\"color: #008080;\">&nbsp;div.jHtmlArea .ToolBar ul li {<span style=\"color: #800000;\">border: solid 1px transparent;</span>... <em>etc</em>...)</span></p>\r\n<p>I tested the solution in Chrome v19, IE v9, FF v11, and Safari v5.1.7 and it behaves the same across all of them.</p>",
+    "PostedDate": "2012-05-21T11:35:15.167-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

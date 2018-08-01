@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "899410",
+    "ThreadId": "391647",
+    "Html": "\r\n<p>At first: thank you for this very good program.</p>\r\n<p>My question: I have tried to change the colors and therefore I have edited the file jHtmlArea.Editor.css, but nothing happend. I have used the example files, which are included in the download:</p>\r\n<p><em>jHtmlArea-0.7.5.ExamplesPlusSource\\Test.html:</em></p>\r\n<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $(function() {&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\r\n<br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $(&quot;#Textarea1&quot;).htmlarea({<br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; css: &quot;jHtmlArea.Editor.css&quot;, // Specify a specific CSS file to use for the Editor<br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; });</p>\r\n<p>&nbsp;</p>\r\n<p><em>jHtmlArea-0.7.5.ExamplesPlusSource\\style\\jHtmlArea.Editor.css:</em></p>\r\n<p>body <br>\r\n{<br>\r\n&nbsp;&nbsp;&nbsp; background: #444;<br>\r\n&nbsp;&nbsp;&nbsp; color: red;<br>\r\n&nbsp;&nbsp;&nbsp; margin: 2px;<br>\r\n}</p>\r\n<p>&nbsp;</p>\r\n<p>By the way, I think it would be good to have a small table in the documenatation which files were needed for a minimal installation and where to put them.</p>\r\n<p>Regards, Martin</p>\r\n",
+    "PostedDate": "2012-08-14T23:15:23.45-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

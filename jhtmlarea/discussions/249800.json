@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "580819",
+    "ThreadId": "249800",
+    "Html": "\r\n<p>Hi,</p>\r\n<p>i am trying to integrate jHtmlArea to a System that has a media library. Also i need the option to include &quot;captions&quot; and &quot;alt&quot; tags.</p>\r\n<p>So i want to change the behaviour of editing images in jHtmlArea. I would like to take away the Event Listener on the img tags and add my own so hovering the images will show buttons that i wil lattatch to functions/dialog boxes.</p>\r\n<p>How can i access those event listeners and the behaviour?</p>\r\n",
+    "PostedDate": "2011-03-15T09:34:25.62-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

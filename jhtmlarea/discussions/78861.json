@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "270001",
+    "ThreadId": "78861",
+    "Html": "<p>Hi,</p>\r\n<p>I would like to attach an event to the keypress event for the HTML editor so that I can set a shortcut key.&nbsp; I cant seem to figure out how to access the actual element that is being used.&nbsp;</p>\r\n<p>I can see that the the text is actually being placed in the body section of an iframe.</p>\r\n<p>I tried the following (and about a hundred other alternatives) and am stuck</p>\r\n<p>$(&quot;.jHtmlArea iframe&quot;).contents().find('body').keypress( function(e)<br>{</p>\r\n<p>// do something</p>\r\n<p>}</p>\r\n<p>Any help would be appreciated.</p>\r\n<p>&nbsp;</p>\r\n<p>Mark</p>",
+    "PostedDate": "2009-12-22T11:18:05.297-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "283411",
+    "ThreadId": "78861",
+    "Html": "<p>I would also be quite interested in this. Please let me know if you have any luck.</p>",
+    "PostedDate": "2010-01-29T10:54:07.237-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "426239",
+    "ThreadId": "78861",
+    "Html": "<p>&nbsp;</p>\r\n<div id=\"_mcePaste\" style=\"left:-10000px;top:0px;width:1px;height:1px;overflow-x:hidden;overflow-y:hidden\">hi,</div>\r\n<div id=\"_mcePaste\" style=\"left:-10000px;top:0px;width:1px;height:1px;overflow-x:hidden;overflow-y:hidden\">I thik this works very well.</div>\r\n<div id=\"_mcePaste\" style=\"left:-10000px;top:0px;width:1px;height:1px;overflow-x:hidden;overflow-y:hidden\">$('iframe').contents().keypress(function(){</div>\r\n<div id=\"_mcePaste\" style=\"left:-10000px;top:0px;width:1px;height:1px;overflow-x:hidden;overflow-y:hidden\"><span style=\"white-space:pre\"> </span>// do something</div>\r\n<div id=\"_mcePaste\" style=\"left:-10000px;top:0px;width:1px;height:1px;overflow-x:hidden;overflow-y:hidden\">})</div>\r\n<p>\r\n<p>hi,</p>\r\n<p>I thik this works very well.</p>\r\n<p>$('iframe').contents().keypress(function(){</p>\r\n<p><span style=\"white-space:pre\"> </span>// do something</p>\r\n<p>})</p>\r\n</p>\r\n<p>&nbsp;</p>\r\n<p>Ueda</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2010-03-31T17:59:37.657-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

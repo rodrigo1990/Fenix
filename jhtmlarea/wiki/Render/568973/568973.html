@@ -1,0 +1,10 @@
+<div class="wikidoc"><h1>jHtmlArea Editor &quot;Load&quot; Event Callback</h1>jHtmlArea exposes the ability to set a callback function to allow for notification when the editor has finished loading within the page. This can be done by setting the callback function using the &quot;<span class="codeInline">loaded</span>&quot; option when creating the editor.<br /><div style="color:Black;background-color:White;"><pre>
+$(<span style="color:#A31515;">&#39;textarea&#39;</span>).htmlarea({
+    loaded: <span style="color:Blue;">function</span> () {
+        <span style="color:Green;">// &#39;this&#39; is equal to the jHtmlArea object</span>
+
+        <span style="color:Green;">// peform some action here,</span>
+        <span style="color:Green;">// now that the editor has been loaded / created</span>
+    }
+});
+</pre></div></div><div class="ClearBoth"></div>

@@ -1,0 +1,66 @@
+[
+  {
+    "Id": "258589",
+    "ThreadId": "75577",
+    "Html": "<p>How do I add a button in the toolbar&nbsp;for selection of font-family?</p>\r\n<p>BR,<br>Pasi</p>",
+    "PostedDate": "2009-11-19T02:35:17.617-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "831953",
+    "ThreadId": "75577",
+    "Html": "<p>I am also need to know how to do this. Thanks</p>",
+    "PostedDate": "2012-05-03T17:31:31.723-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "842919",
+    "ThreadId": "75577",
+    "Html": "<p>I've just created a plugin for fonts selection. Will try to post it shortly</p>\r\n<p>&nbsp;</p>\r\n<p>Simon</p>",
+    "PostedDate": "2012-05-30T23:02:47.933-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "923690",
+    "ThreadId": "75577",
+    "Html": "<p>Simon, did you ever get around to writing that plugin?</p>",
+    "PostedDate": "2012-10-08T14:23:15.013-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "924149",
+    "ThreadId": "75577",
+    "Html": "\r\n<p>&nbsp;</p>\r\n<p>Hi Mikemill,</p>\r\n<p>&nbsp;</p>\r\n<p>Yes I uploaded it but its still under review... for months now.. :/</p>\r\n<p>&nbsp;</p>\r\n<p>Under Sourcecode / Patches</p>\r\n<p>enjoy</p>\r\n<p>Simon</p>\r\n",
+    "PostedDate": "2012-10-09T10:34:27.817-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "956395",
+    "ThreadId": "75577",
+    "Html": "\r\n<p>first off thanks for jhtmlarea!</p>\r\n<p>&nbsp;</p>\r\n<p>I used the patch and found a little issue. Was able to fix it for myself. I figured since I was using jhtmlarea for free I should post it here. I don't claim to know what I am doing, just a hack.</p>\r\n<p>When i used the patch the and clicked on font family button it worked but the font names went to the right and out of the drop down. Guessing that my own css was interfering with the patch's I opened jHtmlArea.FontPickerMenu.css and found this line</p>\r\n<p>div.jHtmlAreaFontPickerMenu div {float: left; margin: 2px; width: 112px; height: 14px;}</p>\r\n<p>Changed it to this</p>\r\n<p>div.jHtmlAreaFontPickerMenu div {float: left; margin: 2px; width: 112px; height: 14px; text-align: left;}</p>\r\n<p>iow, added text-align: left;</p>\r\n<p>No biggie but figured someone who knows even less than me might try the patch and get a headache trying to change it.</p>\r\n<p>thanks again!</p>\r\n",
+    "PostedDate": "2012-12-14T23:26:36.25-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "956526",
+    "ThreadId": "75577",
+    "Html": "\r\n<p>Hi DrNotSure</p>\r\n<p>Thanks for posting the font patch change. I didn't notice that. I'll check/update the patch and post it when I get a moment.</p>\r\n<p>Regards,</p>\r\n<p>Simon</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n",
+    "PostedDate": "2012-12-15T14:02:39.763-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "996074",
+    "ThreadId": "75577",
+    "Html": "hi, i have 2 questions<br />\n<ol>\n<li>do we use Menu for display font names, instead of single list of font names.</li>\n<li>\ndid any one uses this.fontfamily(&quot;arial&quot;) method to change the font, i am\r<br />\ntrying to use it in customise toolbar button<br />\n</li>\n</ol>\nthanks<br />\n",
+    "PostedDate": "2013-02-04T05:24:11.89-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

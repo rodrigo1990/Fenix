@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "I'm trying it with a fluid html layout and the tool bar doesn't show properly, as well when resizing the browser the editor doesn't resize.\n \n<div><textarea id=\"editContent\" cols=\"50\" rows=\"15\" style=\"width: 100%; height: 400px\" name=\"content\">{{ page.content|escape }}</textarea></div>",
+    "LastUpdatedDate": "2013-02-21T17:58:49.82-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "jhtmlarea",
+    "ReportedDate": "2009-08-26T04:55:08.697-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Auto resize on fluid layouts and toolbar rearrangement",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 4,
+    "Id": 8627
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

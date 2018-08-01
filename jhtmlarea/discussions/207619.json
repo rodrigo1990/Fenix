@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "424881",
+    "ThreadId": "207619",
+    "Html": "i'm not sure if there is already an easy way to do this but if not would be great to have external facing functions e.g.\r\n\r\n$('#editor').htmlarea();\r\n$('#editor').getHtmlToString(); - returns text from editor",
+    "PostedDate": "2010-03-29T05:15:20.063-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

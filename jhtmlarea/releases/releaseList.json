@@ -1,0 +1,94 @@
+[
+  {
+    "Id": "0",
+    "Name": "0.7.5",
+    "DevelopmentStatus": "Stable",
+    "Description": "* Fixed \"html\" method\n* Fixed jQuery UI Dialog Example",
+    "ReleasedDatge": "0001-01-01T00:00:00",
+    "ModifiedDate": "2012-08-03T21:04:54.227-07:00",
+    "Files": [
+      {
+        "Id": "24de2629-6b48-4efc-86a0-f2b847c51a2c",
+        "FileName": "jHtmlArea-0.7.5.ExamplePlusSource.zip",
+        "Url": "./0/24de2629-6b48-4efc-86a0-f2b847c51a2c",
+        "Type": "Source Code",
+        "UploadDate": "2012-08-03T21:04:26.977-07:00"
+      }
+    ]
+  },
+  {
+    "Id": "1",
+    "Name": "0.7.0",
+    "DevelopmentStatus": "Stable",
+    "Description": "* Fixed ColorPickerMenu positioning when placed within a \"position: relative\"\ndiv element.\n* Fixed ColorPickerMenu to auto-hide after a short delay (1 second) once the\nuser moves the mouse off the menu.\n* Fixed Form Submit issue that caused the text to not be posted. Also fixed a\nrelated issue with ASP.NET Postbacks.\n* Added jHtmlArea.p method and \"paragraph\" functionality + toolbar button\nThis allows the user to change the formatting from <H1>, <H2>, etc. to <P>\n* Added an \"Automatic\" color option to the ColorPickerMenu.",
+    "ReleasedDatge": "0001-01-01T00:00:00",
+    "ModifiedDate": "2012-08-03T20:26:40.687-07:00",
+    "Files": [
+      {
+        "Id": "99e902cc-92f9-49e5-bd66-51819ddadef7",
+        "FileName": "jHtmlArea-0.7.0.ExamplePlusSource.zip",
+        "Url": "./1/99e902cc-92f9-49e5-bd66-51819ddadef7",
+        "Type": "Source Code",
+        "UploadDate": "2009-10-28T06:59:56.197-07:00"
+      }
+    ]
+  },
+  {
+    "Id": "2",
+    "Name": "0.6.0",
+    "DevelopmentStatus": "Beta",
+    "Description": "This is the second release of jHtmlArea, and this release offers quite a few improvements over the previous release. This is still a Beta release.\n\nThe minified script alone is 8.7kb, and with css and image files it's a total of 22kb. If you include the jHtmlAreaColorPickerMenu extension for the \"fontcolor\" toolbar button, then everything comes to a total of 24.5kb. The overall size of the project is still pretty small, and the goal is to keep it this way.\n\n*CHANGE LOG*\n\n- Hide All Toolbar buttons except the \"html\" button when entering\nHTML Source view (via clicking \"html\" button or executing\njHtmlArea.showHTMLView). When toggling view back to the WYSIWYG editor\nall other buttons will then be shown again.\n\n- Added jHtmlArea.dispose method - Allows you to remove the WYSIWYG\neditor, and go back to having a plain TextArea. Beware, there is a\nmemory leak when using this method; it's not too bad, but you want\nto call this as few a number of times if you can. The memory leak\nis due to the way the browsers handle removing DOM Elements.\n\n- Added Indent and Outdent functionality - This includes toolbar buttons\nand jHtmlArea.indent and jHtmlArea.outdent buttons.\n\n- Added justifyLeft, justifyCenter, justifyRight functionality and toolbar\nbuttons.\n\n- Added insertHorizontalRule functionality and toolbar button. This adds a\n<hr> tag to the currently selected area.\n\n- Added an \"alias\" method for jHtmlArea.execCommand named \"ec\" to help reduce the\nfile size of the script.\n\n- Added increaseFontSize and decreaseFontSize functionality and toolbar buttons.\nThe increaseFontSize and decreaseFontSize doesn't currently work in Safari.\n\n- Added forecolor functionality - Changes a font color for the selection or at the\ninsertion point. Requires a color value string to be passed in as a value argument.\n\n- Fixed bug in jHtmlArea.toString method\n\n- Added jHtmlArea.queryCommandValue method and it's alias \"jHtmlArea.qc\"\n\n- Added the jHtmlAreaColorPickerMenu plugin/extension that resides within the\n\"jHtmlAreaColorPickerMenu.js\" file. This file includes a somewhat generic color\npicker menu that can be used for any purpose, plus it includes the code to wire\nup and override the \"stock\" jHtmlColor.forecolor functionality and inject the new\nColor Picker Menu functionality in it's place when you click on the \"forecolor\"\ntoolbar button.\n\n- Changed the \"execCommand\" and \"ec\" second parameter to default to \"false\" if not\nspecified, and third parameter to default to \"null\" if not specified. This helps to\nreduce the overall file size of the script.\n\n- Added support for Toolbar Button Grouping, now with the additional buttons included\nin this release, or even when any custom buttons are used, they will be able to display\nnicely by \"auto-wrapping\" to the next line.\n\n- Added a gradient background to the Toolbar Button Groups, with a slight reverse\ngradient on the Buttons when the mouse is hovered over.",
+    "ReleasedDatge": "0001-01-01T00:00:00",
+    "ModifiedDate": "2009-07-24T15:21:21.54-07:00",
+    "Files": [
+      {
+        "Id": "a0295f27-4ad6-4bc0-a0ab-720734ce7fa8",
+        "FileName": "jHtmlArea-0.6.0.ExamplePlusSource.zip",
+        "Url": "./2/a0295f27-4ad6-4bc0-a0ab-720734ce7fa8",
+        "Type": "Application",
+        "UploadDate": "2009-07-24T15:21:21.443-07:00"
+      }
+    ]
+  },
+  {
+    "Id": "3",
+    "Name": "0.5.0",
+    "DevelopmentStatus": "Beta",
+    "Description": "This is the intial release of jHtmlArea.\n\nA simple, light weight, extensible WYSIWYG HTML Editor built on top of jQuery. This component allows you to easily display a WYSIWYG HTML Editor in place of any TextArea DOM Elements on the page. The minified script alone is 7kb, and with css and image files it's a total of 15kb.\n\nThis release also includes Visual Studio JavaScript Intellisense Support.",
+    "ReleasedDatge": "0001-01-01T00:00:00",
+    "ModifiedDate": "2009-07-21T16:42:53.98-07:00",
+    "Files": [
+      {
+        "Id": "f3f94394-c605-4959-b6c1-befe5a9db6e1",
+        "FileName": "jHtmlArea-0.5.0_FullSourceWithExample.zip",
+        "Url": "./3/f3f94394-c605-4959-b6c1-befe5a9db6e1",
+        "Type": "Source Code",
+        "UploadDate": "2009-07-21T16:36:18.697-07:00"
+      },
+      {
+        "Id": "1ef841dd-3e10-4037-a345-86706ef26c61",
+        "FileName": "jHtmlArea-0.5.0_MinifiedOnly.zip",
+        "Url": "./3/1ef841dd-3e10-4037-a345-86706ef26c61",
+        "Type": "Source Code",
+        "UploadDate": "2009-07-21T16:36:18.71-07:00"
+      }
+    ]
+  },
+  {
+    "Id": "4",
+    "Name": "0.8.0",
+    "DevelopmentStatus": "Stable",
+    "Description": "* Fix modern browser support (IE9, IE10, IE11, Firefox, Chrome) via js and css fixes\n* Fix jQuery 1.9+ support\n* Fixed Issue 15635: html() function doesn't set blank value",
+    "ReleasedDatge": "0001-01-01T00:00:00",
+    "ModifiedDate": "2014-04-26T17:55:41.12-07:00",
+    "Files": [
+      {
+        "Id": "cea7c8c5-b366-42af-8c63-ca1a4a71096e",
+        "FileName": "jHtmlArea-0.8.0.ExamplePlusSource.zip",
+        "Url": "./4/cea7c8c5-b366-42af-8c63-ca1a4a71096e",
+        "Type": "Source Code",
+        "UploadDate": "2014-04-26T17:55:41.027-07:00"
+      }
+    ]
+  }
+]

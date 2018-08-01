@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "1054314",
+    "ThreadId": "446409",
+    "Html": "Short question: Is there a onchange event I can bind to?\r<br />\n<br />\nKoos<br />\n",
+    "PostedDate": "2013-06-08T03:01:25.46-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1055747",
+    "ThreadId": "446409",
+    "Html": "This kind of fixes it, but maybe it is not the best solution<br />\n<pre><code>/**\n         * Hotfix for jHtml Area not telling us something has changed\n         */\n        jHtmlArea.prototype.updateTextArea = function() {\n          this.textarea.val(this.toHtmlString());\n          this.textarea.trigger('change');\n        }</code></pre>\n\n",
+    "PostedDate": "2013-06-12T03:10:17.897-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

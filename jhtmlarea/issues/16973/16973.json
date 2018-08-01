@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Hi...\nI'm korean and do not write english well. please understand me\nfirst, I insert image in htmlarea and next i write any word.\nWhen I write wrong word, delete it use backspace key and delete key.\nI want delete wrong word, but delete wrong word and image\nthe more funny situation is that appear only internet explorer 8\nI being used jqeury version : 1.7.2\nI being used jHtmlarea version : 0.7.0\nwhy delete image together??\n\n혹시 한국 사람들이 보실까봐 한국말로도 합니다.\n영어를 잘못해서 엉터리 영어가 되었네요.\n내용은 제가 htmlarea로 된 곳에 이미지를 넣고 글자를 적은 후 오타를 지우기 위해 backspace key 나 delete key를 누르면 오타만 지워져야 되는데 이미지도 지워집니다. 웃긴건 이 상황에 Internet Explorer 8 에서만 나타난다는 겁니다.\n현재 사용중인 jQeury 버전은 1.7.2\n현재 사용중인 jHtmlarea 버전은 0.7.0 입니다.\n왜 이미지도 함께 삭제 될까요 ?",
+    "LastUpdatedDate": "2014-09-12T03:05:55.11-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "jhtmlarea",
+    "ReportedDate": "2014-09-12T03:05:55.11-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Unwanted Image delete when i touching backspace in IE8",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 16973
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

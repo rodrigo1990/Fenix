@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "639068",
+    "ThreadId": "264324",
+    "Html": "\r\n<p>Is it possible to retain script tags in the jHtmlArea rich text editor? I would like to use the editor within my content management system, but I need to be able to embed videos using script tags. Currently the jHtmlArea rich text editor strips out my script\r\n tags. Is there a configuration setting I could implement to override this default behavior?</p>\r\n",
+    "PostedDate": "2011-07-07T14:36:14.743-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "639538",
+    "ThreadId": "264324",
+    "Html": "<p>I suppose I should clarify. If I manually type a script tag into the jHtmlArea rich text editor, the script tag saves just fine. The problem occurs when I re-open that text in that same editor. The jHtmlArea rich text editor won't display the script tags, and when I submit the form again, the script tags are effectively stripped out of the result because they weren't displayed. I understand that some other editors have settings you can specify to keep special tags from being stripped out of the text area in this manner. Does the jHtmlArea have any such options?</p>",
+    "PostedDate": "2011-07-08T09:30:26.667-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

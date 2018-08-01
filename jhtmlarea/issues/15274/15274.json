@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Line 380 of jHtmlArea-0.7.0.js causes issues in MVC3 \n \n$('form').submit(function() { t.toggleHTMLView(); t.toggleHTMLView(); });\n \nI have an application with multiple forms on different tabs. When posting MVC3 AJAX forms on other tabs, this line effectively disables jHmtlArea textareas.\n \nCommenting out the line or removing it fixes the issue. I use an MVC3 AJAX call to post the form containing jHmtlArea textareas - this seems to work fine.",
+    "LastUpdatedDate": "2013-02-21T17:58:41.323-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "jhtmlarea",
+    "ReportedDate": "2012-06-11T04:12:46.503-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Form Submit Fix on Line 380 Causes Issues in MVC3",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 15274
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "456945",
+    "ThreadId": "216439",
+    "Html": "<p>hello , how d<span style=\"color:#000000\">o i add </span>a <span style=\"color:#ff00ff\">font or color </span><span style=\"color:#ff0000\">dropdown </span>in jHtmlArea? really appreciate if you have sample code to share. Thanks!</p>",
+    "PostedDate": "2010-06-17T14:16:10.103-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "464020",
+    "ThreadId": "216439",
+    "Html": "<p>&nbsp;&nbsp;&nbsp; $(&quot;#wysiwyg&quot;).htmlarea({<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; toolbar: [&quot;html&quot;, &quot;|&quot;,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;forecolor&quot;,&nbsp; // &lt;-- Add the &quot;forecolor&quot; Toolbar Button<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;|&quot;, &quot;bold&quot;, &quot;italic&quot;, &quot;underline&quot;, &quot;strikethrough&quot;, &quot;|&quot;, &quot;h1&quot;, &quot;h2&quot;, &quot;h3&quot;, &quot;upsize&quot;, &quot;|&quot;, &quot;link&quot;, &quot;unlink&quot;] // Overrides/Specifies the Toolbar buttons to show<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; });</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2010-07-06T18:29:57.667-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

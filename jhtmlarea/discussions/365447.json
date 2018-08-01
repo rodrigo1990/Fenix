@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "863712",
+    "ThreadId": "365447",
+    "Html": "\r\n<p>Hello, &#65279;</p>\r\n<p>&#65279;&#65279;Increase/Deacrease font size buttons do not work in Chrome.</p>\r\n<p>Someone who already faced this issue, please help!!!</p>\r\n<p>&nbsp;</p>\r\n<p>Thanks.</p>\r\n<p>&#65279;&#65279;LukeSkyWalker2012</p>\r\n",
+    "PostedDate": "2012-07-13T01:01:48.8-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "912446",
+    "ThreadId": "365447",
+    "Html": "<p>Hey man,</p>\r\n<p>Looks like you want to edit increaseFontSize</p>\r\n<p>Approximately line 209 in the js file.</p>\r\n<p>\r\n<pre>increaseFontSize: function () {\r\n\tvar CurrentFontSize = parseInt(this.qc(\"fontSize\"));\r\n\tif ($.browser.msie) {\r\n\t\tthis.ec(\"fontSize\", false, CurrentFontSize + 1);\r\n\t} else if ($.browser.safari) {\r\n\t\tthis.getRange().surroundContents($(this.iframe[0].contentWindow.document.createElement(\"span\")).css(\"font-size\", \"larger\")[0]);\r\n\t} else if (($.browser.chrome)) {\r\n\t\tthis.ec(\"fontSize\", false, CurrentFontSize + 1);\r\n\t} else {\r\n\t\tthis.ec(\"increaseFontSize\", false, \"big\");\r\n\t}</pre>\r\n</p>\r\n<p>Two items worth noting here:</p>\r\n<p>1) Chrome was not being targeted.</p>\r\n<p>2)&nbsp;this.qc(\"fontSize\") + 1 fails because it thinks it is a string. &nbsp;Make sure to convert to integer and then it works.</p>\r\n<p>You may need to do the same on the decreaseFontSize too.</p>",
+    "PostedDate": "2012-09-13T17:52:56.827-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

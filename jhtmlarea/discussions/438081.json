@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "1021448",
+    "ThreadId": "438081",
+    "Html": "Is there a way that instead of using &lt;br&gt; for a new line &lt;p&gt; &amp; &lt;/p&gt; could be implemented instead?<br />\n",
+    "PostedDate": "2013-03-26T15:10:56.503-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1047474",
+    "ThreadId": "438081",
+    "Html": "<strong>rpiggott wrote:</strong><br />\n<blockquote>\nIs there a way that instead of using &lt;br&gt; for a new line &lt;p&gt; &amp; &lt;/p&gt; could be implemented instead?<br />\n</blockquote>\nI have no idea but I'd vote for this if i could<br />\n",
+    "PostedDate": "2013-05-22T18:53:35.71-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

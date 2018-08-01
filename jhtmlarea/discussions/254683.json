@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "600492",
+    "ThreadId": "254683",
+    "Html": "\r\n<p>Hi,</p>\r\n<p>I need to be able to dynamically change the background css, font color and font styles, rather than using a css file.</p>\r\n<p>For example:</p>\r\n<p>$(&quot;#pageEditor&quot;).css(&quot;backgroundColor&quot;, &quot;#000000&quot;);</p>\r\n<p>Where &quot;#pageEditor&quot; would be a reference to the editor, changing the background color.&nbsp;</p>\r\n<p>I am not sure how to reference the editor frame or body.&nbsp; Attempting to access the textarea doesn't have any effect.&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>Any suggestions?</p>\r\n<p><br>\r\nThanks, <br>\r\nGeoff B</p>\r\n",
+    "PostedDate": "2011-04-20T09:11:41.097-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "600505",
+    "ThreadId": "254683",
+    "Html": "<p>Figured it out:</p>\r\n<p>I added this line to init:</p>\r\n<p>iframe.attr(\"id\",\"iFrameEditor\");</p>\r\n<p>Then referenced as:</p>\r\n<p>$(\"#iFrameEditor\").contents().find('body').css(\"backgroundColor\",backgroundColor);</p>\r\n<p>Works great.</p>\r\n<p>Nice app!</p>\r\n<p>Geoff B</p>",
+    "PostedDate": "2011-04-20T09:43:18.577-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "616105",
+    "ThreadId": "254683",
+    "Html": "<p>This was exceedingly helpful. &nbsp;Thank you so much!&nbsp;</p>\n<p>Here is my code, copied directly from my site, hopefully it will help someone flesh out the details of how to modify the iframe. &nbsp;In particular, it demonstrates how to modify the border of the editor.</p>\n<p>&nbsp;</p>\n<p>//give the iframe an id, so that we can select it on the next line. &nbsp;</p>\n<p>$(\"iframe\").attr(\"id\", \"txtText\");&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>\n<p>//now that the iframe has an id, we can select it using jquery and modify the attributes. &nbsp;</p>\n<p>//I gave the textarea a gray background, set the text to a larger size so that people could read it more easily, and changed the font</p>\n<p>$(\"#txtText\").contents().find('body').css({\"backgroundColor\" : \"#F0F0F0\", \"font-size\" : \"16pt\", \"font-family\" : \"'Trebuchet MS', Arial\" &nbsp;});</p>\n<p>//to add a 4px blue border, modify txtText, not its body</p>\n<p>&nbsp;$(\"#txtText\").css({\"border\": \"4px solid #61A4D9\" });</p>",
+    "PostedDate": "2011-05-20T14:49:34.62-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1201912",
+    "ThreadId": "254683",
+    "Html": "Hello sir,\r<br />\n<br />\nPlease give me suggestion for how to put the external or custom toolbar for Font-Family or Font-size. I want to apply the selection of font-family and font-fize  operation on the chosen text of editor. If you have any  plugin for this (Like for-color chosen)  with jHtmlArea then please give the link for this. \r<br />\n<br />\nGive me answer as soon as possible. \r<br />\n<br />\nThank you.<br />\n",
+    "PostedDate": "2014-02-02T21:31:29.523-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

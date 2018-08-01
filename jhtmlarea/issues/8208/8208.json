@@ -1,0 +1,55 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "jHtmlArea",
+      "DisplayName": "jHtmlArea"
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Add jHtmlArea.font method and toolbar button (\"Choose Font...\" menu)",
+    "LastUpdatedDate": "2017-11-29T06:38:46.38-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "jhtmlarea",
+    "ReportedDate": "2009-07-27T14:25:21.353-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Add jHtmlArea.font method and toolbar button (\"Choose Font...\" menu)",
+    "Type": {
+      "Name": "Feature",
+      "Id": 1
+    },
+    "VoteCount": 1,
+    "Id": 8208
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Please answer any for this ",
+      "PostedDate": "2014-06-11T03:43:41.34-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "True, this is really needed and useful.",
+      "PostedDate": "2014-08-10T12:09:40.84-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2017-11-29T06:38:46.38-08:00",
+      "Id": -2147483648
+    }
+  ]
+}

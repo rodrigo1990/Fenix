@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "1066122",
+    "ThreadId": "449448",
+    "Html": "When I try to run example from documentation, I dont see toolbar. Am I missing something?\r<br />\nHere's my code - \r<br />\n<br />\nhtml xmlns=&quot;<a href=\"http://www.w3.org/1999/xhtml\" rel=\"nofollow\">http://www.w3.org/1999/xhtml</a>&quot;&gt;<br />\n&lt;head runat=&quot;server&quot;&gt;\r\n  &lt;link rel=&quot;Stylesheet&quot; type=&quot;text/css&quot; href=&quot;~/style/jHtmlArea.css&quot; /&gt;\r\n  &lt;script type=&quot;text/javascript&quot; src=&quot;~/scripts/jHtmlArea-0.7.5.js&quot;&gt;  \r\n      $('#txtEditor'}.htmlarea({\r\n        toolbar: [\r\n        &quot;bold&quot;, &quot;italic&quot;, &quot;underline&quot;,\r\n        &quot;|&quot;,\r\n        &quot;h1&quot;, &quot;h2&quot;, &quot;h3&quot;, &quot;h4&quot;, &quot;h5&quot;, &quot;h6&quot;,\r\n        &quot;|&quot;,\r\n        &quot;link&quot;, &quot;unlink&quot;\r\n    ]\r\n});\r\n\r\n  &lt;/script&gt;\r\n&lt;/head&gt;\r\n&lt;body&gt;<br />\n<pre><code>&lt;form id=&quot;form1&quot; runat=&quot;server&quot;&gt;\n&lt;textarea id=&quot;txtEditor&quot;&gt;&lt;/textarea&gt;\n&lt;/form&gt;</code></pre>\n\n&lt;/body&gt;\r<br />\n&lt;/html&gt;<br />\n",
+    "PostedDate": "2013-07-09T06:57:59.133-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

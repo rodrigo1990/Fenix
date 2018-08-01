@@ -1,0 +1,67 @@
+a:hover
+{
+	text-decoration: none;
+}
+a:focus
+{
+	text-decoration: none;
+}
+
+.clear
+{
+  clear: both;
+}
+
+.img_full
+{
+  width: 100%;
+  max-width: 100%;
+}
+
+.img_hover_zoom
+{
+	-moz-transition: all 0.3s;
+  	-webkit-transition: all 0.3s;
+ 	transition: all 0.3s;
+}
+.img_hover_zoom:hover
+{
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.padding_0 
+{ 
+	padding: 0px; 
+}
+
+.padding_l_0 
+{ 
+	padding-left: 0px; 
+}
+
+.padding_r_0 
+{ 
+	padding-right: 0px; 
+}
+
+.padding_30 
+{ 
+	padding: 30px 0px; 
+}
+.padding_40 
+{ 
+	padding: 40px 0px; 
+}
+
+
+.fondo_gris
+{
+	background: #f2f2f2;
+}
+
+.uppercase
+{
+	text-transform: uppercase;
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "1308174",
+    "ThreadId": "568384",
+    "Html": "I have jHtmlArea successfully installed. The edit function works fine. I have customized the selection of buttons in the toolbar and that works fine. I've also added one custom button, and it executes its function correctly, but I can't for the life of me get the little image to display in the button itself, the button is blank. I have added the image to jHtmlArea.png, the code that defines the button has a unique css value, and that style is defined in jHtmlArea.css. I have even tried using the exact same css as another button just to see if I can get any image to display in the button, but so far no luck. Does anyone have any ideas on this?\r<br />\n<br />\nThanks,\r<br />\n<br />\nstevex64<br />\n",
+    "PostedDate": "2014-09-25T13:02:56.947-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1367055",
+    "ThreadId": "568384",
+    "Html": "I have the same problem and in addition it doesn't seem like anyone is working this site anymore.<br />\n",
+    "PostedDate": "2015-03-19T06:31:15.947-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1367079",
+    "ThreadId": "568384",
+    "Html": "I found a fix.\r<br />\n<br />\nYou modify the jHtmlArea .css file to add the following for your custom buttons:\r<br />\n<br />\ndiv.jHtmlArea .ToolBar ul li a.{custom button name}{ background-position: -80px -32px;background: url(refreshIcon.png);}<br />\n",
+    "PostedDate": "2015-03-19T07:53:38.14-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

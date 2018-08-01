@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "ColorPickerMenu",
+      "DisplayName": "ColorPickerMenu"
+    },
+    "ClosedComment": "Done",
+    "ClosedDate": "2009-07-27T14:15:29.667-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Add \"Automatic\" option to the ColorPickerMenu plugin.\n \nThe new \"Automatic\" option will just return \"null\" as the color, this will signify that the user selected \"Automatic\" and that the color used should then just be inherited instead of explicitly set.\n \nFor example: This will fix the issue of the user selecting \"Black\" as the color, so that all the text looks the same color, but then when displayed on a website it isn't the correct color because the website css uses something other than black. This just allows the user to remove color formatting.",
+    "LastUpdatedDate": "2013-05-16T04:59:43.663-07:00",
+    "PlannedForRelease": "0.7.0",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "jhtmlarea",
+    "ReportedDate": "2009-07-27T14:12:16.07-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Add \"Automatic\" option to the ColorPickerMenu plugin",
+    "Type": {
+      "Name": "Feature",
+      "Id": 1
+    },
+    "VoteCount": 1,
+    "Id": 8206
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

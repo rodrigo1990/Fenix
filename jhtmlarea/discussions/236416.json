@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "528378",
+    "ThreadId": "236416",
+    "Html": "\r\n<p>The &quot;a.highlighted&quot; class exists in the css file and in the js script but the buttons don't hightlight when clicked. Is there something special needed for this functionality to work? I don't see any documentation for it.</p>\r\n",
+    "PostedDate": "2010-11-29T09:40:26.887-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

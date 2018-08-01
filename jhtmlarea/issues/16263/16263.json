@@ -1,0 +1,55 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Done",
+    "ClosedDate": "2013-07-31T18:51:29.057-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Hi Chris,\n\nthanks for this nice component. I just wanted to point out that jHtmlArea does not play nice with the newer jQuery versions, unless you use the migrate scripts. See my [question on Stackoverflow](http://stackoverflow.com/questions/17068962/jhtmlarea-not-working-with-jquery-1-9-1-and-above-what-to-do-about-it) for more details.\n\nbest regards, Marcel",
+    "LastUpdatedDate": "2013-07-31T18:51:29.057-07:00",
+    "PlannedForRelease": "0.8.0",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "High",
+      "Severity": 150,
+      "Id": 3
+    },
+    "ProjectName": "jhtmlarea",
+    "ReportedDate": "2013-06-13T23:06:15.323-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Fixed"
+    },
+    "Summary": "Not working with jQuery 1.9.1 and above",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 16263
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Duplicate of bug #15990\r\n\r\nhttp://jhtmlarea.codeplex.com/workitem/15990",
+      "PostedDate": "2013-06-19T01:26:27.34-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-07-31T18:51:20.293-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-07-31T18:51:29.057-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

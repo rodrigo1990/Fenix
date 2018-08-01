@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "1257373",
+    "ThreadId": "548996",
+    "Html": "(Warning - jHtmlArea noob)\r<br />\n<br />\nI need to limit the number of rows/lines that users can have in a jHtmlArea.\r<br />\nThis is regardless of the text/HTML behind the scene, what I want to prevent the user from producing content that goes over a certain number of rows when displayed. \r<br />\nDoes anyone know how to achieve this?\r<br />\n<br />\nIf it is too hard, is there a way to limit height (under similar premises)?\r<br />\n<br />\nThe reason for this is that I will need to produce an HTML document combining several sources, including a few jHtmlArea fields, and this has a page limit. <br />\n",
+    "PostedDate": "2014-06-18T02:49:45.333-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

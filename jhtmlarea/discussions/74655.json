@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "255507",
+    "ThreadId": "74655",
+    "Html": "<p>hi,</p>\r\n<p>i cant find the way to get rid of the padding in the editor , check the screenshot please.</p>\r\n<p>thanks</p>\r\n<p>&nbsp;</p>\r\n<p>http://img30.imageshack.us/img30/281/screenmm.gif</p>",
+    "PostedDate": "2009-11-10T06:43:49.607-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "257903",
+    "ThreadId": "74655",
+    "Html": "<p>i cant get rid of the padding , is it possible ?</p>",
+    "PostedDate": "2009-11-17T06:54:14.493-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "266691",
+    "ThreadId": "74655",
+    "Html": "<p>cris,</p>\r\n<p>Try this:</p>\r\n<p>\r\n<div style=\"color:Black;background-color:White\">\r\n<pre>$(<span style=\"color:#A31515\">'iframe'</span>).contents().find(<span style=\"color:#A31515\">'body'</span>).css(<span style=\"color:#A31515\">'margin'</span>, <span style=\"color:#A31515\">'0'</span>)\r\n</pre>\r\n</div>\r\n</p>",
+    "PostedDate": "2009-12-12T16:07:32.04-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

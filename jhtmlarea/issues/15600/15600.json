@@ -1,0 +1,50 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "I need to add an option to attachEditorEvents to handle user defined events.\n \nHer is my implementation changing \"attachEditorEvents\" from line 361 of version 0.7.5:\n \n \n        attachEditorEvents: function (events) {\n            var t = this;\n            var fnHA = function () {\n                t.updateHtmlArea();\n            };\n            var clickEventHA = fnHA;\n            var keyupEventHA = fnHA;\n            var keydownEventHA = fnHA;\n            var mousedownEventHA = fnHA;\n            var blurEventHA = fnHA;\n \n            var fnTA=function(){\n              t.updateTextArea();\n            };\n \n            var clickEventTA = fnTA;\n            var keyupEventTA = fnTA;\n            var keydownEventTA = fnTA;\n            var mousedownEventTA = fnTA;\n            var blurEventTA = fnTA;\n \n\t\t\t\t\t\t$.each(events, function(eventKey, eventFunction){\n\t\t\t\t\t\t\tvar possibleEvents = [ \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"click\", \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"keyup\", \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"keydown\", \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"blur\" \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t];\n             if ($.inArray(eventKey, possibleEvents)>=0) {\n\t\t\t\t\t\t \t\teval(eventKey+\"EventHA\" + \"=\" + eventFunction);\n\t\t\t\t\t\t \t\teval(eventKey+\"EventTA\" + \"=\" + eventFunction);\n\t\t\t\t\t\t }\n \t\t\t\t\t\t});\n            this.textarea.\n                click(clickEventHA).\n                keyup(keyupEventHA).\n                keydown(keydownEventHA).\n                mousedown(mousedownEventHA).\n                blur(blurEventHA);\n \n\t\t\t\t\t\t\n             $(this.editor.body).\n               \tclick(clickEventTA).\n                keyup(keyupEventTA).\n                keydown(keydownEventTA).\n                mousedown(mousedownEventTA).\n                blur(blurEventTA);\n \n            $('form').submit(function () { t.toggleHTMLView(); t.toggleHTMLView(); });\n            //$(this.textarea[0].form).submit(function() { //this.textarea.closest(\"form\").submit(function() {\n \n \n            // Fix for ASP.NET Postback Model\n            if (window.__doPostBack) {\n                var old__doPostBack = __doPostBack;\n                window.__doPostBack = function () {\n                    if (t) {\n                        if (t.toggleHTMLView) {\n                            t.toggleHTMLView();\n                            t.toggleHTMLView();\n                        }\n                    }\n                    return old__doPostBack.apply(window, arguments);\n                };\n            }\n        },",
+    "LastUpdatedDate": "2013-02-21T17:58:40.247-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "jhtmlarea",
+    "ReportedDate": "2012-09-10T01:44:12.677-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "add attachEditorEvents events",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 15600
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "sorry I forgot three things:\r\n1. line 52 has to be modified to add the options to the call:\r\npriv.attachEditorEvents.call(this, opts);\r\n\r\n2. I modified the code concerning to this:\r\n        attachEditorEvents: function (opts) {\r\n            var t = this;\r\n            var fnHA = function () {\r\n                t.updateHtmlArea();\r\n            };\r\n            var clickEventHA = fnHA;\r\n            var keyupEventHA = fnHA;\r\n            var keydownEventHA = fnHA;\r\n            var mousedownEventHA = fnHA;\r\n            var blurEventHA = fnHA;\r\n\r\n            var fnTA=function(){\r\n              t.updateTextArea();\r\n            };\r\n\r\n            var clickEventTA = fnTA;\r\n            var keyupEventTA = fnTA;\r\n            var keydownEventTA = fnTA;\r\n            var mousedownEventTA = fnTA;\r\n            var blurEventTA = fnTA;\r\n\r\n\t\t\t\t\t\tif (opts.events) {\r\n\t\t\t\t\t\t\t$.each(opts.events, function(eventKey, eventFunction){\r\n\t\t\t\t\t\t\t\tvar possibleEvents = [ \r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"click\", \r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"keyup\", \r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"keydown\", \r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"blur\" \r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t];\r\n\t             if ($.inArray(eventKey, possibleEvents)>=0) {\r\n\t\t\t\t\t\t\t \t\teval(eventKey+\"EventHA\" + \"=\" + eventFunction);\r\n\t\t\t\t\t\t\t \t\teval(eventKey+\"EventTA\" + \"=\" + eventFunction);\r\n\t\t\t\t\t\t\t }\r\n\t \t\t\t\t\t\t});\r\n\t\t\t\t\t\t}\r\n\t\t\t\t\t\t\r\n            this.textarea.\r\n                click(clickEventHA).\r\n                keyup(keyupEventHA).\r\n                keydown(keydownEventHA).\r\n                mousedown(mousedownEventHA).\r\n                blur(blurEventHA);\r\n\r\n\t\t\t\t\t\t\r\n             $(this.editor.body).\r\n               \tclick(clickEventTA).\r\n                keyup(keyupEventTA).\r\n                keydown(keydownEventTA).\r\n                mousedown(mousedownEventTA).\r\n                blur(blurEventTA);\r\n\r\n            $('form').submit(function () { t.toggleHTMLView(); t.toggleHTMLView(); });\r\n            //$(this.textarea[0].form).submit(function() { //this.textarea.closest(\"form\").submit(function() {\r\n\r\n\r\n            // Fix for ASP.NET Postback Model\r\n            if (window.__doPostBack) {\r\n                var old__doPostBack = __doPostBack;\r\n                window.__doPostBack = function () {\r\n                    if (t) {\r\n                        if (t.toggleHTMLView) {\r\n                            t.toggleHTMLView();\r\n                            t.toggleHTMLView();\r\n                        }\r\n                    }\r\n                    return old__doPostBack.apply(window, arguments);\r\n                };\r\n            }\r\n        }\r\n\r\n3. adding this option in the jQuery initialization of .htmlarea might lokk like this:\r\n\r\n$(\"myEditor\").htmlarea({\r\n\ttoolbar: [\r\n\t\t[\"bold\", \"italic\", \"underline\"],\r\n\t\t[\"link\", \"unlink\"],\r\n\t\t[\"p\", \"h2\", \"h3\", \"h4\"],\r\n\t\t[\"orderedList\", \"unorderedList\"],\r\n\t\t[\"justifyleft\",\"justifycenter\",\"justifyright\"]\r\n\t\t],\r\n\tevents: {\r\n\t\tkeyup: function() {\r\n\t\t\tvar val = this.innerText;\r\n\t\t\tvar empty = !val.match(/\\S/g);\r\n\t\t\t$(\"#error_myEditor\").remove();\r\n\t\t\tif (empty) {\r\n\t\t\t\t$(\\'<span id=\"error_myEditor\" class=\"error htmlarea\">This field is mandatory.</span>\\').insertAfter($(\"#myEditor\").parent());\r\n\t\t\t}\r\n\t\t},\r\n\t\tblur: function() {\r\n\t\t\tvar val = this.innerText;\r\n\t\t\tvar empty = !val.match(/\\S/g);\r\n\t\t\t$(\"#error_myEditor\").remove();\r\n\t\t\tif (empty) {\r\n\t\t\t\t$(\\'<span id=\"error_myEditor\" class=\"error htmlarea\">This field is mandatory..</span>\\').insertAfter($(\"#myEditor\").parent());\r\n\t\t\t}\r\n\t\t}\r\n\t}\r\n});\r\n",
+      "PostedDate": "2012-09-10T01:59:30.24-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-21T17:58:40.247-08:00",
+      "Id": -2147483648
+    }
+  ]
+}

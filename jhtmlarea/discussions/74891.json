@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "256321",
+    "ThreadId": "74891",
+    "Html": "<p>hi</p>\r\n<p>i am running in big problem when i try to insert &amp;nbsp; from jhtmlarea, &amp;nbsp; wont show in the database.</p>\r\n<p>help</p>",
+    "PostedDate": "2009-11-12T06:22:58.783-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "257414",
+    "ThreadId": "74891",
+    "Html": "<p>&nbsp;nobreakingspace&nbsp; do not work in your editor when inserted in a database&nbsp; this is what happens:</p>\r\n<p>if i submit this with jhtml area :</p>\r\n<p>hello&amp;nbsp;I'm juila &nbsp;&nbsp; -&gt; DB row will show it</p>\r\n<p>but if i put more than one space after hello then some data -&gt; DB row will only show this : hello</p>\r\n<p>it will not show data that's&nbsp; beyond 2 or more &amp;nbsp; after 'hello'</p>\r\n<p>&nbsp;</p>\r\n<p>anyone knows why this happens ?</p>",
+    "PostedDate": "2009-11-16T01:39:31.59-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "257452",
+    "ThreadId": "74891",
+    "Html": "<p>i Was submitting the content trhu ajax , now i did same version but submiting content thru php and It works!</p>\r\n<p>do you know why i have this space problem when submitting with ajax ?</p>",
+    "PostedDate": "2009-11-16T03:46:24.55-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

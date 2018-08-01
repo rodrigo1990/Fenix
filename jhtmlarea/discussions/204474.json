@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "416466",
+    "ThreadId": "204474",
+    "Html": "<p>Hello,</p>\r\n<p>I want to limt the maximun number of chars inside the textarea.</p>\r\n<p>I tried to use the following code but don't work properly with jHtmlArea :</p>\r\n<p>***********************************************</p>\r\n<p>$(document).ready(function(){<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;var&nbsp;&nbsp; &nbsp;battute = 920;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;$('#textarea_intro').after(&quot;&lt;p class='avviso'&gt;Hai ancora &lt;strong&gt;&quot;+ (battute - $('textarea').val().length)+&quot;&lt;/strong&gt; caratteri disponibili&lt;/p&gt;&quot;);<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;$('#textarea_intro').keyup(function(){<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;if($(this).val().length &gt; battute){<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;$(this).val($(this).val().substr(0, battute));<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;}<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;$(this).parent().find('p.avviso').html(&quot;Hai ancora &lt;strong&gt;&quot;+ (battute - $(this).val().length)+&quot;&lt;/strong&gt; caratteri disponibili&quot;);<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; });<br>&nbsp;&nbsp; &nbsp;});<br>&nbsp;&nbsp;&nbsp; **********************************************</p>\r\n<p>Any ideas?</p>\r\n<p>&nbsp;</p>\r\n<p>Thanks in advance,</p>\r\n<p>Mirco</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2010-03-10T09:28:37.29-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

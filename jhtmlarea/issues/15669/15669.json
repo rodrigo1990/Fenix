@@ -1,0 +1,56 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Using jHtmlArea 0.7.5 on a TextArea works like a charm i Chrome and FF on Win7 - but in IE9 on the same machine, all HTML characters are removed.\n\nI have a TextArea that receives the content from a jquery $.post callback, using Charles proxy I can see that the result is correctly formatted HTML (the same as in the other browsers) - but all formatting are stripped, all tags, everything - only plain text shown.\n\nThe editor is correctly displayed, buttons and all. Some things work, I can select text and then make it bold, but can't make a H1 - the first item in the text edited is btw a H1 ??",
+    "LastUpdatedDate": "2013-02-21T17:58:39.85-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "jhtmlarea",
+    "ReportedDate": "2012-10-03T01:15:06.003-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "IE strips any html tags ?",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 15669
+  },
+  "FileAttachments": [
+    {
+      "FileId": 4624,
+      "FileName": "jhtmlarea.gif",
+      "DownloadUrl": ".\\4624"
+    }
+  ],
+  "Comments": [
+    {
+      "Message": "I'm really sorry - this ended up being a completely different issue.\r\n\r\nI was updating the #content with $(\"#pagecontent\").html( json.html ) - should use $(\"#pagecontent\").val (json.html ) as it really is a textarea not a div :(\r\n\r\nSorry about that guys - great product!",
+      "PostedDate": "2012-10-03T02:49:15.177-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-21T17:58:39.85-08:00",
+      "Id": -2147483648
+    }
+  ]
+}

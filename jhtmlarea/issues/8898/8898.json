@@ -1,0 +1,51 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "In Internet Explorer, when an image is selected in the editor the value returned from getSelectedHTML() gives 'undefined' rather than the '<img src=...' HTML expected. This is because just a selected image is seen as a Control, rather than a range. Changing the getSelectedHTML() method to return the outerHTML if the selection is a control fixes this error. A patch file is attached.",
+    "LastUpdatedDate": "2015-11-06T00:19:59.713-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "jhtmlarea",
+    "ReportedDate": "2009-10-02T04:19:32.97-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "getSelectedHTML() not returning value for selected image",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 8898
+  },
+  "FileAttachments": [
+    {
+      "FileId": 2337,
+      "FileName": "jhtmlarea.patch",
+      "DownloadUrl": ".\\2337"
+    }
+  ],
+  "Comments": [
+    {
+      "Message": "Could you demonstrate how to use the patch please?",
+      "PostedDate": "2015-11-06T00:19:59.713-08:00",
+      "Id": -2147483648
+    }
+  ]
+}

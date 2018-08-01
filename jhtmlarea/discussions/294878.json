@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "742185",
+    "ThreadId": "294878",
+    "Html": "\r\n<p>I'm a beginner of Javascript. I can't understand the code<em> jHtmlArea.fn.init.prototype = jHtmlArea.fn;&nbsp;</em>at row&nbsp; 268 &nbsp;<a href=\"http://dl.dropbox.com/u/209352/jhtml.PNG\">http://dl.dropbox.com/u/209352/jhtml.PNG</a></p>\r\n<p>Could you help me some explanation?</p>\r\n<p>Thanks!</p>\r\n",
+    "PostedDate": "2012-02-05T18:34:11.617-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "742198",
+    "ThreadId": "294878",
+    "Html": "<p>And more, could you provide some simple explanation&nbsp;for your source code jHtmlArea-0.7.0.js</p>",
+    "PostedDate": "2012-02-05T18:44:12.04-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

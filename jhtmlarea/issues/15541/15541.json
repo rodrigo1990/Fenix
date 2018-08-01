@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": " tags are not supported within the editor. It is only meant for editing the body content of a page.",
+    "ClosedDate": "2013-07-31T18:58:17.7-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Thanks for the great plugin. Looks and works great!\n \nI'm trying to use jHTMLArea to make a simple HTML email editor. To make this work it's necessary to have the HTML view display the <head> element. But when I paste a full HTML email template (including a <head> element) into the textarea, then click between the HTML and WYSIWYG view the doctype and some of the <head> tags are stripped out. Is there a way to get these to stay present?\n \nThanks",
+    "LastUpdatedDate": "2013-07-31T18:58:17.7-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "jhtmlarea",
+    "ReportedDate": "2012-08-23T08:33:45.3-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Display <head> element",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 15541
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

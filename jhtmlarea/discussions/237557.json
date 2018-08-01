@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "532767",
+    "ThreadId": "237557",
+    "Html": "\r\n<p>Hi all.</p>\r\n<p>I am implementing this as part of an MVC2 project and was wondering if anyone knew any ways of getting past the posting of tagged data?&nbsp; I know you can put [ValidateInput(false)] on the HttpPost action but this opens the rest of the page to script attack.&nbsp;\r\n Any ideas?</p>\r\n<p>Only solution I can think of is to place the html editor inside an AJAX panel and post that seperatly with the [ValidateInput(false)] statement on the controler for that AJAX panels HttpPost action...</p>\r\n",
+    "PostedDate": "2010-12-08T02:02:35.017-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "686114",
+    "ThreadId": "237557",
+    "Html": "<p>[ValidateInput(false)] seems the popular choice for MVC2. &nbsp;If switching to MVC3 is an option though, you can use the [AllowHtml] attribute.</p>",
+    "PostedDate": "2011-10-18T18:54:00.63-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

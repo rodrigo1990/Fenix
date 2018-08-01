@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "442838",
+    "ThreadId": "212627",
+    "Html": "<p>Hi I have an issue that when i use jhtmlarea within ajax tabs the width gets set to 0px which sends the toolbar alll over theplace i have mine nested in 3 sets of ajax tabs tested in 1 and seems to produce the same results however when not nested&nbsp; in any tabs the control works fine.</p>\r\n<p>any help on a work around would be much appreciated</p>\r\n<p>&nbsp;</p>\r\n<p>BR lloydz1</p>",
+    "PostedDate": "2010-05-14T04:35:29.357-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "631421",
+    "ThreadId": "212627",
+    "Html": "<p>Hi, I specifally set the width and height in the style attribute of the text area and it sorted it out.</p>",
+    "PostedDate": "2011-06-22T13:44:42.143-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

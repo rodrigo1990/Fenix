@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "252383",
+    "ThreadId": "73802",
+    "Html": "<p>hi,</p>\r\n<p>Is there an option to add a file uploader in jHtmlArea ?</p>\r\n<p>thanks</p>",
+    "PostedDate": "2009-11-02T05:09:36.093-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "253728",
+    "ThreadId": "73802",
+    "Html": "<p>no, you have to build a custom button</p>\r\n<p>in the toolbar insert a button like this:</p>\r\n<p>{<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; css: &quot;custom_fileUpload_button&quot;,<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; text: &quot;Upload file&quot;,<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; action: function(btn)<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // your uploadFile() function<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;}<br>},</p>\r\n<p>&nbsp;</p>\r\n<p>then, add an icon into the jhtmlarea png, and then copy the css of another button but put in the coordinates of the new icon.</p>",
+    "PostedDate": "2009-11-05T05:18:22.197-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

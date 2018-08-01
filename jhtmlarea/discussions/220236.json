@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "469939",
+    "ThreadId": "220236",
+    "Html": "I would like to have a focus (text cursor is blinking in editor) on my wysiwyg-editor.\r\n\r\nWhat I do is:\r\n\r\n$(&quot;textarea&quot;).htmlarea();\r\n$(&quot;textarea&quot;).focus();\r\n\r\nHowever, no focus there. for a regular input, that works perfectly fine. How do I get the text editor text area to receive the focus?",
+    "PostedDate": "2010-07-20T16:26:07.277-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "469944",
+    "ThreadId": "220236",
+    "Html": "Found a solution to my problem. However, mybe there is a nicer solution to it. Some native function provided would be very nice.\r\n\r\nIf you have no iframes and one textarea on your page:\r\n$(&quot;textarea&quot;).htmlarea({loaded: fucntion(){$(&quot;iframe&quot;).focus();}})\r\n\r\n\r\n\r\n",
+    "PostedDate": "2010-07-20T16:52:33.673-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1004410",
+    "ThreadId": "220236",
+    "Html": "I don't want to start a new thread since my question is similar but I'm wondering if the jHtmlArea plugin natively detects if a TEXTAREA it is being applied to has focus and then gives that focus to the associated IFRAME that it creates for that TEXTAREA.<br />\n",
+    "PostedDate": "2013-02-20T19:43:42.2-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

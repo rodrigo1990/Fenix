@@ -1,0 +1,51 @@
+<div class="wikidoc"><h1>Modify jHtmlArea Editor Programatically using JavaScript / jQuery</h1>All jHtmlArea toolbar buttons and a few other methods can be executed programmatically via JavaScript / jQuery.<br /><br />Using jQuery, the method is specified by name along with passing any necessary parameters.<br /><br />Here are a couple examples:<br /><div style="color:Black;background-color:White;"><pre>
+<span style="color:Green;">// Get the HTML String value from within the editor</span>
+<span style="color:Blue;">var</span> html = $(<span style="color:#A31515;">&#39;#txtEditor&#39;</span>).htmlarea(<span style="color:#A31515;">&#39;toHtmlString&#39;</span>);
+
+<span style="color:Green;">// Insert an image into the current caret location</span>
+<span style="color:Green;">// First Argument = The method name</span>
+<span style="color:Green;">// Second Argument = The argument accepted by the &quot;image&quot; method</span>
+$(<span style="color:#A31515;">&#39;#txtEditor&#39;</span>).htmlarea(<span style="color:#A31515;">&#39;image&#39;</span>, <span style="color:#A31515;">&#39;http://localhost/image.jpg&#39;</span>);
+</pre></div>
+<h2>jHtmlArea Methods</h2>
+<h3>bold()</h3>Toggles the &quot;Bold&quot; state of the currently selected text.<br />
+<h3>copy()</h3>Performs a clipboard &quot;Copy&quot; operation.<br />
+<h3>cut()</h3>Performs a clipboard &quot;Cut&quot; operation.<br />
+<h3>decreaseFontSize()</h3>Performs the same action as the &quot;decreasefontsize&quot; toolbar button.<br />
+<h3>dispose()</h3>Removes the jHtmlArea editor from the page.<br />
+<h3>forecoloe()</h3>Performs the same action as the &quot;forecolor&quot; toolbar button.<br />
+<h3>getSelectedHTML()</h3>Gets the HTML that is currently selected within the editor.<br />
+<h3>getSelection()</h3>Gets the current selection within the editor.<br />
+<h3>h1()</h3>Performs the same action as the &quot;h1&quot; toolbar button.<br />
+<h3>h2()</h3>Performs the same action as the &quot;h2&quot; toolbar button.<br />
+<h3>h3()</h3>Performs the same action as the &quot;h3&quot; toolbar button.<br />
+<h3>h4()</h3>Performs the same action as the &quot;h4&quot; toolbar button.<br />
+<h3>h5()</h3>Performs the same action as the &quot;h5&quot; toolbar button.<br />
+<h3>h6()</h3>Performs the same action as the &quot;h6&quot; toolbar button.<br />
+<h3>hideHTMLView()</h3>Toggles the display of the WYSIWYG view within the editor.<br />
+<h3>html(htmlString)</h3>Gets or Sets the entire HTML contents within the editor.<br /><b>htmlString</b>:<br />If value is specified, then the HTML contents of the editor is set to that value.<br />If not specified, then the HTML contents fo the editor is returned.<br />
+<h3>link()</h3>Adds a Hyperlink to the currently selection.<br />
+<h3>indent()</h3>Performs the same action as the &quot;indent&quot; toolbar button.<br />
+<h3>image(imageUrl)</h3>Inserts an image into the current caret location<br /><b>imageUrl</b>: The URL of the image to insert.<br />
+<h3>increaseFontSize()</h3>Performs the same action as the &quot;increasefontsize&quot; toolbar button.<br />
+<h3>italic()</h3>Toggles the &quot;Italic&quot; state of the currently selected text.<br />
+<h3>justifyCenter()</h3>Performs the same action as the &quot;justifycenter&quot; toolbar button.<br />
+<h3>justifyLeft()</h3>Performs the same action as the &quot;justifyleft&quot; toolbar button.<br />
+<h3>justifyRight()</h3>Performs the same action as the &quot;justifyright&quot; toolbar button.<br />
+<h3>orderedList()</h3>Toggles an Ordered List &quot;<span class="codeInline">&lt;ol&gt;</span>&quot; on the current selection.<br />
+<h3>outdent()</h3>Performs the same action as the &quot;outdent&quot; toolbar button.<br />
+<h3>p()</h3>Performs the same action as the &quot;p&quot; toolbar button.<br />
+<h3>paste()</h3>Performs a clipboard &quot;Paste&quot; operation.<br />
+<h3>pasteHTML(htmlString)</h3>Adds HTML content to the currently selected area within the editor.<br /><b>htmlString</b>: The HTML string to add.<br />
+<h3>removeFormat()</h3>Removes all formatting from the currenlty selected text.<br />
+<h3>showHTMLView()</h3>Toggles the display of the Raw HTML view within the editor.<br />
+<h3>strikeThrough()</h3>Toggles the &quot;Strike Through&quot; state of the currently selected text.<br />
+<h3>subscript()</h3>Performs the same action as the &quot;subscript&quot; toolbar button.<br />
+<h3>superscript()</h3>Performs the same action as the &quot;superscript&quot; toolbar button.<br />
+<h3>toggleHTMLView()</h3>Toggles between Raw HTML view and WYSIWYG view within the editor.<br />
+<h3>toHtmlString()</h3>Returns the HTML String value from within the editor.<br />
+<h3>toString()</h3>Returns a string value (without HTML markup) of the editors contents.<br />
+<h3>underline()</h3>Toggles the &quot;Underline&quot; state of the currently selected text.<br />
+<h3>unlink()</h3>Removes the Hyperlink from the current selection.<br />
+<h3>unorderedList()</h3>Toggles an Unorderd List &quot;<span class="codeInline">&lt;ul&gt;</span>&quot; on the current selection.<br />
+<h3>updateHtmlArea()</h3>Forces the editor to update its contents with the current contents of the underlieing &quot;<span class="codeInline">&lt;textarea&gt;</span>&quot;</div><div class="ClearBoth"></div>

@@ -1,0 +1,65 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2012-08-03T20:55:41.237-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Hi,\nI have some similar problem like in issue 8499 (textarea is disabled), but whit some difference. I have master page which has function openDialog in this way:\n\tfunction openDialog(url, data, curWidth, winTitle) {\t\n\t\tvar dialogDiv =\tjQuery(document.createElement(\"div\"));\t\t\n\t\tdialogDiv.attr(\"id\", \"dialog\");\t\n\t\tdialogDiv.dialog({\n\t\t\tbgiframe: false,\n\t\t\tautoOpen: false,\n\t\t\ttitle: winTitle,\t\t\t\n\t\t\tposition: 'top', \n\t\t\twidth: curWidth,\n\t\t\tmaxHeight: 600,\n\t\t\tmaxWidth: curWidth,\n\t\t\topen: function() {\n\t\t\t\tvar rand_no = Math.random();\t\t\t\t\n\t\t\t\tdata.rnd = rand_no;\t\t\t\t\t\n\t\t\t\tdialogDiv.load(url, data);\t\t\t\t \n\t\t\t},\n\t\t\tclose: function() {\t\t\t\t \n\t\t\t\t dialogDiv.remove();\t\t\t\t\t \n\t\t\t}\n\t\t\t\n\t\t\t/*,\n\t\t\tbuttons: {\n\t\t\t\tCancel: function() {\n\t\t\t\t\t$(this).dialog('close');\n\t\t\t\t},\n\t\t\t\tSave: function() {\t\t\t\t\t\n\t\t\t\t\t$(this).dialog('close');\n\t\t\t\t}\n\t\t\t}*/\n\t\t});\n\t\tdialogDiv.dialog('open');\t\t\n\t}\n \n \nI'm creating div and after that loading some another page to it (open: function() {\n\t\t\t\tvar rand_no = Math.random();\t\t\t\t\n\t\t\t\tdata.rnd = rand_no;\t\t\t\t\t\n\t\t\t\tdialogDiv.load(url, data);\t\t\t\t \n\t\t\t},\n)\n \nAt those page I have some textarea with  jHtmlArea editor which initialising in this way :\n \n<script type=\"text/javascript\">\n$(document).ready(function(){\n\t$(\"#html\").htmlarea();\n \n});\n</script>\n<textarea  rows=\"10\" id=\"html\"></textarea>\n \nThis editor renrders corectly, but it is in readonly mode.\n Is it bug? How can I fix this?\n \nThanks in advance,\nPaul",
+    "LastUpdatedDate": "2013-05-16T04:59:41.79-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "jhtmlarea",
+    "ReportedDate": "2009-11-05T07:39:11.3-08:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "jHtmlArea and jQuery dialog again",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 9127
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Issue can be closed. \r\nSolution:\r\n\r\nopen: function() {\r\n\t\t\t\tvar rand_no = Math.random();\t\t\t\t\r\n\t\t\t\tdata.rnd = rand_no;\t\t\t\t\t\r\n\t\t\t\tdialogDiv.load(url, data,  function(){\r\n\t\t\t\t\t\t// init HTML areas on edot page\r\n\t\t\t\t\t\tdialogDiv.find('#htmlUA').htmlarea({\r\n\t\t\t\t\t         // Override/Specify the Toolbar buttons to show\r\n\t\t\t\t\t        toolbar: [\r\n\t\t\t\t\t\t        [\"html\"], [\"bold\", \"italic\", \"underline\", \"|\", \"forecolor\"],\r\n\t\t\t\t\t\t        [\"increasefontsize\", \"decreasefontsize\"],\r\n\t\t\t\t\t\t        [\"orderedlist\", \"unorderedlist\"],\r\n\t\t\t\t\t\t        [\"justifyleft\", \"justifycenter\", \"justifyright\"],\r\n\t\t\t\t\t\t        [\"link\", \"unlink\", \"image\"]\t        \r\n\t\t\t\t\t\t    ]}\r\n\t\t\t\t\t    );\t\t\t\t\t    \r\n\t\t\t\t\t   dialogDiv.find(\"#htmlEN\").htmlarea({\r\n\t\t\t\t\t         // Override/Specify the Toolbar buttons to show\r\n\t\t\t\t\t        toolbar: [\r\n\t\t\t\t\t\t        [\"html\"], [\"bold\", \"italic\", \"underline\", \"|\", \"forecolor\"],\r\n\t\t\t\t\t\t        [\"increasefontsize\", \"decreasefontsize\"],\r\n\t\t\t\t\t\t        [\"orderedlist\", \"unorderedlist\"],\r\n\t\t\t\t\t\t        [\"justifyleft\", \"justifycenter\", \"justifyright\"],\r\n\t\t\t\t\t\t        [\"link\", \"unlink\", \"image\"]\t        \r\n\t\t\t\t\t\t    ]}\r\n\t\t\t\t\t    );\t\r\n\t\t\t\t \t}\r\n\t\t\t   );\t\t\t\t \r\n\t\t\t}",
+      "PostedDate": "2009-11-09T01:30:57.213-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2010-01-19T08:48:43.847-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2012-08-03T20:55:41.237-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-21T17:58:48.633-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-16T04:59:41.79-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

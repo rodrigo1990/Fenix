@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "1257595",
+    "ThreadId": "549057",
+    "Html": "As far as I can tell, there is no way to detect onblur or onfocus, if so, can this be implemented?<br />\n",
+    "PostedDate": "2014-06-18T11:19:56.507-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1257675",
+    "ThreadId": "549057",
+    "Html": "You can actually use this.editor.body\r<br />\nFor myself, I implemented this:<br />\n<pre><code>getEditorBody: function () {\n            return $(this.editor.body);\n }\n\n//and then later...\n\n$('#foobar').htmlarea('getEditorBody').focus(function(){\n //do something\n});</code></pre>\n\n",
+    "PostedDate": "2014-06-18T14:52:01.777-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": "2014-06-18T14:52:10.73-07:00"
+  }
+]

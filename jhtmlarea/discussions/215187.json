@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "452424",
+    "ThreadId": "215187",
+    "Html": "<p>I needed to get this to display correctly with Internet Explorer 6 and have done so, and I wanted to share it just in case anyone else also required it.</p>\r\n<p>All I did was create an IE6 only CSS file called jHtmlArea-ie6.css, which I put into conditional comments:</p>\r\n<p>&lt;!--[if IE 6]&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/jHtmlArea-ie6.css&quot; /&gt;&lt;![endif]--&gt;</p>\r\n<p>This file simply contains the following CSS definitions:</p>\r\n<p>div.jHtmlArea .ToolBar ul li a { width:18px; }<br>div.jHtmlArea div iframe&nbsp; {<br>&nbsp;&nbsp; &nbsp;border-width:2px;<br>&nbsp;&nbsp; &nbsp;border-style:solid;<br>&nbsp;&nbsp; &nbsp;border-color:#000 #aaa #aaa #000;<br>&nbsp;&nbsp; &nbsp;margin:2px;<br>}</p>\r\n<p>And that's it. The toolbar should line up correctly and the iframe containing the actual text has a border.</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2010-06-07T05:44:31.077-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

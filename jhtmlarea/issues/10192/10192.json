@@ -1,0 +1,50 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "i'm inserting text into the wysiwyg editor from an external link. in firefox it places the text at the cursor location. but in ie it always places the text at the beginning of the text regardless of cursor location.",
+    "LastUpdatedDate": "2013-02-21T17:58:48.29-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "jhtmlarea",
+    "ReportedDate": "2010-02-12T13:59:40.163-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "pastehtml placing text at the beginning of the textarea not where the cursor is.",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 10192
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "I had the same problem pasting html from a jquery UI modal dialog.  Adding the updateHtmlArea did the trick for me:\r\n\r\n$(\"#entryText\").htmlarea(\"updateHtmlArea\");\r\n$('#entryText').htmlarea('pasteHTML', htmlContent);",
+      "PostedDate": "2012-01-04T09:29:40.86-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-21T17:58:48.29-08:00",
+      "Id": -2147483648
+    }
+  ]
+}

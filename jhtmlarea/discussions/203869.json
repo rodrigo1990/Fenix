@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "414354",
+    "ThreadId": "203869",
+    "Html": "<p>hi,</p>\r\n<p>i have two (or more) textarea in my form.</p>\r\n<p>i set jhtmlArea by className:</p>\r\n<div style=\"color:Black;background-color:White\">\r\n<pre>$(document).ready(<span style=\"color:Blue\">function</span>() {$(<span style=\"color:#A31515\">'.editorHTML'</span>).htmlarea({\r\ntoolbar: [[<span style=\"color:#A31515\">&quot;html&quot;</span>],\r\n[<span style=\"color:#A31515\">&quot;bold\\&quot;</span>, <span style=\"color:#A31515\">&quot;italic&quot;</span>, <span style=\"color:#A31515\">&quot;underline&quot;</span>], \r\n[<span style=\"color:#A31515\">&quot;p&quot;</span>, <span style=\"color:#A31515\">&quot;h1&quot;</span>, <span style=\"color:#A31515\">&quot;h2&quot;</span>, <span style=\"color:#A31515\">&quot;h3&quot;</span>], \r\n[<span style=\"color:#A31515\">&quot;link&quot;</span>, <span style=\"color:#A31515\">&quot;unlink&quot;</span>],\r\n[{\r\n css: <span style=\"color:#A31515\">&quot;image&quot;</span>,text: <span style=\"color:#A31515\">&quot;Apri gallery&quot;</span>,\r\n action: <span style=\"color:Blue\">function</span>() {\r\nmyfun(ID_OF_ELEMENT)\r\n \r\n}\r\n}]],\r\n loaded: <span style=\"color:Blue\">function</span>() { alert(ID_OF_ELEMENT)}\r\n;<br><br><br>i do this because i don't know the ID of the textarea and how element i have in the form.<br>my question is: how i can get the ID of the texrarea and pass it to function &quot;myfun&quot;?<br></pre>\r\n</div>\r\n<p>Thanks!!</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2010-03-04T13:57:45.02-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "290316",
+    "ThreadId": "85219",
+    "Html": "<p>I'm using jquery to insert text into the wysiwyg editor. I'm trying to enter it at the cursor position. Using pasteHTML() works fine in firefox but in Internet Explorer it will only paste the text at the beginning of the text editor in front of any existing text. How can I get it to place it at the cursor location?</p>",
+    "PostedDate": "2010-02-12T14:08:09.283-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

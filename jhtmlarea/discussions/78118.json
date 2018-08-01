@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "267210",
+    "ThreadId": "78118",
+    "Html": "<p>Simple question....</p>\r\n<p>How do I clear the contents of the WYSIWYG editor after a button click?</p>\r\n<p>$(&quot;#sendMessage&quot;).click(function(){<br>&nbsp;&nbsp;&nbsp;&nbsp; SendMessage();<br>&nbsp;&nbsp;&nbsp;&nbsp; //What do I put here to clear the contents?<br>});</p>\r\n<p>Thanks,</p>\r\n<p>Planecrash</p>",
+    "PostedDate": "2009-12-14T11:31:39.187-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "267222",
+    "ThreadId": "78118",
+    "Html": "<p>I can accomplish my goal this way....</p>\r\n<p>$(&quot;#commentBox&quot;).htmlarea(&quot;dispose&quot;);<br>$(&quot;#commentBox&quot;).html(&quot;&quot;);<br>$(&quot;#commentBox&quot;).htmlarea();</p>\r\n<p>But it feels more like a hack than an actual solution.&nbsp; Is there a function like &quot;dispose&quot; or &quot;toHtmlString&quot; that clears the contents?</p>\r\n<p>Thanks,</p>\r\n<p>Planecrash</p>",
+    "PostedDate": "2009-12-14T11:43:34.96-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "267235",
+    "ThreadId": "78118",
+    "Html": "<p>Actually I was unable to &quot;focus&quot; the cursor on the htmlarea in IE8 with my previous solution.&nbsp; So I kept trying and stumbled across this method...</p>\r\n<p>$(&quot;#commentBox&quot;).html(&quot;&quot;);<br>$(&quot;#commentBox&quot;).htmlarea(&quot;updateHtmlArea&quot;);</p>\r\n<p>Thanks,</p>\r\n<p>Planecrash</p>",
+    "PostedDate": "2009-12-14T11:59:59.037-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]
