@@ -1,97 +1,49 @@
 <?php 
-
-include('header.php');
-
 require_once("clases/BaseDatos.php");
-
+include('includes/head.php');
+include('includes/header.php');
 $baseDatos = new BaseDatos();
- ?>
-
-<link rel="stylesheet" href="css/responsiveslides/responsiveslides.css">
-<link rel="stylesheet" href="css/responsiveslides/demo.css">
-<script src="js/responsiveslides.min.js"></script>
-<script>
-    $(function () {
-
-      $("#slider4").responsiveSlides({
-        auto: true,
-        pager: false,
-        nav: true,
-        speed: 500,
-        namespace: "callbacks",
-        before: function () {
-          $('.events').append("<li>before event fired.</li>");
-        },
-        after: function () {
-          $('.events').append("<li>after event fired.</li>");
-        }
-      });
-
-    });
-
-    $(document).on('keyup.callbacks_container', function(evt) {
-      if (evt.keyCode == 37) { // LEFT
-          $('.callbacks_container .prev').trigger('click');
-      } else if (evt.keyCode == 39) { // RIGHT
-          $('.callbacks_container .next').trigger('click');
-      }
-  });
-</script>
-
-<link href="css/carousel/assets/css/bootstrapTheme.css" rel="stylesheet">
-<!-- Owl Carousel Assets -->
-<link href="css/carousel/owl.carousel.css" rel="stylesheet">
-<link href="css/carousel/owl.theme.css" rel="stylesheet">
-
-<script src="js/owl.carousel.js"></script>
-<script>
-    $(document).ready(function() {
-      $("#owl-demo").owlCarousel({
-        items: 4,
-        loop: true,
-        pagination: false,
-        navigation: true,
-        navigationText: [
-        "<i class='fa fa-angle-left' style='font-size: 20px !important;  border-radius: 60px !important;'></i>",
-        "<i class='fa fa-angle-right' style='font-size: 20px !important;  border-radius: 60px !important;'></i>"
-        ]
-      });
-    });
-</script>
-<style type="text/css">
-.item
-{
-  padding-bottom: 20px !important;
-}
-.btn_carousel
-{
-  font-size: 16px !important;
-}
-</style>
-
+?>
 <div id="wrapper">
   <div class="callbacks_container" style="margin-top: -70px;">
       <ul class="rslides" id="slider4">
       <?php $baseDatos->listarPortadas(); ?>
-      <!--  <li>
-        <a  href="https://topshow.com.ar/info/fenix/rod-stewart-cena-show-2018" target="_blank"><img src="imagenes/home/5.jpg" alt=""></a>
-
-      </li>-->
-         
      </ul> 
   </div>
   <div class="clear"></div>
 </div>
 
-<div class="container">
-  <div class="row">
-    <div class="col-sm-12"><h2 class="titulos"><span>EVENTOS DESTACADOS</span></h2></div>
+<div class="row">
+  <div class="container">
 
-    <?php $baseDatos->listarDestacados(); ?>
+    <div class="col-sm-12">
+      <div class="col-sm-12"><h2 class="titulos"><span>VIDEO DESTACADO</span></h2></div>
+      <!-- video -->
+    </div>
+    <div class="col-sm-12">
+      <div class="col-sm-12"><h2 class="titulos"><span>LIVE FEED</span></h2></div>
 
+      <div class="col-sm-4">
+        <div class="fb-page" data-href="https://www.facebook.com/fenixargentina/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/fenixargentina/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/fenixargentina/">Fenix Entertainment Group</a></blockquote></div>   
+      </div>
+      <div class="col-sm-4">
+        <a class="twitter-timeline" data-width="340" data-height="500" data-link-color="#FAB81E" href="https://twitter.com/fenix?ref_src=twsrc%5Etfw">Tweets by fenix</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+      
+    </div>
   </div>
 </div>
 
+
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12"><h2 class="titulos"><span>EVENTOS DESTACADOS</span></h2></div>
+    <?php $baseDatos->listarDestacados(); ?>
+  </div>
+</div>
 <div id="proximos_eventos">
   <div class="container">
     <div class="row">
@@ -104,7 +56,6 @@ $baseDatos = new BaseDatos();
     </div>
   </div>
 </div>
-
 <div class="parallax_follow">
   <div class="bg__break">
     <div class="capture">
@@ -118,18 +69,8 @@ $baseDatos = new BaseDatos();
     </div>
   </div>
 </div>
-
 <?php $baseDatos->listarGacetillas(); ?>
-
-
-<script type="text/javascript" src="js/jquery.mousewheel-3.0.6.pack.js"></script>
-<script type="text/javascript" src="js/jquery.fancybox.js?v=2.1.5"></script>
-<link rel="stylesheet" type="text/css" href="css/fancybox/jquery.fancybox.css?v=2.1.5" media="screen" />
-
-<script type="text/javascript">
-  $(document).ready(function() {
-    $('.fancybox').fancybox();
-  });
-</script>
-
-<?php include('footer.php'); ?>
+<?php
+ include('includes/footer.php');
+ include('includes/scripts.php');
+?>

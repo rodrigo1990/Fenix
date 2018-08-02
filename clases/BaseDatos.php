@@ -2,18 +2,18 @@
 
 class BaseDatos{
 
-	public $base='legion';
-	public $servidor='172.31.45.208';
+	public $base='fenix';
+	public $servidor='localhost';
 	public $conexion;
 	public $mysqli;
 
 
 	public function __construct(){
 		
-		$this->conexion=mysqli_connect($this->servidor,'root','Topshow123',$this->base) or die ("No se ha podido establecer conexion con la base de datos");
+		$this->conexion=mysqli_connect($this->servidor,'root','',$this->base) or die ("No se ha podido establecer conexion con la base de datos");
 	
 
-		$this->mysqli=new mysqli($this->servidor,'root','Topshow123', $this->base);
+		$this->mysqli=new mysqli($this->servidor,'root','', $this->base);
 
 		$this->mysqli->set_charset("utf8");
 	}
