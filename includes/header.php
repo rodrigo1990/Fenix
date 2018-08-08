@@ -15,16 +15,15 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-2 text_center_mobile">
-          <a href="<?php echo $base_url ?>index" id="logo-container"><img src="<?php echo $base_url ?>imagenes/logo.png" alt="TravelTime" id="logo" /></a>
+          <a href="<?php echo $base_url ?>index.php" id="logo-container"><img src="<?php echo $base_url ?>imagenes/logo.png" alt="TravelTime" id="logo" /></a>
         </div>
         <div class="col-sm-8 text-center">
           <div id="cssmenu" style="position: relative; z-index:999;">
             <ul>
-               <li <?php if(($url_actual == "index") || ($url_actual == "")) { ?>class="current"<?php } ?>><a href="<?php echo $base_url ?>index.php" style="margin-left: 0px; padding-left: 0px;">EVENTOS</a></li>
-               <li <?php if($url_actual == "productora") { ?>class="current"<?php } ?>><a href="<?php echo $base_url ?>productora.php">PRODUCTORA</a></li>
+               <li <?php if(($url_actual == "index") || ($url_actual == "")) { ?>class="current"<?php } ?>><a href="<?php echo $base_url ?>index.php" style="margin-left: 0px; padding-left: 0px;">HOME</a></li>
+               <li <?php if($url_actual == "productora") { ?>class="current"<?php } ?>><a href="<?php echo $base_url ?>productora.php">¿QUIENES SOMOS?</a></li>
                <!--<li <?php if($url_actual == "venues") { ?>class="current"<?php } ?>><a href="<?php echo $base_url ?>venues">VENUES</a></li>-->
                <!--<li <?php if($url_actual == "produccion") { ?>class="current"<?php } ?>><a href="<?php echo $base_url ?>produccion">PRODUCCIÓN</a></li>-->
-                <li <?php if(($url_actual == "reviews") || ($url_actual == "multimedia_a")) { ?>class="current"<?php } ?>><a href="<?php echo $base_url ?>reviews.php">REVIEWS</a></li>
                <li <?php if($url_actual == "contacto") { ?>class="current"<?php } ?>><a href="<?php echo $base_url ?>contacto.php" style="margin-right: 0px; padding-right: 0px;">CONTACTO</a></li>
             </ul>
           </div>
@@ -39,4 +38,4 @@
       </div>
     </div>
 </header>
-<div id="espacio_header"></div>
+<!--  <div id="espacio_header"></div>-->

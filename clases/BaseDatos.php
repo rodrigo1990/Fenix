@@ -956,7 +956,7 @@ class BaseDatos{
 		try{
 			$sql="SELECT *
 				 FROM evento
-				 where Es_Portada=1
+				 where Es_Portada=1 AND es_historico=0
 				 ORDER BY Fecha ASC
 				 ";
 
@@ -967,10 +967,10 @@ class BaseDatos{
 
 			while($fila=mysqli_fetch_assoc($consulta)){
 			
-						echo "<li>
+						echo "<div>
 							<a href='".$fila['Link_Compra']."'><img src='imagenes/home/imagenesBig/".$fila["Img_Big"]."'></a>
 
-							</li>";
+							</div>";
 						
 
 			}//while
@@ -989,7 +989,7 @@ class BaseDatos{
 		try{
 			$sql="SELECT EVE.*,LOC.descripcion as locacion
 				 FROM evento EVE JOIN locacion LOC ON EVE.ID_Locacion=LOC.ID
-				 WHERE Es_Destacado=1
+				 WHERE Es_Destacado=1 AND es_historico=0
 				 ORDER BY Fecha ASC";
 
 
@@ -1030,7 +1030,7 @@ class BaseDatos{
 							          ".utf8_encode($fila['Copete'])."...
 							          <br /><br />
 
-							          <a href='#evento_".$fila['ID']."' class='link_mas_info fancybox'><span>+</span> Info</a>
+							          <a href='#evento_".$fila['ID']."' class='link_mas_info fancybox shake'><span>+</span> Info</a>
 
 							        </div>
 
@@ -1058,6 +1058,7 @@ class BaseDatos{
 		try{
 			$sql="SELECT EVE.*,LOC.descripcion as locacion
 				 FROM evento EVE JOIN locacion LOC ON EVE.ID_Locacion=LOC.ID
+				 WHERE es_historico=0
 				 ORDER BY Fecha ASC";
 
 
@@ -1100,7 +1101,142 @@ class BaseDatos{
 
 		try{
 			$sql="SELECT EVE.*,LOC.descripcion as locacion
-				 FROM evento EVE JOIN locacion LOC ON EVE.ID_Locacion=LOC.ID";
+				 FROM evento EVE JOIN locacion LOC ON EVE.ID_Locacion=LOC.ID
+				 WHERE EVE.es_historico=0";
+
+			$consulta=mysqli_query($this->conexion,$sql);
+
+			while($fila=mysqli_fetch_assoc($consulta)){
+
+
+						$dia = date("d",strtotime($fila['Fecha']));
+						$mes = date("m",strtotime($fila['Fecha']));
+
+						if($mes==01){
+							$mes='ENERO';
+						}else if($mes==02){
+							$mes='FEBRERO';
+						}else if($mes==03){
+							$mes='MARZO';
+						}else if($mes==04){
+							$mes='ABRIL';
+						}else if($mes==05){
+							$mes='MAYO';
+						}else if($mes==06){
+							$mes='JUNIO';
+						}else if($mes==07){
+							$mes='JULIO';
+						}else if($mes==08){
+							$mes='AGOSTO';
+						}else if($mes==09){
+							$mes='SEPTIEMBRE';
+						}else if($mes==10){
+							$mes='OCTUBRE';
+						}else if($mes==11){
+							$mes='NOVIEMBRE';
+						}else if($mes==12){
+							$mes='FEBRERO';
+						}
+
+						echo "
+								<div id='evento_".$fila['ID']."' class='popup_evento'>
+								  <h2 class='titulos'><span>".$fila['Artista']."</span></h2>
+								  <div class='row'>
+								    <div class='col-sm-8 gacetillas-cont'>
+								      ".utf8_encode($fila['Descripcion'])."<br><br>
+
+								      <div class='compartir_redes'>
+								        <span>SEGUILO EN </span>
+								      ";
+
+
+
+						if($fila['Link_Facebook_1']!=''){
+
+							echo "<a href='".$fila['Link_Facebook_1']."' target='_blank'><i class='fa fa-facebook' aria-hidden='true'></i></a>";
+
+						}
+
+						if($fila['Link_Facebook_2']!=''){
+
+							echo "<a href='".$fila['Link_Facebook_2']."' target='_blank'><i class='fa fa-facebook' aria-hidden='true'></i></a>";
+
+						}	
+
+
+						if($fila['Link_Twitter_1']!=''){
+
+							echo "<a href='".$fila['Link_Twitter_2']."' target='_blank'><i class='fa fa-twitter' aria-hidden='true'></i></a>";
+
+						}
+
+						if($fila['Link_Twitter_2']!=''){
+
+							echo "<a href='".$fila['Link_Twitter_2']."' target='_blank'><i class='fa fa-twitter' aria-hidden='true'></i></a>";
+
+						}
+
+						if($fila['Link_Instagram_1']!=''){
+
+							echo "<a href='".$fila['Link_Instagram_1']."' target='_blank'><i class='fa fa-instagram' aria-hidden='true'></i></a>";
+
+						}
+
+						if($fila['Link_Instagram_2']!=''){
+
+							echo "<a href='".$fila['Link_Instagram_2']."' target='_blank'><i class='fa fa-instagram' aria-hidden='true'></i></a>";
+
+						}
+								        
+						echo "</div>
+								    </div>";
+	      
+					    echo "<div class='col-sm-4'>
+    					      <div class='fecha_popup'>
+    					        <div class='dia_popup'>".$dia."</div>";
+
+						echo "<div class='texto_popup'>
+								          DE ".utf8_encode($mes)."<br />
+								          <span>".utf8_encode($fila['locacion'])."</span>
+								        </div>
+								        <div class='clearfix'></div>
+								      </div>
+								      <a href='".$fila['Link_Compra']."' target='_blank' class='btn_carousel'><i class='fa fa-ticket' aria-hidden='true'></i> Comprar ticket</a>
+								    </div>
+								  </div>
+								 ";
+
+
+						if($fila['Link_Youtube_1']!=''){
+						echo "<div class='video_popup'>
+								    <iframe width='100%' height='315' src='".$fila['Link_Youtube_1']."' frameborder='0' allowfullscreen></iframe>
+								  </div>
+								</div>";
+
+						}		  
+
+						echo " </div>";
+								  
+						
+
+			}//while
+
+
+		}catch(Exception $e){
+
+			echo "¡Ups! Ha ocurrido un error: ",$e->getMessage(),"";
+
+		}
+
+
+
+	}//listarGacetillas
+	public function listarGacetillaDeEventosAnteriores(){
+
+		try{
+			$sql="SELECT EVE.*,LOC.descripcion as locacion
+				 FROM evento EVE JOIN locacion LOC ON EVE.ID_Locacion=LOC.ID
+				 WHERE EVE.es_historico=1";
 
 			$consulta=mysqli_query($this->conexion,$sql);
 
@@ -1230,11 +1366,12 @@ class BaseDatos{
 
 	}//listarGacetillas
 
-	public function listarAgendaDeEventosEnSeccionProductora(){
+	public function listarEventosAnteriores(){
 
 		try{
 			$sql="SELECT EVE.*,LOC.descripcion as locacion
 				 FROM evento EVE JOIN locacion LOC ON EVE.ID_Locacion=LOC.ID
+				 WHERE es_historico=1
 				 ORDER BY Fecha ASC";
 
 
@@ -1244,17 +1381,21 @@ class BaseDatos{
         
 
 			while($fila=mysqli_fetch_assoc($consulta)){
-						
+				
+
+
+
 						$date = new DateTime($fila['Fecha']);
 
 				$img='"imagenes/home/imagenesSm/'.$fila['Img_Sm'].'"';
 				echo "<div class='item carousel_empresa' style='background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(".$img."); background-size: cover;'>
 		              <div class='descripcion_carousel'>
-		                <div class='titulo_evento'>".$fila['Artista']."</div>
-		                <a class='fecha_evento'>".str_replace("-","/",$date->format('d-m'))."</a>  <a class='lugar_evento'><i class='fa fa-map-marker' aria-hidden='true'></i>".$fila['Locacion']."</a>
-		              </div>
-		              <a href='".$fila['Link_Compra']."' target='_blank' class='btn_carousel'><i class='fa fa-ticket' aria-hidden='true'></i> Comprar ticket</a>
-		            </div>";
+					            <div class='titulo_evento'>".utf8_encode($fila['Artista'])."</div>
+					            <p></p>
+					            <a class='fecha_evento'>".str_replace("-","/",$date->format('d-m'))."</a>  <a class='lugar_evento'><i class='fa fa-map-marker' aria-hidden='true'></i> ".utf8_encode($fila['locacion'])."</a><br />
+					            <a href='#evento_".$fila['ID']."' class='link_mas_info fancybox'><span>+</span> Info</a>
+					          </div>
+					        </div>";
 
 
 
@@ -1264,6 +1405,9 @@ class BaseDatos{
 			}//while
 
 
+
+
+
 		}catch(Exception $e){
 
 			echo "¡Ups! Ha ocurrido un error: ",$e->getMessage(),"";
@@ -1271,6 +1415,21 @@ class BaseDatos{
 		}
 
 	}//listarAgendaDeEventosEnSeccionProductora
+
+	public function actualizarAHistoricos(){
+
+
+
+		$sql="UPDATE evento
+				SET es_historico=1
+			  WHERE Fecha < NOW()
+			  ";
+
+
+
+		$consulta=mysqli_query($this->conexion,$sql);
+
+	}
 
 
 

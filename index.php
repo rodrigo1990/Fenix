@@ -3,35 +3,34 @@ require_once("clases/BaseDatos.php");
 include('includes/head.php');
 include('includes/header.php');
 $baseDatos = new BaseDatos();
+$baseDatos->actualizarAHistoricos();
 ?>
-<div id="wrapper">
-  <div class="callbacks_container" style="margin-top: -70px;">
-      <ul class="rslides" id="slider4">
-      <?php $baseDatos->listarPortadas(); ?>
-     </ul> 
-  </div>
-  <div class="clear"></div>
-</div>
-
-<div class="row">
-  <div class="container">
+      <div id="slider-principal" class="owl-one owl-carousel owl-theme" style="">
+         <?php $baseDatos->listarPortadas(); ?>    
+       </div>
+<div class="clear"></div>
+<div class="row" style="margin-top:3%;">
 
     <div class="col-sm-12">
-      <div class="col-sm-12"><h2 class="titulos"><span>VIDEO DESTACADO</span></h2></div>
-      <!-- video -->
-    </div>
-    <div class="col-sm-12">
-      <div class="col-sm-12"><h2 class="titulos"><span>LIVE FEED</span></h2></div>
 
-      <div class="col-sm-4">
-        <div class="fb-page" data-href="https://www.facebook.com/fenixargentina/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/fenixargentina/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/fenixargentina/">Fenix Entertainment Group</a></blockquote></div>   
-      </div>
-      <div class="col-sm-4">
-        <a class="twitter-timeline" data-width="340" data-height="500" data-link-color="#FAB81E" href="https://twitter.com/fenix?ref_src=twsrc%5Etfw">Tweets by fenix</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-      </div>
-      
+    <!--  <h2 class="titulos"><span>VIDEO DESTACADO</span></h2> -->
+      <!--  <div class='video_popup'>-->
+                    <!-- <iframe width='100%' height='315' src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&loop=1&controls=0&showinfo=0&nologo=1&iv_load_policy=3&mute=1" frameborder='0' allowfullscreen></iframe> -->
+    
+
+        <video id="my-video" class="video-js center-block"  autoplay muted preload="auto" style="width:100%;height:300px" data-setup="{}">
+    <source src="video/1.mp4">
+    <p class="vjs-no-js">
+      To view this video please enable JavaScript, and consider upgrading to a web browser that
+      <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+    </p>
+  </video>
+
+
+
+      <!--  </div>-->
     </div>
-  </div>
+    
 </div>
 
 
@@ -40,16 +39,17 @@ $baseDatos = new BaseDatos();
 
 <div class="container">
   <div class="row">
-    <div class="col-sm-12"><h2 class="titulos"><span>EVENTOS DESTACADOS</span></h2></div>
+    <div class="col-sm-12"><h2 class="titulos"><span>SHOWS</span></h2></div>
     <?php $baseDatos->listarDestacados(); ?>
   </div>
 </div>
+ 
 <div id="proximos_eventos">
   <div class="container">
     <div class="row">
-      <div class="col-sm-12"><h2 class="titulos"><span>AGENDA DE EVENTOS</span></h2></div>
+      <div class="col-sm-12"><h2 class="titulos"><span>PROXIMOS SHOWS</span></h2></div>
 
-      <div id="owl-demo" class="owl-carousel"> 
+      <div id="owl-demo" class="owl-carousel" style="z-index:5;"> 
      <?php $baseDatos->listarAgendaDeEventos(); ?>
 
       <div class="clearfix"></div>
