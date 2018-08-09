@@ -1,4 +1,5 @@
-<?php include('header.php'); ?>
+<?php include('includes/head.php'); 
+include('includes/header.php');  ?>
 
 <section>
   <div id="cabecera_contacto">
@@ -41,4 +42,7 @@
 
 </section>
 
-<?php include('footer.php'); ?>
+<?php 
+include('includes/footer.php');
+include('includes/scripts.php');
+  ?>

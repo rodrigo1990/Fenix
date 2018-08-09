@@ -16,8 +16,14 @@ body
   font-family: 'Ubuntu', sans-serif;
   font-size: 13px;
   color: #000000;
-  background: #e4e4e4;
+ /* background: #e4e4e4;*/
   overflow-x:hidden !important; 
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e4e4e4+42,fca416+100 */
+background: #e4e4e4; /* Old browsers */
+background: -moz-linear-gradient(top, #e4e4e4 42%, #fca416 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #e4e4e4 42%,#fca416 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #e4e4e4 42%,#fca416 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4e4e4', endColorstr='#fca416',GradientType=0 ); /* IE6-9 */
 }
 
 header
@@ -1026,6 +1032,22 @@ i.slider-home:hover{
 #wrapper {
     /* height: 44px; */
    /* margin-top: 4%;*/
+}
+
+.live-feed-cont{
+  padding:10px 0px 50px 0px;
+  background-color: rgba(0,0,0,0.90);
+  margin-bottom:50px;
+  border-radius:10px;
+
+}
+
+
+
+
+.live-feed-cont .titulos{
+  color:white;
+  border-bottom: 1px solid #fffdfd;
 }
 
 

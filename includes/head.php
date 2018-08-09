@@ -57,7 +57,6 @@ function urls_amigables($url) {
 	  font-size: 16px !important;
 	}
 	</style>
- 	 <link href="https://vjs.zencdn.net/7.1.0/video-js.css" rel="stylesheet">
   	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-  	 <script src="https://vjs.zencdn.net/ie8/ie8-version/videojs-ie8.min.js"></script>
+  	
 </head>

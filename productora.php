@@ -1,6 +1,6 @@
 <?php
-
-include('header.php'); 
+include('includes/head.php'); 
+include('includes/header.php'); 
 require_once("clases/BaseDatos.php");
 
 $baseDatos= new BaseDatos();
@@ -94,7 +94,7 @@ $baseDatos= new BaseDatos();
           <div id="owl-demo" class="owl-carousel">
 
             <?php 
-              $baseDatos->listarAgendaDeEventosEnSeccionProductora();
+              $baseDatos->listarEventosAnteriores();
 
              ?>
 
@@ -109,4 +109,25 @@ $baseDatos= new BaseDatos();
 </div>
 </section>
 
-<?php include('footer.php'); ?>
+<?php 
+$baseDatos->listarGacetillaDeEventosAnteriores();
+ ?>
+
+<?php
+include('includes/footer.php');
+include('includes/scripts.php');
+ ?>
+ <script>
+
+      $("#owl-demo").owlCarousel({
+        items: 4,
+        loop: true,
+        nav:true,
+        pagination: false,
+        navigation: true,
+        navigationText: [
+        "<i class='fa fa-angle-left' style='font-size: 20px !important;  border-radius: 60px !important;'></i>",
+        "<i class='fa fa-angle-right' style='font-size: 20px !important;  border-radius: 60px !important;'></i>"
+        ]
+      });
+</script>

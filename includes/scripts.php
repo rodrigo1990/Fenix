@@ -8,58 +8,26 @@
 <script type="text/javascript" src="js/jquery.fancybox.js?v=2.1.5"></script>
 <script src="js/responsiveslides.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
-<script src="https://vjs.zencdn.net/7.1.0/video.js"></script>
-<script>
-     $('.owl-one').owlCarousel({
-    loop:true,
-    margin:10,
-    autoPlay:false,
-    nav:true,
-    navigation: true,
-    navigationText: [
-        "<i class='fa fa-angle-left slider-home' style='font-size: 7.5rem !important;color:white;  border:none; margin-left:50px'></i>",
-        "<i class='fa fa-angle-right slider-home' style='font-size: 7.5rem !important;color:white;  border:none; margin-right:50px'></i>"
-        ],
-    dots:true,
-    items:1,
-    responsive:{
-        0:{
-            items:1
-        },
-        1200:{
-            items:1
-        }
 
-
-    }
-});
-</script>
-<script>
-
-      $("#owl-demo").owlCarousel({
-        items: 4,
-        loop: true,
-        nav:true,
-        pagination: false,
-        navigation: true,
-        navigationText: [
-        "<i class='fa fa-angle-left' style='font-size: 20px !important;  border-radius: 60px !important;'></i>",
-        "<i class='fa fa-angle-right' style='font-size: 20px !important;  border-radius: 60px !important;'></i>"
-        ]
-      });
-</script>
 <script type="text/javascript">
   $(document).ready(function() {
     $('.fancybox').fancybox();
     $("header").css({
-            background:"rgba(0,0,0,0)",
-            transition:"background 0.5s"
+            background:"rgba(0,0,0,1)",
+            transition:"background 0.5s",
+            padding:"8px 0px"
         });
-      $("#cssmenu").fadeOut();
-      $("#logo").css({
+    $("#logo").css({
         width:"70%",
         transition:"width 0.5s"
       });
+    $("#cssmenu > ul > li > a").css({
+        fontSize:"1.40rem"
+    });
+    $("#espacio_header").css({
+        paddingTop:"40px"
+    });
+      
   });
 </script>
 <script>
@@ -68,25 +36,37 @@
 
     if(scroll==0){
         $("header").css({
-            background:"rgba(0,0,0,0)",
+            background:"rgba(0,0,0,1)",
             transition:"background 0.5s"
         });
-      $("#cssmenu").fadeOut();
         $("#logo").css({
             width:"70%",
             transition:"width 0.5s"
         });
+      $("#cssmenu > ul > li > a").css({
+        fontSize:"1.40rem"
+        });
+        $("#espacio_header").css({
+            paddingTop:"40px"
+        });
+        
 
     }else{
         $("header").css({
             background:"rgba(0,0,0,0.90)",
             transition:"background 0.5s"
         });
-          $("#cssmenu").fadeIn();
         $("#logo").css({
             width:"100%",
             transition:"width 0.5s"
         });
+        $("#cssmenu > ul > li > a").css({
+        fontSize:"1.90rem"
+        });
+        $("#espacio_header").css({
+            paddingTop:"60px"
+        });
+        
     }
     // Do something
 });
