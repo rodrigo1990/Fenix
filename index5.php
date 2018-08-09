@@ -9,12 +9,24 @@ $baseDatos->actualizarAHistoricos();
          <?php $baseDatos->listarPortadas(); ?>    
        </div>
 <div class="clear"></div>
-<div class="row" style="margin-top:3%;background-color:black;">
+<div class="row" style="margin-top:3%;">
 
-  <video id="my-video" class="center-block"  autoplay muted loop preload="auto" style="width:100%;height:300px">
-    <source src="video/2.mp4">
-  </video>
+    <div class="col-sm-12" style="background-color: black;">
+
+    <!--  <h2 class="titulos"><span>VIDEO DESTACADO</span></h2> -->
+      <!--  <div class='video_popup'>-->
+                    <!-- <iframe width='100%' height='315' src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&loop=1&controls=0&showinfo=0&nologo=1&iv_load_policy=3&mute=1" frameborder='0' allowfullscreen></iframe> -->
     
+  
+        <video id="my-video" class="center-block"  autoplay muted loop preload="auto" style="width:100%;height:300px">
+           <source src="video/2.mp4">
+  
+        </video>
+
+
+
+      <!--  </div>-->
+    </div>
     
 </div>
 

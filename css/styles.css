@@ -114,29 +114,29 @@ footer .padding_footer
 
 /* HOME */
 .parallax_follow [class*="bg__"] {
-  position: relative;
-  text-indent: -9999px;
-  /* background-attachment: fixed; */
-  background-position: top center;
-  background-size: cover;
-
-  padding: 160px 0px;
-  color: #ffffff;
-  font-size: 16px;
-  text-align: center;
-  line-height: 26px;
+      position: relative;
+    text-indent: -9999px;
+        background-attachment: fixed;
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px 0px;
+    color: #ffffff;
+    font-size: 16px;
+    text-align: center;
+    line-height: 26px;
 }
 
 #linea_seguinos
 {
-  border-bottom: 1px solid #ffffff;
+  /*border-bottom: 1px solid #ffffff;*/
   padding-top: 10px;
   margin-bottom: 20px;
 }
 #linea_seguinos div
 {
   border-bottom: 5px solid #fdb945;
-  max-width: 200px;
+  max-width: 85px;
   margin: 0px auto -3px auto;
 }
 
@@ -145,7 +145,7 @@ footer .padding_footer
 }
 .parallax_follow .capture {
   text-indent: 0;
-  border: 2px solid #ffffff;
+  /*border: 2px solid #ffffff;*/
   width: 100%;
   max-width: 500px;
   margin: auto;
@@ -154,11 +154,11 @@ footer .padding_footer
 }
 
 .parallax_follow .capture #titulo_seguinos {
-  background: #000000;
+  /*background: #000000;*/
   color: #ffffff;
-  border-right: 3px solid #fdb945;
-  border-bottom: 3px solid #fdb945;
-  font-size: 24px;
+  /*border-right: 3px solid #fdb945;
+  border-bottom: 3px solid #fdb945;*/
+  font-size: 5.4rem;
   font-weight: 700;
   padding: 10px 0px;
   margin-bottom: 18px;
@@ -198,6 +198,7 @@ footer .padding_footer
   -webkit-box-shadow: -8px 22px 37px -7px rgba(140,140,140,1);
 -moz-box-shadow: -8px 22px 37px -7px rgba(140,140,140,1);
 box-shadow: -8px 22px 37px -7px rgba(140,140,140,1);
+    background: rgba(12,0,0,0.8)
 }
 .descripcion_eventosdestacados div
 {
