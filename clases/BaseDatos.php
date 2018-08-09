@@ -1002,7 +1002,7 @@ class BaseDatos{
 						
 						$date = new DateTime($fila['Fecha']);
 
-						echo "<div class='col-sm-6 item_calafate'>
+						echo "<div class='col-lg-4 col-md-6 col-sm-6 item_calafate'>
 							      <a>
 							        <div class='contenedor_overlay'>
 									
@@ -1016,7 +1016,7 @@ class BaseDatos{
 
 							              <a href='".$fila['Link_Compra']."' target='_blank' class='btn_carousel'><i class='fa fa-ticket' aria-hidden='true'></i> Comprar ticket</a>
 							              
-							              <a class='fecha_evento'>".str_replace("-","/",$date->format('d-m'))."</a>  <a class='lugar_evento'><i class='fa fa-map-marker' aria-hidden='true'></i>".$fila['locacion']."</a><br />
+							              <a class='fecha_evento'>".str_replace("-","/",$date->format('d-m'))."</a>  <a class='lugar_evento'><i class='fa fa-map-marker' aria-hidden='true'></i>".utf8_encode($fila['locacion'])."</a><br />
 							            </div>
 
 							          </div>
@@ -1026,11 +1026,11 @@ class BaseDatos{
 							        <div class='descripcion_eventosdestacados'>
 
 							          <div>".$fila['Artista']."</div>
+									  <div class='copete-cont'>
+							         	 ".utf8_encode($fila['Copete'])."...
+							          </div>
 
-							          ".utf8_encode($fila['Copete'])."...
-							          <br /><br />
-
-							          <a href='#evento_".$fila['ID']."' class='link_mas_info fancybox shake'><span>+</span> Info</a>
+							          <a href='#evento_".$fila['ID']."' class='link_mas_info fancybox'><span>+</span> Info</a>
 
 							        </div>
 

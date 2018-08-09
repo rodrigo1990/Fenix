@@ -42,6 +42,7 @@ $baseDatos->actualizarAHistoricos();
       
   </div>
  
+<div class="bk-gradient"></div>
 <div id="proximos_eventos">
   <div class="container">
     <div class="row">
@@ -89,6 +90,9 @@ $baseDatos->actualizarAHistoricos();
     responsive:{
         0:{
             items:1
+        },
+        768:{
+          items:1
         },
         1200:{
             items:1

@@ -7,7 +7,7 @@
 <script type="text/javascript" src="js/jquery.mousewheel-3.0.6.pack.js"></script>
 <script type="text/javascript" src="js/jquery.fancybox.js?v=2.1.5"></script>
 <script src="js/responsiveslides.min.js"></script>
-<script src="js/owl.carousel.min.js"></script>
+<script src="js/owl.carousel.js"></script>
 
 <script type="text/javascript">
   $(document).ready(function() {

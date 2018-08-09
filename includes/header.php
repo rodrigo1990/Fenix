@@ -1,4 +1,4 @@
-  <body>
+  <body class="logo-bk">
   <!-- SDK FOR FACEBOOK PLUGIN -->   
   <div id="fb-root"></div>
   <script>
