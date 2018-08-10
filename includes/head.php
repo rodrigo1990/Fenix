@@ -24,21 +24,24 @@ function urls_amigables($url) {
 <!DOCTYPE html>
 <html lang="es">
 <head>
+	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+  	<script src="js/owl.carousel.min.js"></script>
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Fenix Entertainment Group</title>
 	<meta name="description" content="Fenix Entertainment Group es la empresa Argentina de entretenimiento lider en Latinoamerica. El grupo nacio como una productora de espectaculos musicales, hoy es una compania de entretenimiento global." />
 	<meta name="keywords" content="" />
+	<script type="text/javascript" src="js/preloader.js"></script>
 	<link rel="icon" type="image/png" href="<?php echo $base_url ?>imagenes/favicon-32x32.png" sizes="32x32" />
 	<link rel="icon" type="image/png" href="<?php echo $base_url ?>imagenes/favicon-16x16.png" sizes="16x16" />
 	<!-- CSS -->
 	<link href="<?php echo $base_url ?>css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="<?php echo $base_url ?>css/menu.css">
 	<link href="<?php echo $base_url ?>css/styles.css" rel="stylesheet">
 	<link href="<?php echo $base_url ?>css/queries.css" rel="stylesheet">
 	<link href="<?php echo $base_url ?>css/shortcodes.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Ubuntu:400,500,700" rel="stylesheet">
 	<link rel="stylesheet" href="<?php echo $base_url ?>css/font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="<?php echo $base_url ?>css/menu.css">
 	<link rel="stylesheet" href="css/responsiveslides/responsiveslides.css">
 	<link rel="stylesheet" href="css/responsiveslides/demo.css">
 	<link href="css/carousel/assets/css/bootstrapTheme.css" rel="stylesheet">
@@ -57,6 +60,25 @@ function urls_amigables($url) {
 	  font-size: 16px !important;
 	}
 	</style>
-  	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+	<style>
+	/* width */
+		::-webkit-scrollbar {
+		    width: 10px;
+		}
+
+		/* Track */
+		::-webkit-scrollbar-track {
+		    background: #f1f1f1; 
+		}
+		 
+		/* Handle */
+		::-webkit-scrollbar-thumb {
+		    background: #fdb945; 
+		}
+
+		
+	</style>
+  	
+
   	
 </head>

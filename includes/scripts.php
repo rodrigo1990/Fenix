@@ -1,15 +1,23 @@
+<script src="js/preloader.js" type="text/javascript"></script>
+<script  src="https://s3.amazonaws.com/menumaker/menumaker.min.js" type="text/javascript"></script>
+<script  type="text/javascript" src="js/jquery.fancybox.min.js?v=2.1.5"></script>
+<script  src="js/responsiveslides.min.js"></script>
 
-<script src="https://s3.amazonaws.com/menumaker/menumaker.min.js" type="text/javascript"></script>
-<script src="<?php echo $base_url ?>js/bootstrap.min.js"></script>
-<script src="<?php echo $base_url ?>js/menu.js"></script>
-<script src="<?php echo $base_url ?>js/parallax.min.js"></script>
-<script src='https://www.google.com/recaptcha/api.js'></script>
-<script type="text/javascript" src="js/jquery.mousewheel-3.0.6.pack.js"></script>
-<script type="text/javascript" src="js/jquery.fancybox.js?v=2.1.5"></script>
-<script src="js/responsiveslides.min.js"></script>
-<script src="js/owl.carousel.js"></script>
+<script async>
+    (function($){
+$(document).ready(function(){
 
-<script type="text/javascript">
+$("#cssmenu").menumaker({
+    title: "Menu",
+    breakpoint: 975,
+    format: "multitoggle"
+});
+
+});
+})(jQuery);
+
+</script>
+<script type="text/javascript" async>
   $(document).ready(function() {
     $('.fancybox').fancybox();
     $("header").css({
@@ -30,7 +38,7 @@
       
   });
 </script>
-<script>
+<script async>
   $(window).scroll(function (event) {
     var scroll = $(window).scrollTop();
 
