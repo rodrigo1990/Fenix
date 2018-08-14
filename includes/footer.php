@@ -11,7 +11,7 @@
         <img src="imagenes/logo.png" alt="" />
       </div>
       <div class="col-sm-4 text-right padding_footer text_center_mobile text-center">
-        Email: <a href="mailto:info@fenix.com.ar">info@fenix.com.ar</a>
+        <a class="mail" href="mailto:info@fenix.com.ar">info@fenix.com.ar</a>
       </div>
       <div class="col-sm-4 text-center padding_footer">
         <a href="https://www.facebook.com/fenixargentina/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>

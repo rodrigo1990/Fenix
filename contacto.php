@@ -27,12 +27,12 @@ include('includes/header.php');  ?>
           <b>Email:</b> recepcion@fenix.com.ar
         </div>-->
         <div class="col-sm-12">
-          <form action="mail-landing.php" method="POST">
-            <input type="text" name="nombre" placeholder="Nombre" class="input_contacto" />
-            <input type="text" name="apellido" placeholder="Apellido" class="input_contacto" />
-            <input type="email" name="email" placeholder="Email" class="input_contacto" />
-            <input type="text" name="telefono" placeholder="Teléfono" class="input_contacto" />
-            <input type="text" name="mensaje" placeholder="Mensaje" class="input_contacto" />
+          <form action="mail-landing.php" method="POST" autocomplete="off">
+            <input type="text" name="nombre" placeholder="Nombre" class="input_contacto" autocomplete="off" />
+            <input type="text" name="apellido" placeholder="Apellido" class="input_contacto" autocomplete="off" />
+            <input type="email" name="email" placeholder="Email" class="input_contacto" autocomplete="off" />
+            <input type="text" name="telefono" placeholder="Teléfono" class="input_contacto" autocomplete="off" />
+            <input type="text" name="mensaje" placeholder="Mensaje" class="input_contacto" autocomplete="off" />
             <input type="submit" name="submit" value="Enviar" id="btn_enviar_contacto" />
           </form>
         </div>

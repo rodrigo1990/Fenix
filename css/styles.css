@@ -130,6 +130,11 @@ footer a
 {
 	color: #ffffff;
 }
+
+footer .mail{
+  letter-spacing: 8px;
+}
+
 footer i:hover, footer a:hover
 {
 	color: #cccccc;
@@ -704,6 +709,7 @@ i.slider-home:hover{
 #cabecera_contacto h1 span
 {
   border-color: #fdb945;
+      color: white;
 }
 
 #cabecera_contacto h2
@@ -724,13 +730,24 @@ i.slider-home:hover{
 {
   background: transparent;
   border: 0px;
-  border-bottom: 1px solid #fdb945;
+  border-bottom: 1px solid;
+  border-bottom-color: rgba(253,185,69,0.3);
   padding: 10px 0px;
   width: 100%;
   margin-bottom: 10px;
   font-size: 14px;
   color: #ffffff;
+  transition:border-bottom-color 0.5s;
 }
+
+.input_contacto:hover{
+  border-bottom: 1px solid rgba(253,185,69,1);
+}
+
+.input_contacto:focus{
+  outline:none;
+}
+
 
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     color:    #ffffff;
