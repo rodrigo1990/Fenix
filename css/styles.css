@@ -1075,6 +1075,12 @@ i.slider-home:hover{
 
 }
 
+
+
+.MsoNormal span {
+ font-size: 11px !important; 
+}
+
 #wrapper {
     /* height: 44px; */
    /* margin-top: 4%;*/
