@@ -1076,9 +1076,10 @@ i.slider-home:hover{
 }
 
 
-
+/*Tamaño para gacetillas*/
 .MsoNormal span {
  font-size: 11px !important; 
+ font-family: 'Ubuntu', sans-serif !important;
 }
 
 #wrapper {
